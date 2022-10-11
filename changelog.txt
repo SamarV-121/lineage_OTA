@@ -1,0 +1,430 @@
+==========
+2022-10-11
+==========
+android:
+159c36 Sync WallpaperPicker [Michael Bestas] (Tue Oct 4 21:30:23 2022)
+031f98 manifest: android-13.0.0_r6 -> android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 01:13:40 2022)
+5646a3 lineage: Re-enable ntfs-3g [Aaron Kling] (Mon Oct 3 15:58:29 2022)
+660d65 lineage: Sync Aperture camera app [Michael Bestas] (Mon Oct 3 15:58:29 2022)
+534ec5 lineage: Remove misc cli tools [Michael Bestas] (Mon Oct 3 15:58:29 2022)
+dde0a7 lineage: Remove external/libnfc-nxp & hardware/broadcom/nfc [Michael Bestas] (Mon Oct 3 15:58:29 2022)
+44d5a2 lineage: Remove vendor/nxp/opensource repos [Michael Bestas] (Mon Oct 3 15:58:29 2022)
+87846c lineage: Delete old FMRadio app [Michael Bestas] (Mon Oct 3 15:58:28 2022)
+a43e00 lineage: Track AOSP apps we don't build [Nolen Johnson] (Mon Oct 3 02:22:29 2022)
+383f96 manifest: Track our own system/memory/lmkd [Kevin F. Haggerty] (Sun Oct 2 19:46:58 2022)
+68152f lineage: Sync prebuilts/kernel-build-tools from AOSP [Michael Bestas] (Sat Oct 1 16:38:30 2022)
+badc09 lineage: Sync external/dwarves from AOSP [Michael Bestas] (Wed Sep 28 17:16:29 2022)
+4c5b0c pixel: Unify raviole & bluejay kernel [Michael Bestas] (Wed Sep 28 17:16:24 2022)
+
+build/make:
+ad19ca releasetools: Support erofs on non-dynamic partitions [Tim Zimmermann] (Wed Oct 5 14:55:31 2022)
+521ffb Exclude Camera2 for lineage builds [Michael Bestas] (Wed Oct 5 14:10:58 2022)
+4ebdca Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 01:28:22 2022)
+0e1f24 Allow passing makefile path to enforce-product-packages-exist [Aaron Kling] (Sun Sep 25 00:42:38 2022)
+
+external/chromium-webview/patches:
+e599e6 Update Chromium Webview to 106.0.5249.79 [Kevin F. Haggerty] (Sat Oct 1 14:02:11 2022)
+
+external/chromium-webview/prebuilt/arm:
+1ed204 Update Chromium Webview arm prebuilt to 106.0.5249.79 [Kevin F. Haggerty] (Sat Oct 1 14:22:53 2022)
+
+external/chromium-webview/prebuilt/arm64:
+e91124 Update Chromium Webview arm64 prebuilt to 106.0.5249.79 [Kevin F. Haggerty] (Sat Oct 1 14:23:01 2022)
+
+external/chromium-webview/prebuilt/x86:
+e4760b Update Chromium Webview x86 prebuilt to 106.0.5249.79 [Kevin F. Haggerty] (Sat Oct 1 14:23:08 2022)
+
+external/ntfs-3g:
+7471d6 config.h: Update version to 2022.5.17 [Michael Bestas] (Mon Oct 3 20:42:51 2022)
+
+frameworks/av:
+7935d1 Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 01:28:41 2022)
+792eeb Partial revert "Move unused classes out of stagefright foundataion" [Nico] (Sun Sep 25 20:47:51 2022)
+74c378 audioflinger: Fix audio for WifiDisplay [myfluxi] (Sun Sep 25 20:47:51 2022)
+4b9439 libstagefright_wfd: video encoder does not actually release MediaBufferBase when done [Vladimir Oltean] (Sun Sep 25 20:47:51 2022)
+1964e7 stagefright: Fix buffer handle retrieval in signalBufferReturned [Angelo G. Del Regno] (Sun Sep 25 20:47:51 2022)
+0b00e3 stagefright: Fix SurfaceMediaSource getting handle from wrong position issue [zhangbo_a] (Sun Sep 25 20:47:51 2022)
+d9dadd libstagefright_wfd: compilation fixes [Vladimir Oltean] (Sun Sep 25 20:47:51 2022)
+cb69a0 libstagefright: Remove libmediaextractor dependency [Adithya R] (Sun Sep 25 20:47:51 2022)
+1b782d Revert "Removed unused class and its test" [Vladimir Oltean] (Sun Sep 25 20:47:51 2022)
+19f08d Revert "stagefright: remove Miracast sender code" [Vladimir Oltean] (Sun Sep 25 20:47:51 2022)
+
+frameworks/base:
+62a611 Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:26 2022)
+41a4976 Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 12:09:29 2022)
+06e716 SystemUI: Fix QS header clock color [Danny Baumann] (Mon Oct 3 20:41:23 2022)
+314269a SystemUI: QSCustomizer: Fix QS tile reset text color [althafvly] (Mon Oct 3 20:41:23 2022)
+393216 SystemUI: Reset to textColorPrimaryInverse for light theme [Xayah] (Mon Oct 3 20:41:23 2022)
+7890ef7 SystemUI: Fix QS mobile icon disappearing on theme switch [Adithya R] (Mon Oct 3 20:41:23 2022)
+7d6ce1 SystemUI: Re-evaluate system theme on UI mode change [althafvly] (Mon Oct 3 20:41:23 2022)
+671c34 SystemUI: Follow light/dark theme in power menu [Danny Lin] (Mon Oct 3 20:41:23 2022)
+002e76 SystemUI: Calculate paged QS tiles height properly [Adithya R] (Mon Oct 3 20:41:22 2022)
+07e2c8 SystemUI: Fix QS clock overlapping on UI mode change [Adithya R] (Mon Oct 3 20:41:22 2022)
+eaf815 SystemUI: Add dual-tone light and dark themes for QS [Danny Lin] (Mon Oct 3 20:41:22 2022)
+a9aadb SystemUI: Initialize QS tiles in inactive state [Danny Lin] (Mon Oct 3 20:41:22 2022)
+160d85 SystemUI: Follow light/dark theme in quick settings [Danny Lin] (Mon Oct 3 20:41:22 2022)
+bd65f7 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE" [Danny Lin] (Mon Oct 3 20:41:22 2022)
+e5ddf4 SystemUI: Make QS panel change on UI mode changes [Danny Lin] (Mon Oct 3 20:41:22 2022)
+900f1d3 Add support for runtime toggle of navbar [Bruno Martins] (Mon Oct 3 20:29:00 2022)
+47ee69 PixelUdfpsHbmProvider: Remove unused imports [Michael Bestas] (Sun Oct 2 04:32:32 2022)
+e1f936 Remove navbar inset for UDFPS BiometricPrompt [LuK1337] (Sun Oct 2 04:32:32 2022)
+54bf71 SystemUI: Port statusbar brightness control [Alberto97] (Wed Sep 28 20:01:42 2022)
+c24f69 Implement edge long swipe gesture [Nico] (Wed Sep 28 13:26:56 2022)
+797c882 SystemUI: Network Traffic [1/3] [Sam Mortimer] (Tue Sep 27 21:01:35 2022)
+eb141ca Download: Add support to manually pause/resume download [qqzhou] (Tue Sep 27 21:00:46 2022)
+324fb9 Camera button support [HazouPH] (Tue Sep 27 19:35:39 2022)
+2d922e PhoneWindowManager: Add support for back key long press customization [LuK1337] (Tue Sep 27 19:35:38 2022)
+fec75a fw/b: Allow customisation of navbar app switch long press action [Sam Mortimer] (Tue Sep 27 16:56:41 2022)
+c433b0 PhoneWindowManager: Implement press home to answer call [Oleksandr Byelkin] (Tue Sep 27 16:56:41 2022)
+59e2b4 PhoneWindowManager: Tap volume buttons to answer call [martincz] (Tue Sep 27 16:56:41 2022)
+f7b9eb Reimplement device hardware wake keys support [LuK1337] (Tue Sep 27 16:56:41 2022)
+465a3d Reimplement hardware keys custom rebinding [Phil Tunstall] (Tue Sep 27 16:56:41 2022)
+b55164 fwb: Re-introduce keyboard backlight brightness control [Bruno Martins] (Tue Sep 27 16:56:39 2022)
+5068a5 PowerManager: Allow to distinguish different keypresses [Corinna Vinschen] (Tue Sep 27 16:52:19 2022)
+2c4f09a PowerManagerService: Allow to light up buttons only when pressed [Anas Karbila] (Tue Sep 27 16:52:18 2022)
+2ff87b fw/b: Button backlight brightness [Ricardo Cerqueira] (Tue Sep 27 16:52:15 2022)
+b790d1b PackageManager: Allow build-time disabling of components [Pawit Pornkitprasan] (Tue Sep 27 16:16:55 2022)
+898d0b frameworks: Add support for clock auto-hiding [Cédric Bellegarde] (Mon Sep 26 17:57:05 2022)
+5ce459e SystemUI: VolumeDialogImpl: notifyVisible after the volume panel is fully hidden [Jesse Chan] (Mon Sep 26 11:46:25 2022)
+6899bd SystemUI: Make the volume dialog expandable [Arian] (Mon Sep 26 11:46:25 2022)
+05d1a6 SystemUI: runtime configurable audio panel location [a.derendyaev] (Mon Sep 26 11:46:19 2022)
+edaf49 Forward port 'Swap volume buttons' (1/3) [nadlabak] (Sun Sep 25 23:28:45 2022)
+e18e6fe SystemUI: Bring back good ol' circle battery style [Luca Stefani] (Sun Sep 25 18:39:00 2022)
+ea5ed91 SystemUI: Add tunables for clock AM/PM style [Michael Bestas] (Sun Sep 25 18:39:00 2022)
+481742 SystemUI: Add tunables for clock position [Luca Stefani] (Sun Sep 25 18:38:59 2022)
+de71cd3 SystemUI: doze: add config for long press sensors that need a proximity check [Cosmin Tanislav] (Sun Sep 25 18:38:59 2022)
+540691 SystemUI: doze: add config for double tap sensors that need a proximity check [Cosmin Tanislav] (Sun Sep 25 18:38:59 2022)
+9af197 Partially revert "Assume sensors perform prox check" [Cosmin Tanislav] (Sun Sep 25 18:38:59 2022)
+7830a6 frameworks/base: Lights notifications brightness support [Adrian DC] (Sun Sep 25 18:38:59 2022)
+9c1433 frameworks/base: Battery and Notification Lights [Sam Mortimer] (Sun Sep 25 18:38:58 2022)
+195e96 Add custom handling for backup/restore of UIDS_ALLOWED_ON_RESTRICTED_NETWORKS [Oliver Scott] (Sun Sep 25 18:38:58 2022)
+31dd5e Migrate from network isolation to restricted networking mode [Oliver Scott] (Sun Sep 25 18:38:58 2022)
+93b336 NetworkPolicyManager: Add POLICY_REJECT_ALL constant [Chirayu Desai] (Sun Sep 25 18:38:58 2022)
+0616e5 Clear calling identity when setting restricted networking mode UID firewall rules [Oliver Scott] (Sun Sep 25 18:38:58 2022)
+60d0ec Implement backup/restore for network policy [Oliver Scott] (Sun Sep 25 18:38:57 2022)
+56c088 Split network policy XML parsing into read/write helper functions [Oliver Scott] (Sun Sep 25 18:38:57 2022)
+2173bc3 fw/b: Add support for allowing/disallowing apps on cellular, vpn and wifi networks [Oliver Scott] (Sun Sep 25 18:38:57 2022)
+7acd86 Restricted Networking Mode fixes [Oliver Scott] (Sun Sep 25 18:38:57 2022)
+6b1980 Remove removed package uids from Restricted Mode's uid allowlist [Oliver Scott] (Sun Sep 25 18:38:57 2022)
+8d8f79 Add Restricted Mode uid allowlist setting observer to NetworkPolicyManagerService [Oliver Scott] (Sun Sep 25 18:38:56 2022)
+68012f Sync hasRestrictedModeAccess with PermissionMonitor in NetworkPolicyManagerService [Oliver Scott] (Sun Sep 25 18:38:56 2022)
+85a2af3 SystemUI: add left and right virtual buttons while typing [Roman Birg] (Sun Sep 25 18:38:56 2022)
+63dad47 base: ChooserActivity: Don't show image edit button on multiple targets [Aayush Gupta] (Sun Sep 25 18:36:58 2022)
+65b51a Don't skip theme application if it's already current [Michael Bestas] (Sun Sep 25 18:36:57 2022)
+c8aeee SystemUI: support black theme for dark mode [1/4] [althafvly] (Sun Sep 25 18:36:57 2022)
+5cec49 SystemUI: screenshot: open the screenshot instead of edit [Timi Rautamäki] (Sun Sep 25 18:36:57 2022)
+2708e8 Screenshot: Append app name to filename [ezio84] (Sun Sep 25 18:36:57 2022)
+0c2d0b SystemUI: screenshot: add delay for long-press partial screenshot [Pranav Vashi] (Sun Sep 25 18:36:57 2022)
+e306e7 SystemUI: screenshot: close QS after launching long screenshot activity [LuK1337] (Sun Sep 25 18:36:56 2022)
+bde697e SystemUI: screenshot: disable magnification for partial screenshots [Cosmin Tanislav] (Sun Sep 25 18:36:56 2022)
+a5906f SystemUI: screenshot: add extra crop boundaries [Cosmin Tanislav] (Sun Sep 25 18:36:56 2022)
+ea5bbf SystemUI: screenshot: remove duplicate clamping on move action [Cosmin Tanislav] (Sun Sep 25 18:36:56 2022)
+463caa SystemUI: screenshot: remove misplaced call to set crop view padding [Cosmin Tanislav] (Sun Sep 25 18:36:56 2022)
+42c086 SystemUI: screenshot: open long screenshot activity for partial screenshots [Cosmin Tanislav] (Sun Sep 25 18:36:55 2022)
+55b96e4 Implement click to take partial screenshot [1/3] [Jesse Chan] (Sun Sep 25 18:36:55 2022)
+aa225f SystemUI: Redraw display cutout on overlay changes [Adithya R] (Sun Sep 25 18:36:55 2022)
+db9faf1 Biometrics: Allow disabling of fingerprint cleanups [Quallenauge] (Sun Sep 25 18:36:55 2022)
+55afa89 SystemUI: Add left padding for keyguard slices [LuK1337] (Sun Sep 25 18:36:55 2022)
+b4cd5c7 AutoBrightness: Add support for one shot auto-brightness [Cédric Bellegarde] (Sun Sep 25 18:36:54 2022)
+ba2bff DSU: Only try to install on sdcard if the filesystem in use is vfat [Tim Zimmermann] (Sun Sep 25 18:36:54 2022)
+4e9634 SystemUI: Make isTablet() use correct API for getting window metrics [LuK1337] (Sun Sep 25 18:36:54 2022)
+16ba639 SystemUI: Add API for runtime taskbar config [Danny Lin] (Sun Sep 25 18:36:54 2022)
+dbe865 SystemUI: Port brightness slider changes [Alberto97] (Sun Sep 25 18:36:54 2022)
+53b537 SystemUI: Fix alarm icon [Michael W] (Sun Sep 25 18:36:54 2022)
+45142c frameworks: Exempt location packages from location indicators [Chirayu Desai] (Sun Sep 25 18:36:53 2022)
+ae83ed VolumeDialogImpl: Don't hide the default stream when adjusting the music stream [Arian] (Sun Sep 25 18:36:53 2022)
+c8120ff VolumeDialogImpl: Respect multiple visible rows in landscape [Arian] (Sun Sep 25 18:36:53 2022)
+8c62ef SystemUI: Fix the unlock sound played repeatedly [Shufeng Hou] (Sun Sep 25 18:36:53 2022)
+cabf3f fonts: Use variable font for Roboto Regular [Danny Lin] (Sun Sep 25 18:36:53 2022)
+9a7dc3f Keyguard: Allow user configurable fingerprint wake-and-unlock [althafvly] (Sun Sep 25 18:36:52 2022)
+a56ccf Keyguard: Allow disabling fingerprint wake-and-unlock [Steve Kondik] (Sun Sep 25 18:36:52 2022)
+c94cee Introduce high touch polling rate feature control [Ramii Ahmed] (Sun Sep 25 18:36:52 2022)
+6f19af8 camera: Support exposing aux camera to apps [Sauhard Pande] (Sun Sep 25 18:36:52 2022)
+72aeb8 Keyguard: allow large clock on tablets [Timi Rautamäki] (Sun Sep 25 18:36:51 2022)
+47a033d Keyguard: don't use large clock on landscape [Timi Rautamäki] (Sun Sep 25 18:36:51 2022)
+7bbcda0 AuthService: Add support for workaround side fps props [LuK1337] (Sun Sep 25 18:36:51 2022)
+a980cd4 SystemUI: add FloatingRotationButton for hw-key devices [Michal Pražák] (Sun Sep 25 18:36:51 2022)
+e74afd Sharesheet: Display two rows of max ranked targets [LuK1337] (Sun Sep 25 18:36:51 2022)
+c3294f SystemUI: handle camera launch gesture from keyhandler [Roman Birg] (Sun Sep 25 18:36:51 2022)
+4d559f Keyguard: Add option to scramble pin layout when unlocking (2/2). [Adnan] (Sun Sep 25 18:36:50 2022)
+b47866 SystemUI: Use AVCProfileMain for screen recorder [Arne Coucheron] (Sun Sep 25 18:36:50 2022)
+e23170 frameworks: Add device controls shortcut to power menu [LuK1337] (Sun Sep 25 18:36:50 2022)
+c9fdffb frameworks: Add more power menu customizations [Gegham Zakaryan] (Sun Sep 25 18:36:50 2022)
+fdba07 frameworks: Add support for advanced restart options [Michael Bestas] (Sun Sep 25 18:36:50 2022)
+f11c65 SystemUI: Don't store pending ControlAction if the device is locked [LuK1337] (Sun Sep 25 18:36:49 2022)
+3f5ca7 SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds [Arne Coucheron] (Sun Sep 25 18:36:49 2022)
+65bf08c webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well [LuK1337] (Sun Sep 25 18:36:49 2022)
+c866c70 Enable Binder Proxy Tracking by Uid only on eng builds [dianlujitao] (Sun Sep 25 18:36:49 2022)
+848951 Don't pass repeated back key events to app if custom action is set up [LuK1337] (Sun Sep 25 18:36:49 2022)
+628c97 PhoneWindowManager: Allow torch and track skip during ambient display [ezio84] (Sun Sep 25 18:36:44 2022)
+8d87fdf Long-press power while display is off for torch [beanstown106] (Sun Sep 25 18:35:55 2022)
+f07de4 PhoneWindowManager: add LineageButtons volumekey hook [Simon Shields] (Sun Sep 25 17:20:49 2022)
+5b1381 SystemUI: Add HBM provider for UDFPS on Pixel devices [Danny Lin] (Sun Sep 25 17:20:49 2022)
+2b022ac SystemUI: Import Pixel display interfaces [Danny Lin] (Sun Sep 25 17:20:49 2022)
+b374a9 Fix bug Device that can't support adoptable storage cannot read the sdcard. [sangho.yoon] (Sun Sep 25 17:20:49 2022)
+50a957 VolumeDialogImpl: Don't vibrate when volume dialog is not visible [LuK1337] (Sun Sep 25 17:20:49 2022)
+9772e2 Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan] (Sun Sep 25 17:20:48 2022)
+0078c6 Support enforcing a minimum delay between notification sounds of an app. [Danny Baumann] (Sun Sep 25 17:20:44 2022)
+df235b PowerManagerService: Wake on plug (1/2) [Jon Evans] (Sun Sep 25 13:54:19 2022)
+147872 PowerManager: Add proximity check on wake [Bruno Martins] (Sun Sep 25 13:54:18 2022)
+cd5da56 Add high touch sensitivity and hovering to InputService [Danesh M] (Sun Sep 25 13:54:18 2022)
+d88e44 Allow lid to send a generic COVER_CHANGED broadcast [jrior001] (Sun Sep 25 13:54:18 2022)
+79677d SystemUI: Allow to enable Lockscreen Media Art [beanstown106] (Sun Sep 25 11:08:04 2022)
+d54190 Remove Safety Center tile from default tiles [Michael Bestas] (Sun Sep 25 10:59:40 2022)
+277270 SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod [maxwen] (Sat Sep 24 13:12:05 2022)
+15971e SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab] (Sat Sep 24 13:11:01 2022)
+8e1f32 SystemUI: Add quick settings pull down with one finger [Roman Birg] (Sat Sep 24 12:57:56 2022)
+458cb2b SystemUI: ic_brightness_*: drawables get surface color [Harsh Pal] (Sat Sep 24 12:57:56 2022)
+13cea7b SystemUI: Fix QS status font weight mismatch in dark mode [Danny Lin] (Sat Sep 24 12:57:56 2022)
+cc0a433 SystemUI: Remove nav bar background in QS customizer [Danny Lin] (Sat Sep 24 12:57:56 2022)
+713d7f SystemUI: Fix uneven volume icon padding in status bar [Danny Lin] (Sat Sep 24 12:57:56 2022)
+ca117e WiredAccessoryManager: Update stream index assignment [Harold Tan] (Sat Sep 24 12:56:10 2022)
+863139 WiredAccessoryManager: use dev index from UEventInfo to form devPath [Harold Tan] (Sat Sep 24 12:56:10 2022)
+c0889f WiredAccessoryManager: Update display port device index [Aniket Kumar Lata] (Sat Sep 24 12:56:10 2022)
+6471e11 WiredAccessoryManager: support for multiple display ports [Vignesh Kulothungan] (Sat Sep 24 12:56:10 2022)
+6dcabb audio: update WiredAccessoryManager to use ExtconUEventObserver based on events available [Dhananjay Kumar] (Sat Sep 24 12:56:10 2022)
+e89a31 WiredAccessoryManager: Support for multiple extconn devices [Haynes Mathew George] (Sat Sep 24 12:56:10 2022)
+15ecd7 WiredAccessoryManager: update extcon file paths [Aalique Grahame] (Sat Sep 24 12:56:10 2022)
+b0a15e WiredAccessoryManager: Add support for DisplayPort Audio [Revathi Uddaraju] (Sat Sep 24 12:56:10 2022)
+6baa33 SystemUI: Add VPN tile [Danny Baumann] (Sat Sep 24 12:56:10 2022)
+d824566 SystemUI: Add Profiles tile [Roman Birg] (Sat Sep 24 12:56:10 2022)
+8b02dc SystemUI: Enable NFC tile [Tim Schumacher] (Sat Sep 24 12:56:10 2022)
+d5ae3af SystemUI: Add reading mode tile [Joey] (Sat Sep 24 12:56:10 2022)
+6284dd SystemUI: Add powershare QS tile [Linux4] (Sat Sep 24 12:56:10 2022)
+5866bf SystemUI: Add AOD QS tile [Marko Man] (Sat Sep 24 12:56:10 2022)
+6508115 SystemUI: Add USB Tether tile [BestPig] (Sat Sep 24 12:56:10 2022)
+a0148be SystemUI: Add AmbientDisplay tile [Adnan Begovic] (Sat Sep 24 12:56:10 2022)
+eee551 SystemUI: Add Sync tile [Altaf-Mahdi] (Sat Sep 24 12:56:10 2022)
+595ec17 SystemUI: Add heads up tile [Michael Bestas] (Sat Sep 24 12:56:10 2022)
+9a61bf SystemUI: Add caffeine QS tile [Keith Mok] (Sat Sep 24 12:56:10 2022)
+6f026a SystemUI: Expose legacy Wi-Fi and cellular data QS tiles [Danny Lin] (Sat Sep 24 12:56:10 2022)
+978176 SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model [Danny Lin] (Sat Sep 24 12:56:10 2022)
+bb7d2b Revert "[DO NOT MERGE] Make sure WiFi and Cell tiles are not created in Provider Model" [Danny Lin] (Sat Sep 24 12:56:10 2022)
+b9f0f3 SystemUI: Add Lineage statusbar item holder [Sam Mortimer] (Sat Sep 24 12:56:10 2022)
+66e6ca SystemUI: Implement hide gestural navigation hint bar [Jesse Chan] (Sat Sep 24 12:56:10 2022)
+149b5b SystemUI: Add navbar layout inversion tuning [LuK1337] (Sat Sep 24 12:56:10 2022)
+4532fb6 SystemUI: Dismiss keyguard on boot if disabled by current profile [Gabriele M] (Sat Sep 24 10:53:34 2022)
+15c560 keyguard: Do not trigger a wake up when hiding lockscreen [Arne Coucheron] (Sat Sep 24 10:53:34 2022)
+d430d5 Forward port CM Screen Security settings (1/2) [Michael Bestas] (Sat Sep 24 10:51:18 2022)
+e2ba0f fixup! Rewrite trust USB restriction handling [Luca Stefani] (Sat Sep 24 10:00:21 2022)
+8d270cc UsbDeviceManager: Delay MSG_UPDATE_SCREEN_LOCK message [LuK1337] (Sat Sep 24 09:57:59 2022)
+c1d505 SystemUI: Use max Display.Mode in AuthController as well [LuK1337] (Sat Sep 24 09:47:09 2022)
+7f846d Save user preferred resolution into persistent data store [LuK1337] (Sat Sep 24 09:47:05 2022)
+2f3eb0 Automatic translation import [Michael Bestas] (Thu Sep 22 12:29:41 2022)
+
+frameworks/native:
+4513d9 InputDispatcher: On keypress, deliver keycode to pokeUserActivity [Corinna Vinschen] (Mon Sep 26 14:38:04 2022)
+c8adc5 PowerManager.h: Define USER_ACTIVITY_FLAG values [Corinna Vinschen] (Mon Sep 26 13:58:05 2022)
+d62b12 Forward port 'Swap volume buttons' (2/3) [nadlabak] (Sun Sep 25 23:32:00 2022)
+
+frameworks/opt/telephony:
+e5f9b7 telephony: Disable handling audio direction changes on IMS calls. [Quallenauge] (Tue Sep 27 23:16:23 2022)
+eecd4f RIL: Fix manual network selection with old modem [faust93] (Wed Sep 21 20:56:50 2022)
+a622db Restore support with RadioConfig@1.0 dsds clients. [Quallenauge] (Wed Sep 21 20:56:50 2022)
+9321af Update external card state based on current app [Wileen Chiu] (Wed Sep 21 20:56:50 2022)
+
+hardware/interfaces:
+a08c62 wifi: Add provision to create/remove dynamic interface(s). [Purushottam Kushwaha] (Tue Oct 4 16:17:25 2022)
+050d71 Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 01:29:15 2022)
+31c1df keymasterV4_0: Tags support for FBE wrapped key. [Shivaprasad Hongal] (Mon Oct 3 20:39:38 2022)
+b30747 Mark android.hardware.security.dice as system_ext_specific [Michael Bestas] (Sat Oct 1 15:56:06 2022)
+
+lineage-sdk:
+67a104 TrustInterfaceService: Simplify hasUsbRestrictorInternal code [Bruno Martins] (Wed Sep 28 11:41:01 2022)
+ab6e04 TrustInterfaceService: Fix checking for Trust HAL availability [Chirayu Desai] (Wed Sep 28 10:53:13 2022)
+02eddd Refactor network traffic code [Oliver Scott] (Sun Sep 25 19:11:48 2022)
+fd4a90 Remove duplicate reading of offload tethering stats [Oliver Scott] (Sun Sep 25 19:11:48 2022)
+938f8d Migrate berry_black_theme to Secure table [Michael Bestas] (Sun Sep 25 17:51:16 2022)
+500f74 Trust: restrict-usb: Check DPM for support [Chirayu Desai] (Sat Sep 24 09:57:29 2022)
+607d62 Automatic translation import [Michael Bestas] (Thu Sep 22 12:29:45 2022)
+
+packages/apps/AudioFX:
+2cbd6f AudioFX: Override MusicFX when present [Nolen Johnson] (Tue Sep 27 21:12:55 2022)
+
+packages/apps/Camera2:
+0a7cd0 Override Aperture app [Michael Bestas] (Mon Oct 3 15:14:20 2022)
+9895e2 Automatic translation import [Michael Bestas] (Thu Sep 22 12:29:48 2022)
+
+packages/apps/Contacts:
+9141ad vcard: Drop READ_EXTERNAL_STORAGE permission [Aayush Gupta] (Fri Sep 23 14:35:59 2022)
+5b686f Automatic translation import [Michael Bestas] (Thu Sep 22 12:29:50 2022)
+
+packages/apps/DeskClock:
+ba50db Automatic translation import [Michael Bestas] (Thu Sep 22 12:29:53 2022)
+
+packages/apps/Dialer:
+6a7a97 Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:03 2022)
+
+packages/apps/Eleven:
+9bf52a Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:30 2022)
+
+packages/apps/Etar:
+95495c Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:32 2022)
+d99b1a Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:06 2022)
+
+packages/apps/FlipFlap:
+0ab3ed Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:34 2022)
+5b162e Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:08 2022)
+
+packages/apps/Jelly:
+f82a37 Jelly: Freeze sdk version to 32 [althafvly] (Sat Oct 8 05:35:32 2022)
+462837 Jelly: Override Browser2 when present [Nolen Johnson] (Tue Sep 27 21:16:33 2022)
+0973f9 Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:09 2022)
+
+packages/apps/LineageParts:
+0e05a8 Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:36 2022)
+fc2d55 Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:11 2022)
+
+packages/apps/Messaging:
+0f43ee Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:13 2022)
+
+packages/apps/Recorder:
+ef0cf4 Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:39 2022)
+9f6df2 Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:16 2022)
+
+packages/apps/Settings:
+94ea3f Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:42 2022)
+689c0a Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 01:31:16 2022)
+0051f7 fixup! Settings: Protect sensitive data on the about phone [Michael Bestas] (Mon Oct 3 00:05:53 2022)
+8cba3a Settings: Good news, `encryptable=footer` is broken [Michael W] (Mon Oct 3 00:04:45 2022)
+0adcf6 Settings: Follow system theme for SD card activities [Michael W] (Mon Oct 3 00:04:36 2022)
+b58084 KeyboardSettings: Add a RemotePreference for device-specific panel [Bruno Martins] (Sun Sep 25 20:25:06 2022)
+ead025 Settings: Add back battery and notification lights settings [Sam Mortimer] (Sun Sep 25 20:25:06 2022)
+0276b2 Settings: support black theme for dark mode [2/4] [Jesse Chan] (Sun Sep 25 14:22:05 2022)
+e184b6 Settings: Allow user configurable fingerprint wake-and-unlock [althafvly] (Sun Sep 25 14:22:05 2022)
+a1c954 Settings: gestures: Add page for Screen-Off UDFPS [Cosmin Tanislav] (Sun Sep 25 14:22:05 2022)
+b3a5bc Settings: Make NetworkScanHelper max search time customizable [LuK1337] (Sun Sep 25 14:22:05 2022)
+f4da55 Hide the "Show the vibrate icon in the Status Bar" setting [Chirayu Desai] (Sun Sep 25 14:22:05 2022)
+b7b91be Settings: Add preference for one shot auto-brightness [Cédric Bellegarde] (Sun Sep 25 14:22:04 2022)
+fbdf55 Settings: Hide settings that don't work when taskbar is enabled [LuK1337] (Sun Sep 25 14:22:04 2022)
+32585c Settings: Allow using legacy VPN types [Alessandro Astone] (Sun Sep 25 14:22:04 2022)
+146e53 Settings: Add preference for KEY_MIN_REFRESH_RATE [LuK1337] (Sun Sep 25 14:22:04 2022)
+679e61 Settings: Add peak refresh rate list preference [Michael Bestas] (Sun Sep 25 14:22:04 2022)
+d9d3cb Revert "Revert "Revert "Update animation for fingerprint edu page""" [Michael Bestas] (Sun Sep 25 14:22:04 2022)
+d85c89 Settings: Display: Add High Touch Polling Rate Support [Ramii Ahmed] (Sun Sep 25 14:22:03 2022)
+fd95db FingerprintEnrollEnrolling: Set proper dialog message when user touches fp icon [Bruno Martins] (Sun Sep 25 14:22:03 2022)
+2f415a fingerprint: Rework enrollment screen [Bruno Martins] (Sun Sep 25 14:22:03 2022)
+286fcb fingerprint: hide link icon when there's no link [Timi Rautamäki] (Sun Sep 25 14:22:03 2022)
+898c7a Settings: Add FastCharge preference into Battery settings [Bruno Martins] (Sun Sep 25 14:22:03 2022)
+f750cf Settings: Add an option to force pre-O apps to use full screen aspect ratio [Jesse Chan] (Sun Sep 25 14:16:56 2022)
+56d208 Settings: Add setup UI for minimum delay between an app's notification sounds [Danny Baumann] (Sun Sep 25 14:16:56 2022)
+922a9ad Settings: display: Add wake on plug switch [Jon Evans] (Sun Sep 25 14:16:56 2022)
+117eba Settings: Add proximity check on wake preference [Bruno Martins] (Sun Sep 25 14:16:55 2022)
+25f4ac AppDataUsage: Handle apps without INTERNET permission [Oliver Scott] (Sun Sep 25 14:16:55 2022)
+71fac8 Settings: Add high touch sensitivity and touchscreen hovering toggles [LuK1337] (Sun Sep 25 14:16:55 2022)
+415fa8 Settings: Add support for allowing/disallowing apps on cellular, vpn and wifi networks [Oliver Scott] (Sun Sep 25 14:16:55 2022)
+cba742 Settings: Add support for allowing/disallowing apps on restricted networks [Sam Mortimer] (Sun Sep 25 14:16:55 2022)
+6614a1 Settings: Add option to scramble pin layout when unlocking (1/2). [Adnan] (Sun Sep 25 14:16:55 2022)
+6d46e2 Settings: Add hotspot setting to allow VPN upstreams [Sam Mortimer] (Sun Sep 25 14:16:54 2022)
+5ebf0d Bring back font and icon shape customization [Michael Bestas] (Sun Sep 25 14:16:54 2022)
+81dbb0 settings: display actual device peak refresh rate in summary [Willy Gardiol] (Sun Sep 25 14:16:54 2022)
+d64863 Settings: Add toggle for Lockscreen Media Art [beanstown106] (Sun Sep 25 11:33:44 2022)
+bfd788 Settings: default to GlifV3Theme [Timi Rautamäki] (Sun Sep 25 11:33:19 2022)
+948343 Settings: Only show gesture navigation if device has a software nav bar [Rashed Abdel-Tawab] (Sat Sep 24 13:26:54 2022)
+c63854 Settings: Apply SUW button theming to WiFi page [Erfan Abdi] (Sat Sep 24 13:22:10 2022)
+aa2465 Settings: Allow devices to provide remote gesture preferences [Bruno Martins] (Sat Sep 24 13:22:09 2022)
+c6ec2b Settings: gesture: Add LineageParts touchscreen gesture settings [Zhao Wei Liew] (Sat Sep 24 13:21:48 2022)
+76b7ba Remove useless USB page header [Michael Bestas] (Sat Sep 24 13:21:48 2022)
+0ef43e Settings: Add double tap to sleep preference [Rashed Abdel-Tawab] (Sat Sep 24 13:08:32 2022)
+b0dd11 get outer NFC preference to listen for changes [inthewaves] (Sat Sep 24 13:07:59 2022)
+3f7ebf Fix inconsistent USB preference screen title [Danny Lin] (Sat Sep 24 13:07:59 2022)
+6c0aba3 Settings: Allow removing livedisplay pref screen with config_enableLiveDisplay [Paul Keith] (Sat Sep 24 12:45:44 2022)
+110364 Settings: Network setup UI changes for SUW [Michael Bestas] (Sat Sep 24 12:45:44 2022)
+d37674 Settings: use Glif themed button bar [Timi Rautamäki] (Sat Sep 24 12:45:44 2022)
+a39d38 Don't change nouns in summaries to lower case for German [Danny Baumann] (Sat Sep 24 12:45:44 2022)
+798db1 Settings: Add package name to installed app details [Luca Stefani] (Sat Sep 24 12:45:44 2022)
+c80add Allow sorting Applications by size [Roman Royer] (Sat Sep 24 12:45:44 2022)
+aa016c Settings: Implement hide gestural navigation hint bar [Jesse Chan] (Sat Sep 24 12:45:44 2022)
+e0385d Settings: Add a RemotePreference for device-specific doze settings [Steve Kondik] (Sat Sep 24 12:45:44 2022)
+1299e2 Settings: Hide unsupported USB modes automatically [Wang Han] (Sat Sep 24 12:45:44 2022)
+69dadf Settings: Check if we have any color modes declared in overlay [Luca Stefani] (Sat Sep 24 12:45:44 2022)
+bc7208 Settings: Forward port pattern visibility settings (2/2) [Michael Bestas] (Sat Sep 24 10:43:16 2022)
+b35206 Settings: Forward port lock pattern grid size (2/2) [Michael Bestas] (Sat Sep 24 10:42:20 2022)
+25bf4d Settings: Protect sensitive data on the about phone [althafvly] (Sat Sep 24 08:28:53 2022)
+42e121 Settings: Fix the failing strings [Michael Bestas] (Thu Sep 22 14:28:21 2022)
+d2f98f Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:18 2022)
+
+packages/apps/SetupWizard:
+b9f0ca Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:44 2022)
+fb30f3 Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:21 2022)
+
+packages/apps/ThemePicker:
+360f38 Override legacy WallpaperPicker app [Danny Lin] (Tue Oct 4 21:28:45 2022)
+
+packages/apps/Trebuchet:
+f0ef0d Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 14:16:50 2022)
+1f071b Launcher3: Add some spacing below the all apps search bar [str-br] (Mon Oct 3 14:18:13 2022)
+de2072 Launcher3: Increase end padding for search bar UI [Pranav Vashi] (Mon Oct 3 14:18:13 2022)
+9c4cef Fix header protection height calculation [Danny Lin] (Mon Oct 3 14:18:13 2022)
+11c9eb Trebuchet: Override QuickSearchBox [Nolen Johnson] (Sun Oct 2 23:55:25 2022)
+9e2be8 Add support for toggling taskbar [Danny Lin] (Sun Sep 25 19:15:37 2022)
+301f4e Fix extra default workspaces layout [Chirayu Desai] (Sun Sep 25 19:15:37 2022)
+2bc83c Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:23 2022)
+
+packages/apps/Updater:
+9ff0a2 Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:46 2022)
+8c2d43 Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:24 2022)
+
+packages/inputmethods/LatinIME:
+abd72a Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:26 2022)
+
+packages/modules/Connectivity:
+9818ef Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 01:31:17 2022)
+
+packages/overlays/Lineage:
+896a90 stub: Import color bundles from TP1A.220624.021 [Tim Zimmermann] (Mon Sep 26 13:40:17 2022)
+
+packages/providers/DownloadProvider:
+8fb99b Automatic translation import [Michael Bestas] (Wed Oct 5 17:08:48 2022)
+da440e DownloadProvider: Add support for manual pause/resume [Zhao Wei Liew] (Mon Sep 26 20:58:46 2022)
+ec3f2b DownloadProvider: Display download speed in notification [Lasse Brudeskar Vikås] (Mon Sep 26 20:58:19 2022)
+
+packages/providers/MediaProvider:
+96d1c0 Merge tag 'android-13.0.0_r8' into staging/lineage-20.0_merge-android-13.0.0_r8 [Michael Bestas] (Tue Oct 4 01:31:49 2022)
+
+packages/resources/devicesettings:
+a6f7c1 Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:29 2022)
+
+packages/services/Mms:
+26be2a Automatic translation import [Michael Bestas] (Thu Sep 22 12:30:31 2022)
+
+system/core:
+ec0899 Add wrapped key support [dianlujitao] (Mon Oct 3 20:39:48 2022)
+
+system/libhidl:
+832444 Revert "delete gBn/sConstructorMap" [anrui2032] (Tue Oct 4 16:13:58 2022)
+
+system/memory/lmkd:
+be8c79 lmkd: fix the cgroup attribute name to MemCgroupEventControl [Yongqin Liu] (Sat Oct 1 20:52:58 2022)
+
+system/security:
+054423 Handle key parameter conversion for FBE_ICE tag [Phanindra Babu Pabba] (Mon Oct 3 20:39:54 2022)
+98bd1d Mark android.security.dice as system_ext_specific [Michael Bestas] (Sat Oct 1 15:57:23 2022)
+
+vendor/lineage:
+91176e lineage: overlay: common: Move GMS overlays elsewhere [Nolen Johnson] (Fri Oct 7 21:58:25 2022)
+e2377b vars: Update qcom tags [Michael Bestas] (Wed Oct 5 15:55:54 2022)
+1b127d config: Exclude android.hidl.memory@1.0-impl.vendor and vndk_apex_snapshot_package from package enforcement [ivanmeler] (Wed Oct 5 14:54:53 2022)
+273de2 overlay: Set config_defaultQrCodeComponent [Michael Bestas] (Wed Oct 5 14:11:06 2022)
+d58271 config: Build Aperture camera app [Michael Bestas] (Wed Oct 5 14:11:06 2022)
+60327a vars: Use full paths for kernel_repos [Michael Bestas] (Tue Oct 4 14:20:08 2022)
+105c26 vars: October 2022 Security Update [Michael Bestas] (Tue Oct 4 14:20:08 2022)
+722348 lineage: common: Exclude ntfs-3g from artifact path requirement [Nolen Johnson] (Tue Oct 4 01:36:16 2022)
+c162e6 config: Bring back ntfs tools [Aaron Kling] (Mon Oct 3 18:31:22 2022)
+ce9107 overlay: Enable config_setColorTransformAccelerated by default [Nolen Johnson] (Mon Oct 3 06:29:56 2022)
+057779 config: Exclude Launcher3*/Calendar packages from enforcement [Nolen Johnson] (Sun Oct 2 23:26:01 2022)
+a70b00 config: Exclude AOSP rild package from enforcement [Bruno Martins] (Sun Oct 2 15:49:24 2022)
+ca97b5 config: Remove missing cli tools [Aaron Kling] (Sun Oct 2 15:48:20 2022)
+631ead config: Exclude product_manifest.xml from enforced existing packages [Aaron Kling] (Sun Oct 2 15:48:20 2022)
+ee8dbc config: Require all requested packages to exist [Aaron Kling] (Sun Oct 2 15:48:20 2022)
+70b1bf lineage: kernel: Use getconf instead of nproc [Alexander Koskovich] (Sun Oct 2 15:47:00 2022)
+bcfa69 kernel: Support building dtbimage with mkdtboimg.py config [Tim Zimmermann] (Sun Oct 2 15:45:12 2022)
+0d450d kernel: Changes for 5.10 build without GCC [Michael Bestas] (Fri Sep 30 21:46:45 2022)
+c80ca0 kernel: Slightly reorder config [Michael Bestas] (Fri Sep 30 21:41:24 2022)
+728eff kernel: Use consistent spacing [Michael Bestas] (Fri Sep 30 21:39:11 2022)
+8ab31c kernel: add `pahole` dependency [Michael Bestas] (Wed Sep 28 19:03:50 2022)
+564deb vars: unify raviole & bluejay kernels [Michael Bestas] (Wed Sep 28 19:03:46 2022)
+f06d0c QCOM: msm8953: Use legacy-um ipacm [Andrew Hexen] (Wed Sep 28 16:23:10 2022)
+9add63 lineage: Support charger on vendor [Tim Zimmermann] (Sun Sep 25 11:45:03 2022)
+c05ae9 Revert "Disable vendor/crowdin overlays for now" [Michael Bestas] (Thu Sep 22 13:50:28 2022)
+e5dd08 apns: Clean up Austrian carriers [Georg Veichtlbauer] (Wed Sep 21 20:56:25 2022)

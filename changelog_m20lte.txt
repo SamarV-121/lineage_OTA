@@ -1,0 +1,9 @@
+==========
+2022-10-11
+==========
+device/samsung/m20lte:
+3a51ef m20lte: Remove unused libraries [SamarV-121] (Wed Sep 28 05:26:02 2022)
+28ffe8 m20lte: Inherit non_ab_device.mk [Tim Zimmermann] (Wed Sep 28 05:21:41 2022)
+
+device/samsung/universal7904-common:
+108440 universal7904: Disable wifi background scan [AndDiSa] (Mon Sep 26 09:58:12 2022)
