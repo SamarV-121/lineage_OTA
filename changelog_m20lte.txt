@@ -1,4 +1,67 @@
 ==========
+2022-11-09
+==========
+device/samsung/m20lte:
+4221ee m20lte: Symlink /mnt/vendor/efs to /factory [SamarV-121] (Wed Nov 9 15:04:20 2022)
+
+device/samsung/universal7904-common:
+19a86d universal7904: Inherit several Android Go configurations [Albert I] (Wed Nov 9 14:10:17 2022)
+f11671 universal7904: Speed profile services and wifi-service to reduce RAM and storage [Mathieu Chartier] (Wed Nov 9 14:10:17 2022)
+b74787 universal7904: Drop default DRM service [Bruno Martins] (Wed Nov 9 14:10:17 2022)
+d49db1 universal7904: Set fdsan level to warn once [Luofan Chen] (Wed Nov 9 14:10:17 2022)
+d54cca universal7904: Add hardware/samsung to soong namespaces [LuK1337] (Wed Nov 9 14:10:17 2022)
+8afc3b universal7904: Remove references to a2dp module [Aaron Kling] (Wed Nov 9 14:10:17 2022)
+f0c919 universal7904: Enable skia reduceOpsTaskSplitting [Adlai Holler] (Wed Nov 9 14:10:17 2022)
+
+kernel/samsung/universal7904:
+9e9fad Makefile: Disable start-stop-gc [SamarV-121] (Sun Nov 6 04:42:14 2022)
+69497b3 arm64: Avoid breakage caused by .altmacro in fpsimd save/restore macros [Dave P Martin] (Sun Nov 6 04:42:14 2022)
+819a48 arm64: alternative: fix build with clang integrated assembler [Ilie Halip] (Sun Nov 6 04:42:14 2022)
+094753 arm64: link with -z norelro regardless of CONFIG_RELOCATABLE [Nick Desaulniers] (Sun Nov 6 04:42:13 2022)
+4bffa97 arm64: relocatable: fix inconsistencies in linker script and options [Ard Biesheuvel] (Sun Nov 6 04:42:13 2022)
+e92e8d arm64: prevent regressions in compressed kernel image size when upgrading to binutils 2.27 [Nick Desaulniers] (Sun Nov 6 04:42:13 2022)
+ab8702 arm64: kernel: force ET_DYN ELF type for CONFIG_RELOCATABLE=y [Ard Biesheuvel] (Sun Nov 6 04:42:12 2022)
+3d8e16 arm64: build with baremetal linker target instead of Linux when available [Olof Johansson] (Sun Nov 6 04:42:12 2022)
+2f162a5 arm64: add endianness option to LDFLAGS instead of LD [Masahiro Yamada] (Sun Nov 6 04:42:12 2022)
+81bd93 arm64: Set UTS_MACHINE in the Makefile [Michal Marek] (Sun Nov 6 04:42:11 2022)
+7b5e26 kbuild: clear LDFLAGS in the top Makefile [Masahiro Yamada] (Sun Nov 6 04:42:11 2022)
+1a1603 kbuild: use HOSTLDFLAGS for single .c executables [Robin Jarry] (Sun Nov 6 04:42:11 2022)
+9439ca BACKPORT: arm64: Change .weak to SYM_FUNC_START_WEAK_PI for arch/arm64/lib/mem*.S [Fangrui Song] (Sun Nov 6 04:42:10 2022)
+9a77c3 BACKPORT: ANDROID: ftrace: fix function type mismatches [Sami Tolvanen] (Sun Nov 6 04:42:10 2022)
+7306266 BACKPORT: ANDROID: fs: logfs: fix filler function type [Sami Tolvanen] (Sun Nov 6 04:42:10 2022)
+de56e4a BACKPORT: ANDROID: fs: gfs2: fix filler function type [Sami Tolvanen] (Sun Nov 6 04:42:09 2022)
+200dcb0 BACKPORT: ANDROID: fs: exofs: fix filler function type [Sami Tolvanen] (Sun Nov 6 04:42:09 2022)
+466105 BACKPORT: ANDROID: fs: afs: fix filler function type [Sami Tolvanen] (Sun Nov 6 04:42:09 2022)
+7d2389 BACKPORT: drivers/perf: arm_pmu: fix function type mismatch [Sami Tolvanen] (Sun Nov 6 04:42:08 2022)
+e85fbd BACKPORT: dummycon: fix function types [Sami Tolvanen] (Sun Nov 6 04:42:08 2022)
+031580 BACKPORT: fs: nfs: fix filler function type [Sami Tolvanen] (Sun Nov 6 04:42:08 2022)
+657f19 BACKPORT: mm: fix filler function type mismatch [Sami Tolvanen] (Sun Nov 6 04:42:07 2022)
+96828d BACKPORT: mm: fix drain_local_pages function type [Sami Tolvanen] (Sun Nov 6 04:42:07 2022)
+5b7693 BACKPORT: vfs: pass type instead of fn to do_{loop,iter}_readv_writev() [Miklos Szeredi] (Sun Nov 6 04:42:07 2022)
+ba9fb1 BACKPORT: module: Do not paper over type mismatches in module_param_call() [Kees Cook] (Sun Nov 6 04:42:06 2022)
+7cb0b96 BACKPORT: treewide: Fix function prototypes for module_param_call() [Kees Cook] (Sun Nov 6 04:42:06 2022)
+d9aa4e BACKPORT: module: Prepare to convert all module_param_call() prototypes [Kees Cook] (Sun Nov 6 04:42:06 2022)
+f512d3 BACKPORT: kbuild: record needed exported symbols for modules [Nicolas Pitre] (Sun Nov 6 04:42:05 2022)
+b1611f BACKPORT: kbuild: Allow to specify composite modules with modname-m [Michal Marek] (Sun Nov 6 04:42:05 2022)
+e51871 BACKPORT: kbuild: add arch specific post-link Makefile [Nicholas Piggin] (Sun Nov 6 04:42:05 2022)
+46b63b BACKPORT: arm64: add a workaround for GNU gold with ARM64_MODULE_PLTS [Sami Tolvanen] (Sun Nov 6 04:42:04 2022)
+8f701b BACKPORT: arm64: explicitly pass --no-fix-cortex-a53-843419 to GNU gold [Sami Tolvanen] (Sun Nov 6 04:42:04 2022)
+e87e8a BACKPORT: arm64: errata: Pass --fix-cortex-a53-843419 to ld if workaround enabled [Will Deacon] (Sun Nov 6 04:42:04 2022)
+38893b drivers/usb/serial/console.c: remove superfluous serial->port condition [Dan Aloni] (Sun Nov 6 04:42:03 2022)
+09af4f7 drivers/firmware/efi/libstub.c: prevent a relocation [Dan Aloni] (Sun Nov 6 04:42:03 2022)
+7e43c507 BACKPORT: arm64: Delete the space separator in __emit_inst [Fangrui Song] (Sun Nov 6 04:42:03 2022)
+b705348 arm64: Bring asm/opcodes.h back [SamarV-121] (Sun Nov 6 04:42:02 2022)
+31f6eb2 BACKPORT: arm64: Get rid of asm/opcodes.h [Marc Zyngier] (Sun Nov 6 04:42:02 2022)
+aa0ec8 BACKPORT: arm64: Fix minor issues with the dcache_by_line_op macro [Will Deacon] (Sun Nov 6 04:42:02 2022)
+299f47 BACKPORT: crypto: arm64/aes-modes - get rid of literal load of addend vector [Ard Biesheuvel] (Sun Nov 6 04:42:01 2022)
+1b789d BACKPORT: arm64: vdso: use $(LD) instead of $(CC) to link VDSO [Masahiro Yamada] (Sun Nov 6 04:42:01 2022)
+80126d BACKPORT: kbuild: support LLVM=1 to switch the default tools to Clang/LLVM [Masahiro Yamada] (Sun Nov 6 04:42:01 2022)
+3751a4 BACKPORT: kbuild: replace AS=clang with LLVM_IAS=1 [Masahiro Yamada] (Sun Nov 6 04:42:00 2022)
+6a14ef BACKPORT: Documentation/llvm: fix the name of llvm-size [Fangrui Song] (Sun Nov 6 04:42:00 2022)
+1aabd5 BACKPORT: Documentation/llvm: add documentation on building w/ Clang/LLVM [Nick Desaulniers] (Sun Nov 6 04:41:59 2022)
+1c1b83b BACKPORT: arm64: vdso: remove commas between macro name and arguments [Jian Cai] (Sun Nov 6 04:41:59 2022)
+
+==========
 2022-10-11
 ==========
 device/samsung/m20lte:

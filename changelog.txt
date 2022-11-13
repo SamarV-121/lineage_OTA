@@ -1,4 +1,245 @@
 ==========
+2022-11-09
+==========
+android:
+8f1541 manifest: android-13.0.0_r11 -> android-13.0.0_r14 [SamarV-121] (Tue Nov 8 09:10:23 2022)
+9d0330 pixel: Add groups for pixel-specific repos [Tim Schumacher] (Thu Nov 3 22:38:32 2022)
+611e40 lineage: Drop darwin GCC toolchains [Michael Bestas] (Tue Nov 1 17:05:22 2022)
+60d47f lineage: Sync clang-r416183b prebuilts [Michael Bestas] (Tue Nov 1 12:21:59 2022)
+c7a961 lineage: Move inline kernel build repos to separate section [Michael Bestas] (Tue Nov 1 11:08:08 2022)
+f4e16a Track our own external/cldr to update TZDB [Kevin F. Haggerty] (Tue Oct 18 21:54:36 2022)
+670c20 manifest: android-13.0.0_r8 -> android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 14:53:46 2022)
+62ae0a Track our own forks to update TZDB [Kevin F. Haggerty] (Tue Oct 11 21:51:26 2022)
+
+bootable/recovery:
+a3b26e Only check for powerwash in A/B ota packages [Tim Zimmermann] (Sun Oct 16 20:37:47 2022)
+1f4bc1 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:01:44 2022)
+
+build/make:
+05fe70 Merge tag 'android-13.0.0_r14' into staging/lineage-20.0_merge-android-13.0.0_r14 [SamarV-121] (Tue Nov 8 09:01:54 2022)
+78cf41 Add vendor_kernel_boot files to target-files-package [Chirayu Desai] (Thu Nov 3 23:00:27 2022)
+942e9cf fixup! releasetools: Add script to sign zips [LuK1337] (Wed Nov 2 16:57:49 2022)
+14813f fixup! releasetools: support reading release keys out of some sort of command [LuK1337] (Sun Oct 30 21:55:03 2022)
+63e7cd Version bump to TD1A.221105.003 [core/build_id.mk] [Android Build Coastguard Worker] (Fri Oct 28 04:43:38 2022)
+1799ae Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:17 2022)
+
+build/soong:
+ec3443 check_boot_jars: Add Lineage SDK packages [LuK1337] (Wed Nov 2 14:42:36 2022)
+5a9f7f Tweak Soong install rules logging [Alessandro Astone] (Tue Oct 25 09:45:01 2022)
+deb543 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:01:39 2022)
+
+device/google/atv:
+02cad9 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:01:50 2022)
+
+external/chromium-webview/patches:
+bd6a6c Update Chromium Webview to 107.0.5304.91 [Kevin F. Haggerty] (Fri Oct 28 03:45:56 2022)
+9d8a44 Update Chromium Webview to 106.0.5249.126 [Kevin F. Haggerty] (Sat Oct 15 04:09:03 2022)
+
+external/chromium-webview/prebuilt/arm:
+a62262 Update Chromium Webview arm prebuilt to 107.0.5304.91 [Kevin F. Haggerty] (Fri Oct 28 21:13:13 2022)
+
+external/chromium-webview/prebuilt/arm64:
+aadde5 Update Chromium Webview arm64 prebuilt to 107.0.5304.91 [Kevin F. Haggerty] (Fri Oct 28 21:13:19 2022)
+
+external/chromium-webview/prebuilt/x86:
+740dc2 Update Chromium Webview x86 prebuilt to 107.0.5304.91 [Kevin F. Haggerty] (Fri Oct 28 21:13:24 2022)
+
+external/cldr:
+d95e3d DO NOT MERGE Update Android CLDR data from 2022d to 2022e. [T] [Almaz Mingaleev] (Tue Oct 18 06:24:31 2022)
+0078b6 DO NOT MERGE Update Android CLDR data from 2021e to 2022d. [T] [Almaz Mingaleev] (Wed Oct 12 23:17:31 2022)
+
+external/icu:
+665bff DO NOT MERGE Update Android ICU data from 2022d to 2022e. [T] [Almaz Mingaleev] (Tue Oct 18 06:24:59 2022)
+076978 DO NOT MERGE Update Android data from 2022a2 to 2022d. [T] [Almaz Mingaleev] (Wed Oct 12 23:17:51 2022)
+
+frameworks/av:
+91563e Merge tag 'android-13.0.0_r14' into staging/lineage-20.0_merge-android-13.0.0_r14 [SamarV-121] (Tue Nov 8 09:02:31 2022)
+44880a Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:16 2022)
+
+frameworks/base:
+f20aba Merge tag 'android-13.0.0_r14' into staging/lineage-20.0_merge-android-13.0.0_r14 [SamarV-121] (Tue Nov 8 09:04:35 2022)
+9d8b2a camera: Allow extending aux list/excludelist via sdk resources [LuK1337] (Fri Nov 4 13:26:41 2022)
+807d43 Set callback before hal connection to avoid NPE on startup [Christian Hoffmann] (Tue Nov 1 18:01:09 2022)
+82eb8e SystemUI: Make battery & clock clickable again in QS [Marc K] (Tue Nov 1 13:24:16 2022)
+35fc36 Fix for Pixel Udfps to release peak refresh rate [t-m-w] (Wed Oct 26 09:41:25 2022)
+5b67aee fixup! SystemUI: Use max Display.Mode in AuthController as well [LuK1337] (Sun Oct 16 14:29:10 2022)
+c666b330 fixup! Partially revert "Assume sensors perform prox check" [LuK1337] (Sun Oct 16 14:27:45 2022)
+5cb9413 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:12:29 2022)
+
+frameworks/native:
+181dc3 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:25 2022)
+
+frameworks/opt/telephony:
+0d7ee8 Provide a default executor [Christian Hoffmann] (Tue Nov 1 17:43:44 2022)
+d46171 Conditionally revert "Block Binder thread until incoming call process completes" [ExactExampl] (Wed Oct 26 08:47:24 2022)
+fe9c5e Pass correct value to setPreferredNetworkType() for RIL version < 1.4 [LuK1337] (Fri Oct 21 18:55:05 2022)
+e24b9a Fix NPE with 1.0 and 1.1 CardStatus [Christian Hoffmann] (Fri Oct 21 17:10:19 2022)
+3769bd Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:12:57 2022)
+
+frameworks/opt/timezonepicker:
+b33ea5 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:30 2022)
+
+hardware/google/gchips:
+724ad2 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:32 2022)
+
+hardware/google/graphics/common:
+d56675 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:34 2022)
+
+hardware/google/pixel:
+a6a36f Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:37 2022)
+
+hardware/google/pixel-sepolicy:
+62061c Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:38 2022)
+
+hardware/interfaces:
+7c57f4 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:02:41 2022)
+
+libcore:
+4f7b26 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:16 2022)
+
+lineage-sdk:
+c77518 sdk: Add aux camera related resources to config.xml [LuK1337] (Wed Nov 2 17:32:21 2022)
+6ba680 sdk: Introduce org.lineageos.platform.resources target [LuK1337] (Wed Nov 2 17:31:48 2022)
+f89761 sdk: Use `/>` instead of `<x></x>` where applicable [LuK1337] (Wed Nov 2 17:31:23 2022)
+
+packages/apps/Car/Settings:
+b2fe51 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:20 2022)
+
+packages/apps/CellBroadcastReceiver:
+373ed6 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:22 2022)
+
+packages/apps/Contacts:
+f5cb77 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:25 2022)
+
+packages/apps/DeskClock:
+1c864b Automatic translation import [Michael Bestas] (Wed Nov 2 23:57:28 2022)
+db9eb2 DeskClock: Remove ACTION_CLOSE_SYSTEM_DIALOGS [Michael W] (Mon Oct 31 12:59:56 2022)
+40fe61 DeskClock: Ask for required permissions [Michael W] (Mon Oct 31 12:59:56 2022)
+8c7db0 DeskClock: Refactor to ask user for permissions [Michael W] (Mon Oct 31 12:59:56 2022)
+3342cb DeskClock: Target Sdk 33 [Michael W] (Mon Oct 31 12:59:56 2022)
+aaeeaf DeskClock: Fix opening settings [Michael W] (Mon Oct 31 12:59:56 2022)
+e4f9be DeskClock: DigitalAppWidget: Don't listen to non working intents [Michael W] (Mon Oct 31 12:59:56 2022)
+d8bb8d DeskClock: DigitalAppWidget: Work with cities again [Michael W] (Mon Oct 31 12:59:55 2022)
+cfdd3a DeskClock: Remove ACTION_ALARM_CHANGED [Michael W] (Mon Oct 31 12:59:55 2022)
+1a5fe9 DeskClock: Remove or update old stuff [Michael W] (Mon Oct 31 12:59:55 2022)
+447215 DeskClock: Remove unused permissions [Michael W] (Mon Oct 31 12:59:50 2022)
+
+packages/apps/DocumentsUI:
+6ae45d Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:29 2022)
+
+packages/apps/EmergencyInfo:
+ed7222 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:31 2022)
+
+packages/apps/Jelly:
+8b5520 Automatic translation import [Michael Bestas] (Wed Nov 2 23:57:31 2022)
+f2621a Jelly: Don't request android.permission.WRITE_EXTERNAL_STORAGE [LuK1337] (Sat Oct 22 15:47:51 2022)
+
+packages/apps/LineageParts:
+82f9d8 Automatic translation import [Michael Bestas] (Wed Nov 2 23:57:33 2022)
+3d9cb5 LineageParts: Drop the androidprv namespace [Georg Veichtlbauer] (Wed Nov 2 18:37:32 2022)
+914793 sounds: Use silent if URI returned by ringtone picker is null [Luofan Chen] (Tue Nov 1 08:15:43 2022)
+
+packages/apps/Nfc:
+fa49ec Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:36 2022)
+
+packages/apps/Recorder:
+1214ef Automatic translation import [Michael Bestas] (Wed Nov 2 23:57:35 2022)
+
+packages/apps/Seedvault:
+0c9e43 Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas] (Wed Oct 12 21:58:22 2022)
+
+packages/apps/Settings:
+bda72c Automatic translation import [Michael Bestas] (Wed Nov 2 23:57:38 2022)
+b345f5 Settings: Add toggle for heads up notifications [Michael Bestas] (Fri Oct 21 08:50:36 2022)
+e405036 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:13:36 2022)
+
+packages/apps/SetupWizard:
+603248 Move privacy policy uri to strings resource [Alexander Martinz] (Mon Oct 17 14:30:25 2022)
+
+packages/apps/ThemePicker:
+5753cf Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:47 2022)
+
+packages/apps/Trebuchet:
+187f88 Launcher3: Fix gesture navigation fail to move to bottom [Yingren Wang] (Thu Oct 20 16:22:02 2022)
+cf1b41 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Tue Oct 18 18:37:26 2022)
+4b3ac2 Launcher3: Do not attach cleanupScreenshot() to frame update event [LibXZR] (Wed Oct 12 22:23:40 2022)
+
+packages/apps/TvSettings:
+76280b Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:49 2022)
+
+packages/apps/Updater:
+cb6281 Automatic translation import [Michael Bestas] (Thu Nov 3 19:11:06 2022)
+
+packages/apps/WallpaperPicker2:
+b0dd01 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:03:51 2022)
+
+packages/modules/Connectivity:
+631a61 Bypass VPN lockdown for clat initialization [t-m-w] (Thu Nov 3 22:28:10 2022)
+ee8ea4 Firewall: Support a greater number of apps/uids [t-m-w] (Thu Nov 3 22:27:03 2022)
+1f3f3e Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:02 2022)
+
+packages/modules/Permission:
+cfdb5a Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:04 2022)
+
+packages/modules/Wifi:
+f6e830 Merge tag 'android-13.0.0_r14' into staging/lineage-20.0_merge-android-13.0.0_r14 [SamarV-121] (Tue Nov 8 09:07:09 2022)
+8671ae Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:09 2022)
+
+packages/providers/ContactsProvider:
+a91abd Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:20 2022)
+
+packages/providers/DownloadProvider:
+8919c9 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:22 2022)
+
+packages/providers/MediaProvider:
+2569fe Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:24 2022)
+
+packages/providers/TelephonyProvider:
+1c6f09 Merge tag 'android-13.0.0_r14' into staging/lineage-20.0_merge-android-13.0.0_r14 [SamarV-121] (Tue Nov 8 09:07:18 2022)
+
+packages/screensavers/PhotoTable:
+1ae8c4 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:28 2022)
+
+packages/services/Telecomm:
+89664e Merge tag 'android-13.0.0_r14' into staging/lineage-20.0_merge-android-13.0.0_r14 [SamarV-121] (Tue Nov 8 09:07:22 2022)
+62cbbf Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:32 2022)
+
+packages/services/Telephony:
+ff6b2f Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:35 2022)
+
+packages/wallpapers/LivePicker:
+d24293 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:38 2022)
+
+prebuilts/clang/kernel/linux-x86/clang-r416183b:
+54220f Import r416183b from android-13.0.0_r0.20 [Michael Bestas] (Tue Nov 1 11:44:07 2022)
+
+system/core:
+6ec59f Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:43 2022)
+
+system/media:
+c3cad5 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:56 2022)
+
+system/memory/lmkd:
+0c5ade Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:04:58 2022)
+
+system/sepolicy:
+0d6474 Merge tag 'android-13.0.0_r11' into staging/lineage-20.0_merge-android-13.0.0_r11 [Michael Bestas] (Sat Oct 15 15:05:02 2022)
+
+system/timezone:
+edc38c DO NOT MERGE Update Android TZDB from 2022d to 2022e. [T] [Almaz Mingaleev] (Tue Oct 18 06:25:24 2022)
+ccc190 DO NOT MERGE Update Android TZDB from 2022a2 to 2022d. [T] [Almaz Mingaleev] (Wed Oct 12 23:19:38 2022)
+
+vendor/lineage:
+be4730 kernel: Remove TARGET_KERNEL_MODULES error [Michael Bestas] (Tue Nov 1 15:15:13 2022)
+2adf74 kernel: Only add GCC to PATH when using GNU binutils [Michael Bestas] (Tue Nov 1 15:15:13 2022)
+0693b1 kernel: Remove darwin support [Michael Bestas] (Tue Nov 1 15:15:13 2022)
+19c16d kernel: Override LD_LIBRARY_PATH only on <5.10 [Michael Bestas] (Tue Nov 1 13:55:19 2022)
+69e7a4 kernel: Fix clang version override [Michael Bestas] (Tue Nov 1 13:55:18 2022)
+ed8e19 config: Remove TARGET_CAMERA_BOOTTIME_TIMESTAMP [Michael Bestas] (Sun Oct 23 01:14:52 2022)
+50de80 kernel: Add support for custom dtbimage generation rules [Aaron Kling] (Mon Oct 17 22:59:46 2022)
+fe2500 The cloudrippers are here [Chirayu Desai] (Sat Oct 15 15:00:40 2022)
+
+==========
 2022-10-11
 ==========
 android:
