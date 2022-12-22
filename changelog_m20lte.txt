@@ -1,4 +1,20 @@
 ==========
+2022-12-22
+==========
+device/samsung/m20lte:
+0ccd34 m20lte: Add 32bit libMcClient.so back [SamarV-121] (Wed Dec 21 13:08:25 2022)
+
+device/samsung/universal7904-common:
+b5aace universal7904: sepolicy: Allow surfaceflinger to read hal_graphics_composer_default [SamarV-121] (Tue Dec 20 06:10:00 2022)
+
+hardware/samsung:
+d340ee Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:43 2022)
+25c3d6 AdvancedDisplay: Fix compilation for QPR1 merge [Bruno Martins] (Tue Dec 6 21:46:50 2022)
+e27340 doze: Fix compilation for QPR1 merge [Bruno Martins] (Tue Dec 6 21:20:38 2022)
+49d025 dap: Fix compilation for QPR1 merge [Bruno Martins] (Tue Dec 6 18:02:16 2022)
+66acf4 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:29 2022)
+
+==========
 2022-11-09
 ==========
 device/samsung/m20lte:

@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1668261128,
-      "filename": "lineage-20.0-20221112_172745-UNOFFICIAL-RM6785.zip",
-      "id": "74aec48914b4c7285a0984b84f47d9a2fd56b3af6bf49b805f76553e6d22c27e",
+      "datetime": 1671684918,
+      "filename": "lineage-20.0-20221222_050003-UNOFFICIAL-RM6785.zip",
+      "id": "b2020eacdec36a6b1cbedef56c1fabb5f770770cf64e6ed2b7262f46c4161a59",
       "romtype": "UNOFFICIAL",
-      "size": 1048433703,
-      "url": "https://lineage.samarv121.wtf/RM6785-20221113_054750/lineage-20.0-20221112_172745-UNOFFICIAL-RM6785.zip",
+      "size": 1044140455,
+      "url": "https://lineage.samarv121.wtf/RM6785-20221222_111956/lineage-20.0-20221222_050003-UNOFFICIAL-RM6785.zip",
       "version": "20.0"
     }
   ]

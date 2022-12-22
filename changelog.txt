@@ -1,4 +1,405 @@
 ==========
+2022-12-22
+==========
+android:
+8caa1e manifest: December 2022 Quarterly Platform Release and Security update [Michael Bestas] (Tue Dec 6 00:52:08 2022)
+048417 manifest: Track our own android_external_avb [LuK1337] (Sun Dec 4 12:08:25 2022)
+43f2d3 manifest: Switch to our fork of frameworks/opt/calendar [Michael Bestas] (Fri Nov 25 17:49:56 2022)
+44ea1f manifest: Track our android_packages_modules_Bluetooth [althafvly] (Sun Nov 20 21:01:27 2022)
+
+bionic:
+545fa2 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:56:08 2022)
+
+bootable/recovery:
+3e75e1 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:51 2022)
+bf94d9 Make recovery/fastbootd USB VID/PID configurable. [Josh Gao] (Wed Nov 30 18:14:55 2022)
+36c748 recovery: init: Add console service [Aaron Kling] (Wed Nov 9 23:32:34 2022)
+
+build/make:
+18bb99 Don't remove ANDROID_SECURE_STORAGE_CMD from env vars [LuK1337] (Wed Dec 14 08:47:08 2022)
+d4b74c Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:44 2022)
+5c8315 Log when we fail to get key password from secure cmd [LuK1337] (Sun Dec 4 01:08:05 2022)
+133d57 Support container password for apex signing [Kelvin Zhang] (Sat Dec 3 18:21:10 2022)
+756852 Set default recovery USB vendor/product IDs. [Josh Gao] (Wed Nov 30 18:14:50 2022)
+483f3c Add bluetooth and sdk_sandbox to default key map [HZ] (Sun Nov 20 17:18:43 2022)
+7e3992 fixup! Add build support for XZ ramdisks [pjgowtham] (Thu Nov 17 21:13:17 2022)
+f57d0b fixup! Compute the needed shared libs for otatools. [Aaron Kling] (Tue Nov 15 19:45:06 2022)
+
+build/soong:
+76dfc1 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:56:06 2022)
+
+device/google/atv:
+1a662d Enabling Apex in BT [Roopa Sattiraju] (Sat Dec 17 16:38:03 2022)
+2cc49b Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Fri Dec 9 00:00:22 2022)
+a1807a Partially revert "Enabling Apex in BT" [Timi Rautamäki] (Wed Dec 7 19:09:14 2022)
+
+external/avb:
+f82d0b Add ANDROID_SECURE_STORAGE_CMD support in RSAPublicKey() [LuK1337] (Tue Dec 6 11:42:46 2022)
+
+external/chromium-webview/patches:
+c1a360 Update Chromium Webview to 108.0.5359.79 [Kevin F. Haggerty] (Fri Dec 2 15:52:44 2022)
+0b6b76 Update Chromium Webview to 107.0.5304.105 [Kevin F. Haggerty] (Fri Nov 11 14:43:51 2022)
+
+external/chromium-webview/prebuilt/arm:
+7bae37 Update Chromium Webview arm prebuilt to 108.0.5359.79 [Kevin F. Haggerty] (Fri Dec 2 20:03:10 2022)
+
+external/chromium-webview/prebuilt/arm64:
+5ef1df Update Chromium Webview arm64 prebuilt to 108.0.5359.79 [Kevin F. Haggerty] (Fri Dec 2 20:03:18 2022)
+
+external/chromium-webview/prebuilt/x86:
+b1a7fd Update Chromium Webview x86 prebuilt to 108.0.5359.79 [Kevin F. Haggerty] (Fri Dec 2 20:03:24 2022)
+
+external/gptfdisk:
+291286 Fix hybrid MBR recognition on --android-dump [3l H4ck3r C0mf0r7] (Tue Nov 15 19:42:42 2022)
+
+external/setupcompat:
+702c81 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:56:38 2022)
+
+frameworks/av:
+264dcc Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 01:06:00 2022)
+
+frameworks/base:
+dbd300b Screenshot: Unregister task listener on destroy [OnlyTomInSecond] (Wed Dec 14 17:28:30 2022)
+4fdc0f toast: fix bg color not changing with theme change [SuperDroidBond] (Sat Dec 10 02:18:06 2022)
+7062274 udfps: Make pressed udfp view configurable [TheScarastic] (Fri Dec 9 23:55:39 2022)
+5193f4 udfps: Restore illumination dot for global hbm [Arian] (Fri Dec 9 23:55:39 2022)
+2c21d1c SystemUI: Add display mode provider for UDFPS on Pixel devices [Danny Lin] (Fri Dec 9 12:57:34 2022)
+aee4be udfps: Implement default udfps display mode provider [LuK1337] (Fri Dec 9 12:57:34 2022)
+15b8ab SystemUI: Add double tap to sleep gesture [Rashed Abdel-Tawab] (Fri Dec 9 12:57:34 2022)
+3fcfcf SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod [maxwen] (Fri Dec 9 12:57:34 2022)
+c600f9 fixup! Implement edge long swipe gesture [Michael Bestas] (Fri Dec 9 12:57:33 2022)
+679a239 fixup! Rewrite trust USB restriction handling [jabashque] (Fri Dec 9 00:27:48 2022)
+c2c2f5 Revert "Fix network leaks with split-tunnel VPNs" [Tommy Webb] (Fri Dec 9 00:20:32 2022)
+58a632 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Thu Dec 8 23:42:25 2022)
+f2e1fe Squashed revert of udfps hbm provider changes [Michael Bestas] (Thu Dec 8 23:33:54 2022)
+11806e Revert "SystemUI: Redraw display cutout on overlay changes" [Michael Bestas] (Thu Dec 8 23:27:34 2022)
+db19db Revert "SystemUI: Add double tap to sleep gesture" [Michael Bestas] (Tue Dec 6 14:00:17 2022)
+094458c Revert "SystemUI: use DOUBLE_TAP_TO_WAKE setting also for wake from aod" [Michael Bestas] (Tue Dec 6 14:00:16 2022)
+aded82c9 Revert "keyguard: Do not trigger a wake up when hiding lockscreen" [Michael Bestas] (Tue Dec 6 14:00:15 2022)
+41d9fc Revert "udfps: Trigger onFingerDown with regular action down events too" [Anay Wadhera] (Tue Dec 6 13:56:33 2022)
+361780 Revert "udfps: Restore illumination dot for global hbm" [Michael Bestas] (Tue Dec 6 13:55:07 2022)
+17de28 Revert "udfps: Make pressed udfp view configurable" [Michael Bestas] (Tue Dec 6 13:54:38 2022)
+46eca0 Revert "SystemUI: Use max Display.Mode in AuthController as well" [Michael Bestas] (Tue Dec 6 13:53:24 2022)
+0acc18 Revert "fixup! SystemUI: Use max Display.Mode in AuthController as well" [Michael Bestas] (Tue Dec 6 13:52:46 2022)
+70cc90 Fix network leaks with split-tunnel VPNs [t-m-w] (Fri Dec 2 14:46:29 2022)
+30e2690 fixup! fw/b: Add support for allowing/disallowing apps on cellular, vpn and wifi networks [Oliver Scott] (Fri Dec 2 14:46:29 2022)
+bdbf4a fixup! Restricted Networking Mode fixes [Oliver Scott] (Mon Nov 28 17:11:01 2022)
+d171bb Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:24 2022)
+3caf7f Fallback ESC to BACK [Aaron Kling] (Tue Nov 15 19:45:23 2022)
+3c11d4 SystemUI: Disable clock auto hide feature for QS [LuK1337] (Fri Nov 11 23:09:55 2022)
+
+frameworks/native:
+749d43 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:56:55 2022)
+
+frameworks/opt/calendar:
+6b2351 fix invalid time being set when `Time.set(Time)` is being called on itself [Jonas Häusler] (Wed Nov 16 15:15:41 2022)
+
+frameworks/opt/telephony:
+9d14ed Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 01:08:09 2022)
+
+frameworks/opt/timezonepicker:
+f36e5a Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:02 2022)
+
+hardware/google/gchips:
+88b438 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:04 2022)
+
+hardware/google/graphics/common:
+72ab00 Revert [ DO NOT MERGE ] libhwc2.1: clear brightness level when power off am: f0f011b657" [Peter Lin] (Tue Dec 6 02:15:22 2022)
+c57977 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:07 2022)
+
+hardware/google/pixel:
+a9b60c Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 01:09:17 2022)
+
+hardware/google/pixel-sepolicy:
+120037 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 01:12:50 2022)
+
+hardware/interfaces:
+1cd1eb Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:12 2022)
+
+lineage-sdk:
+f863e2 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:31 2022)
+
+packages/apps/Aperture:
+f2f5ef Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:45 2022)
+77343f Aperture: Reorder secondary top bar buttons [Sebastiano Barezzi] (Thu Dec 15 10:18:29 2022)
+b9da76 Aperture: Reformat capture preview layout [Sebastiano Barezzi] (Thu Dec 15 10:07:09 2022)
+7efb8c Aperture: Add a content description to views where missing [Sebastiano Barezzi] (Thu Dec 15 10:06:22 2022)
+dd866a Aperture: Fix string name typo [Sebastiano Barezzi] (Thu Dec 15 09:56:44 2022)
+f3290e Aperture: Move leveler setting to general section [Sebastiano Barezzi] (Thu Dec 15 09:36:53 2022)
+5bae4e Revert "Aperture: Import SharedPreferences.edit from AndroidX" [LuK1337] (Sun Dec 11 22:48:00 2022)
+1f654f Aperture: Save user selected video framerate in shared preferences [LuK1337] (Sun Dec 11 16:02:31 2022)
+ca1bd6 Aperture: Rework framerate handling [Sebastiano Barezzi] (Sun Dec 11 15:03:37 2022)
+346eb6 Aperture: Update config_additionalVideoConfigurations documentation [Sebastiano Barezzi] (Sun Dec 11 13:36:43 2022)
+b559cd Aperture: Allow adding multiple framerates at once [LuK1337] (Sun Dec 11 10:50:01 2022)
+e12268 Aperture: Add 120fps video recording support [LuK1337] (Sun Dec 11 10:50:01 2022)
+46bf55 Aperture: Remove hardcoded FPS values in CameraManager [LuK1337] (Fri Dec 9 20:48:14 2022)
+62b5b4 Aperture: Merge all "{} FPS" strings [LuK1337] (Fri Dec 9 20:48:14 2022)
+344626 Aperture: Fix strings for translation [Michael Bestas] (Fri Dec 9 20:25:04 2022)
+6a7ebb Aperture: Allow adding additional video configurations [Sebastiano Barezzi] (Fri Dec 9 17:54:18 2022)
+a07126 Aperture: Associate video qualities to available framerates [Sebastiano Barezzi] (Fri Dec 9 01:33:54 2022)
+87f64b Aperture: Calculate intrinsic zoom ratio from view angle degrees [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+b9a77e Aperture: Rename zoomRatio to intrinsicZoomRatio [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+da1806 Aperture: Introduce Sensor interface [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+43c6a7 Aperture: Drop logical multi-camera support in lens selector [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+467c78 Aperture: Implement image/video stabilization [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+54d565 Aperture: Implement video framerate switch [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+5048d2 Aperture: Add code for Camera2 interop [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+6b71eb Aperture: Move to AndroidX Media3 for video capture preview [Sebastiano Barezzi] (Thu Dec 8 16:50:35 2022)
+5216c0 Aperture: Don't handle keypresses when capture preview is open [Sebastiano Barezzi] (Thu Dec 8 13:57:48 2022)
+e1920c Aperture: Store zoom ratio values in LensSelectorLayout [Sebastiano Barezzi] (Thu Dec 1 22:32:34 2022)
+a8a47f Aperture: Cleanup CameraActivity [Sebastiano Barezzi] (Thu Dec 1 22:32:34 2022)
+b31004 Aperture: Support loading RRO resources for .dev build [LuK1337] (Thu Dec 1 22:32:34 2022)
+309fc5 Retain launcher icon on migration from Camera2 [Chirayu Desai] (Thu Dec 1 21:44:42 2022)
+64c4b3 Aperture: Update CameraX to 1.2.0 [LuK1337] (Thu Dec 1 18:03:06 2022)
+5a784b Aperture: Update com.google.android.material to 1.8.0-alpha03 [LuK1337] (Thu Dec 1 18:03:06 2022)
+730642 Revert "Aperture: Add yutailang0119/action-android-lint@v3 to workflow" [LuK1337] (Thu Dec 1 18:03:05 2022)
+b411b6 Aperture: Add `workflow_dispatch` to GitHub actions triggers [LuK1337] (Thu Dec 1 16:04:46 2022)
+c97b7e Aperture: Remove unnecessary type declarations in CameraManager [LuK1337] (Sat Nov 12 21:16:17 2022)
+d2c285 Aperture: Override navigationBarColor for main activity theme [LuK1337] (Sat Nov 12 18:16:30 2022)
+f27063 Aperture: Use context instead of activity ref in CameraManager [Dhina17] (Sat Nov 12 17:50:13 2022)
+1181e2 Aperture: Undefine testInstrumentationRunner [Sebastiano Barezzi] (Wed Nov 9 18:00:28 2022)
+f5a9a7 Aperture: Move .dev suffix to debug build type configuration [Sebastiano Barezzi] (Wed Nov 9 18:00:28 2022)
+f0b464 Aperture: Use `getByName` instead of `named` in build.gradle.kts [Sebastiano Barezzi] (Wed Nov 9 18:00:20 2022)
+
+packages/apps/AudioFX:
+2cb654 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:33 2022)
+
+packages/apps/Backgrounds:
+1ef881 Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:47 2022)
+
+packages/apps/Camera2:
+456eb5 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:51 2022)
+8ee2fc Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:35 2022)
+
+packages/apps/Car/Settings:
+002f37 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:53 2022)
+
+packages/apps/CellBroadcastReceiver:
+c3bc2c Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:55 2022)
+
+packages/apps/Contacts:
+6305e8 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:57:58 2022)
+a78912 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:36 2022)
+
+packages/apps/DeskClock:
+50f5ec Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:49 2022)
+fbb558 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:38 2022)
+
+packages/apps/Dialer:
+1031f4 Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:51 2022)
+934166 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:40 2022)
+
+packages/apps/DocumentsUI:
+977b15 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:02 2022)
+
+packages/apps/Eleven:
+07753f Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:53 2022)
+71d20b Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:43 2022)
+
+packages/apps/EmergencyInfo:
+86e8c8 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:04 2022)
+
+packages/apps/Etar:
+c4a539 Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:56 2022)
+03a7a6 Fix build for android13-qpr1 [Chirayu Desai] (Thu Dec 8 08:59:50 2022)
+66e68f CalendarEventModel: Mark getCalendarEventColors method as nullable [Aayush Gupta] (Mon Dec 5 01:48:18 2022)
+530e17 Remove unused import [Gitsaibot] (Mon Dec 5 01:48:11 2022)
+c0bdc0 Fix totally broken attende parsing when importing ics file [rparkins999] (Mon Dec 5 01:47:58 2022)
+4e70cb Show multiday events with corrent start and end points [rparkins999] (Mon Dec 5 01:47:38 2022)
+7d0ab9 Day view should always reload on day change [t-m-w] (Fri Nov 25 14:46:14 2022)
+ada833 reorder event info menu items [Jonas Häusler] (Fri Nov 25 14:46:11 2022)
+df82e8 save pending changes before duplicating event [Jonas Häusler] (Fri Nov 25 14:46:11 2022)
+489b5d respect timezone delivered via intent [Jonas Häusler] (Fri Nov 25 14:46:11 2022)
+77b96b keep event color on calendar change if possible [Jonas Häusler] (Fri Nov 25 14:46:11 2022)
+8e03f5 add option to duplicate events [Jonas Häusler] (Fri Nov 25 14:46:10 2022)
+18b0d0 enable Java 8+ API desugaring [Jonas Häusler] (Fri Nov 25 14:46:10 2022)
+074483 Rework mini calendar and list of calendars in the tablet view [Gitsaibot] (Fri Nov 25 14:46:10 2022)
+dad64f Warn about the buggy import feature [Johannes Wienke] (Fri Nov 25 14:46:10 2022)
+c4ac13 Add 9h as option for reminder [woheller69] (Fri Nov 25 14:46:10 2022)
+f98da6 Fix crash when opening an event with very large ID [Viachaslau Tratsiak] (Fri Nov 25 14:46:10 2022)
+4a4aa7 Update submodules [Jochen Sprickerhof] (Fri Nov 25 14:46:10 2022)
+ad3eba Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:46 2022)
+
+packages/apps/FlipFlap:
+f47229 Automatic translation import [Michael Bestas] (Fri Dec 16 18:57:58 2022)
+2ccacf FlipFlap: Fix compilation for QPR1 merge [Bruno Martins] (Sat Dec 10 12:05:39 2022)
+
+packages/apps/Gallery2:
+d09743 Gallery2: Show proper latitude and longitude [TheScarastic] (Fri Nov 25 17:57:14 2022)
+
+packages/apps/Jelly:
+b43dfe Jelly: Fix CoarseFineLocation lint issue [LuK1337] (Tue Dec 6 20:38:10 2022)
+cb3ab6 Jelly: Skip null MIME types in file chooser [LuK1337] (Tue Dec 6 18:16:41 2022)
+a73975 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:48 2022)
+
+packages/apps/LineageParts:
+2bef9b Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:00 2022)
+d7b7e6 NFCProfileUtils: Fix shifting operation [Michael W] (Tue Dec 6 17:21:52 2022)
+8a0bc2 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:50 2022)
+
+packages/apps/Messaging:
+b97713 Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:01 2022)
+3edc82 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:52 2022)
+
+packages/apps/Nfc:
+d39f86 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:08 2022)
+
+packages/apps/Profiles:
+9c840e Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:53 2022)
+
+packages/apps/Recorder:
+81f95c Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:03 2022)
+bc75f2 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:55 2022)
+
+packages/apps/Settings:
+1e2b93 Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:05 2022)
+c57f81 Settings: Redo "Good news, `encryptable=footer` is broken" [Michael W] (Fri Dec 9 02:13:03 2022)
+5f662c Use AOSP string for side fps enrollment [Michael Bestas] (Fri Dec 9 00:06:33 2022)
+b4e206 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Thu Dec 8 23:46:39 2022)
+7d69c2 Revert "Settings: Good news, `encryptable=footer` is broken" [Michael Bestas] (Tue Dec 6 01:46:27 2022)
+9c0aaf Revert "Settings: Follow system theme for SD card activities" [Michael Bestas] (Tue Dec 6 01:46:26 2022)
+069f73 Reland: "Update animation for fingerprint edu page" [Michael Bestas] (Tue Dec 6 01:38:05 2022)
+a976ae Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:57 2022)
+
+packages/apps/SettingsIntelligence:
+f265b6 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:14 2022)
+
+packages/apps/SetupWizard:
+036461 Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:07 2022)
+ef8c57 Automatic translation import [Michael Bestas] (Fri Nov 25 13:03:59 2022)
+
+packages/apps/Stk:
+9cbb28 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:16 2022)
+
+packages/apps/Tag:
+7944d5 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:19 2022)
+
+packages/apps/ThemePicker:
+08f630 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Fri Dec 9 00:02:56 2022)
+fcf658 ThemePicker: Drop default permissions [Bharath] (Tue Nov 29 18:09:15 2022)
+
+packages/apps/Trebuchet:
+4d4634 Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:09 2022)
+b62d13 Reland "Fix spacing and header protection for All Apps" after QPR1 merge [Tommy Webb] (Fri Dec 9 00:14:45 2022)
+1a99cb Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Thu Dec 8 23:56:58 2022)
+3f06fc Revert "Fix spacing and colors related to All Apps header" [Michael Bestas] (Tue Dec 6 16:02:58 2022)
+76e84f Revert "Trebuchet: Don't show split screen options ..." [Michael Bestas] (Tue Dec 6 15:42:58 2022)
+b07816 Disable all caps from Personal and Work tabs [Michael Bestas] (Sat Nov 26 19:26:49 2022)
+60af30 Fix spacing and colors related to All Apps header [Tommy Webb] (Sat Nov 26 19:26:37 2022)
+fba6d3 Revert "Fix header protection height calculation" [Tommy Webb] (Sat Nov 26 02:40:44 2022)
+f923e3 Revert "Launcher3: Add some spacing below the all apps search bar" [Michael Bestas] (Sat Nov 26 02:40:27 2022)
+
+packages/apps/TvSettings:
+f08553 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:23 2022)
+
+packages/apps/Updater:
+dfe9ef Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:10 2022)
+79845a Updater: Move PreferenceManager to AndroidX [althafvly] (Mon Nov 28 15:05:23 2022)
+baf223 Automatic translation import [Michael Bestas] (Fri Nov 25 13:04:01 2022)
+59c5c5 Updater: Add POST_NOTIFICATIONS permission & pre-grant it [Dil3mm4] (Mon Nov 14 23:07:09 2022)
+
+packages/apps/WallpaperPicker2:
+4124f0 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:25 2022)
+
+packages/inputmethods/LatinIME:
+fc8113 Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:12 2022)
+
+packages/modules/Bluetooth:
+5d2632 fixup! bluetooth: abandon app local certificate [Michael Bestas] (Fri Dec 9 00:24:57 2022)
+88da7d Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 01:28:12 2022)
+00cecb bluetooth: abandon app local certificate [Ji Luo] (Sun Nov 20 19:35:17 2022)
+
+packages/modules/Connectivity:
+66d378 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:45 2022)
+
+packages/modules/Permission:
+fba307 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:47 2022)
+
+packages/modules/Wifi:
+2a806d Remove length validation for WifiSsid [Quang Luong] (Tue Dec 13 21:05:50 2022)
+cb0f5e Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:52 2022)
+
+packages/modules/adb:
+bc98ad Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:30 2022)
+
+packages/modules/common:
+64913b Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:42 2022)
+
+packages/providers/CalendarProvider:
+d3e7b7 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:58:58 2022)
+
+packages/providers/DownloadProvider:
+962154 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:04 2022)
+44afc2 Automatic translation import [Michael Bestas] (Fri Nov 25 13:04:02 2022)
+
+packages/providers/MediaProvider:
+69100c Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:07 2022)
+
+packages/providers/TelephonyProvider:
+f6fc35 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 01:30:40 2022)
+
+packages/resources/devicesettings:
+cc821f Automatic translation import [Michael Bestas] (Fri Dec 16 18:58:14 2022)
+417655 Automatic translation import [Michael Bestas] (Fri Nov 25 13:04:04 2022)
+
+packages/screensavers/PhotoTable:
+b25228 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:11 2022)
+
+packages/services/Mms:
+8c5425 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:13 2022)
+
+packages/services/Telecomm:
+873d83 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:15 2022)
+
+packages/services/Telephony:
+dd23bb Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:17 2022)
+
+packages/wallpapers/LivePicker:
+411416 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:19 2022)
+
+prebuilts/tools-lineage:
+988d08 Add iasl for in-tree edk2 compilation [Thomas Makin] (Sun Nov 20 03:26:58 2022)
+
+system/core:
+b91f96 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:29 2022)
+
+system/extras:
+56d52b Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:31 2022)
+
+system/keymaster:
+febe22 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:34 2022)
+
+system/media:
+3f7f6d Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:42 2022)
+
+system/memory/lmkd:
+b68f69 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:44 2022)
+
+system/security:
+3b1e68 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:46 2022)
+
+system/sepolicy:
+889466 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:48 2022)
+
+system/timezone:
+dd682d Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:51 2022)
+
+system/update_engine:
+e096c5 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 00:59:56 2022)
+
+system/vold:
+9345b1 Merge tag 'android-13.0.0_r16' into staging/lineage-20.0_merge-android-13.0.0_r16 [Michael Bestas] (Tue Dec 6 01:32:24 2022)
+
+vendor/lineage:
+5fdb4e overlay: Make config_defaultQrCodeComponent untranslatable [LuK1337] (Fri Dec 9 12:28:04 2022)
+610eca overlay: Set config_clockFontFamily to empty string [LuK1337] (Fri Dec 9 12:27:56 2022)
+672d80 overlay: Update ThemePicker for android13-qpr1 [Michael Bestas] (Fri Dec 9 00:12:06 2022)
+2321f0 vars: December 2022 Quarterly Platform Release and Security update [Michael Bestas] (Tue Dec 6 14:43:51 2022)
+e0d3e2 overlay: Update Dialer VVM config [Chirayu Desai] (Wed Nov 30 18:13:43 2022)
+41abb0 kernel: Allow devices to opt-in for full LLVM build [Michael Bestas] (Mon Nov 14 17:20:23 2022)
+d944f6 vars: Update qcom tags [Michael Bestas] (Wed Nov 9 16:57:40 2022)
+
+==========
 2022-11-09
 ==========
 android:

@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1668007677,
-      "filename": "lineage-20.0-20221109_152814-UNOFFICIAL-m20lte.zip",
-      "id": "0f22e552485b426fd140c165b7332e9295693fff7c62c542d6e3f014298534d1",
+      "datetime": 1671637997,
+      "filename": "lineage-20.0-20221221_155743-UNOFFICIAL-m20lte.zip",
+      "id": "f5b679f4f6697e58194a96ad4fa663124ef2ec8fac1c77dddf914edef2ceeb7f",
       "romtype": "UNOFFICIAL",
-      "size": 753127280,
-      "url": "https://lineage.samarv121.wtf/m20lte-20221113_055115/lineage-20.0-20221109_152814-UNOFFICIAL-m20lte.zip",
+      "size": 746782553,
+      "url": "https://lineage.samarv121.wtf/m20lte-20221222_111853/lineage-20.0-20221221_155743-UNOFFICIAL-m20lte.zip",
       "version": "20.0"
     }
   ]
