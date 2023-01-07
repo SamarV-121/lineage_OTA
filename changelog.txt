@@ -1,4 +1,105 @@
 ==========
+2023-01-05
+==========
+android:
+4a4b20 manifest: January 2023 Security update [Michael Bestas] (Wed Jan 4 00:56:15 2023)
+
+build/make:
+2163e2 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:52 2023)
+dd97cd Add e2fsck/resize2fs/tune2fs to recovery/vendor_ramdisk [Michael Bestas] (Tue Dec 27 18:08:11 2022)
+6277315 Remove fs utilities from init_boot module list [Kelvin Zhang] (Thu Dec 22 14:51:46 2022)
+
+build/soong:
+035773 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:53 2023)
+
+external/e2fsprogs:
+9b8f65 Mark e2fsck/resize2fs/tune2fs as `recovery_available` [Michael Bestas] (Thu Dec 22 15:00:20 2022)
+
+frameworks/av:
+8dcf58 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:53 2023)
+
+frameworks/base:
+1113e84 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Thu Jan 5 05:59:20 2023)
+202ef8 IllustrationPreference: Hide illustration when we fail to play anim [LuK1337] (Fri Dec 30 00:43:09 2022)
+865804 SystemUI: Align QS header with status bar [cjh1249131356] (Tue Dec 27 18:59:33 2022)
+
+frameworks/opt/telephony:
+b523fe Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:55 2023)
+
+hardware/google/graphics/common:
+a850dd Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:56 2023)
+
+hardware/google/pixel:
+36fe85 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:56 2023)
+
+hardware/interfaces:
+152362 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:57 2023)
+
+packages/apps/Aperture:
+b4af85 Aperture: Ask for GPS permission only on the first launch [LuK1337] (Mon Jan 2 21:42:38 2023)
+d3755e Aperture: Make sure grant results is not empty [TheScarastic] (Mon Jan 2 21:42:32 2023)
+51a756 Aperture: Migrate to ActivityResultContracts.RequestMultiplePermissions [LuK1337] (Mon Jan 2 21:12:39 2023)
+619ccc Aperture: Keep screen on while in CameraActivity [LuK1337] (Sun Jan 1 20:45:51 2023)
+850862 Aperture: Ask for GPS permissions on first launch and enable if granted [Chirayu Desai] (Thu Dec 29 20:58:00 2022)
+4ebad0 Revert "Retain launcher icon on migration from Camera2" [LuK1337] (Sun Dec 25 14:20:11 2022)
+c23281 Aperture: Implement preview blurring during rebind [Sebastiano Barezzi] (Sun Dec 25 09:59:02 2022)
+80aa92 Aperture: Use .next() where possible [Sebastiano Barezzi] (Fri Dec 23 21:09:33 2022)
+0b3c1f Aperture: Drop non working multi-camera logical camera check [Sebastiano Barezzi] (Fri Dec 23 21:07:21 2022)
+cd4fcd Aperture: Logical zoom ratios support [Sebastiano Barezzi] (Fri Dec 23 21:07:21 2022)
+
+packages/apps/DeskClock:
+349682 DeskClock: Add FLAG_IMMUTABLE flag to PendingIntent [Michael Bestas] (Sat Dec 31 10:52:38 2022)
+8f482b DeskClock: Timer Setup: Add double-zero button [Michael W] (Tue Dec 27 15:52:15 2022)
+da8bf5 DeskClock: Redesign Timer input [Michael W] (Tue Dec 27 15:22:43 2022)
+cfe1f2 DeskClock: Make expand and collapse animations faster [Michael W] (Sun Dec 25 12:20:59 2022)
+98d11b DeskClock: Fix collapsing animation [Michael W] (Sun Dec 25 12:12:01 2022)
+c37a5c DeskClock: Fix adding alarms after deletion [Michael W] (Sun Dec 25 12:11:59 2022)
+
+packages/apps/DocumentsUI:
+ea54cf DocumentsUI: add icons for shortcuts [Timi Rautamäki] (Thu Dec 22 16:49:16 2022)
+163cde DocumentsUI: add feature for adding shortcuts to launcher [Timi Rautamäki] (Thu Dec 22 16:49:13 2022)
+
+packages/apps/Etar:
+dffa3a remove duplicated check for allowed reminders and availability [Jonas Häusler] (Mon Jan 2 22:18:40 2023)
+362b9b Fix drawing of all-day events #1287. [Robert Zenz] (Mon Jan 2 22:18:31 2023)
+5ddf4f New version 1.0.33 [Jochen Sprickerhof] (Mon Jan 2 22:17:57 2023)
+1e3e8f Add aarGen dependency to app build [Jochen Sprickerhof] (Mon Jan 2 22:17:56 2023)
+c32d7a New version 1.0.31 [Gitsaibot] (Mon Jan 2 22:17:56 2023)
+b332cf Override androidx.startup.InitializationProvider authority name [Michael Bestas] (Tue Dec 27 17:41:38 2022)
+
+packages/apps/Settings:
+35762f Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:57 2023)
+1449a7 Settings: Pass empty lottie resource for quickly open camera animation [LuK1337] (Fri Dec 30 00:43:22 2022)
+
+packages/modules/Bluetooth:
+fb376b Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Thu Jan 5 06:00:11 2023)
+3496ca legacy: Split header for hci legacy definitions [Christian Hoffmann] (Fri Dec 30 17:44:56 2022)
+
+packages/modules/Wifi:
+17d37a Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:58 2023)
+
+packages/providers/MediaProvider:
+dcfcf8 Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:59 2023)
+
+packages/services/Telecomm:
+0ca81c Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:38:59 2023)
+
+packages/services/Telephony:
+4f198a Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:39:00 2023)
+
+system/core:
+0cec9e Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:39:00 2023)
+
+system/security:
+34ac2a Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:39:01 2023)
+
+system/sepolicy:
+82e0da Merge tag 'android-13.0.0_r20' into staging/lineage-20.0_merge-android-13.0.0_r20 [Michael Bestas] (Tue Jan 3 23:39:01 2023)
+
+vendor/lineage:
+abdd47 vars: January 2023 Security Update [Michael Bestas] (Wed Jan 4 00:12:43 2023)
+
+==========
 2022-12-22
 ==========
 android:

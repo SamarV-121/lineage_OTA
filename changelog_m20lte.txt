@@ -1,4 +1,10 @@
 ==========
+2023-01-05
+==========
+device/samsung/universal7904-common:
+13a380 universal7904: sepolicy: Address hal_gatekeeper_default denials [SamarV-121] (Thu Dec 29 10:11:52 2022)
+
+==========
 2022-12-22
 ==========
 device/samsung/m20lte:

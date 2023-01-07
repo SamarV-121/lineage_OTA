@@ -1,4 +1,11 @@
 ==========
+2023-01-05
+==========
+kernel/realme/mt6785:
+5a9dc4 scripts: Silence few dtc warnings by default [Nidhun Balaji T R] (Thu Jan 5 06:08:18 2023)
+ec8bb7 Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Wed Jan 4 04:05:39 2023)
+
+==========
 2022-12-22
 ==========
 device/realme/RM6785:
