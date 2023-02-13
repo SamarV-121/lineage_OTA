@@ -1,4 +1,264 @@
 ==========
+2023-02-10
+==========
+android:
+307d71 manifest: February 2023 Security update [Michael Bestas] (Thu Feb 9 09:47:53 2023)
+12832c lineage: Sync new sdm660 HALs [Michael Bestas] (Sun Jan 22 01:51:15 2023)
+201f2c lineage: Track QCOM healthd-ext [Nolen Johnson] (Fri Jan 20 16:49:02 2023)
+98698f lineage: Re-enable rsync [DroidFreak32] (Tue Jan 10 12:02:14 2023)
+
+build/make:
+53936f Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:35 2023)
+
+build/soong:
+dadb5a java_sdk_library_import: Copy all prebuilt properties to child modules [Paul Duffin] (Mon Jan 9 18:37:19 2023)
+8fa3a2 Tag apex_set's 'set' config with `android:"path"` [Pranav Gupta] (Mon Jan 9 18:37:19 2023)
+
+external/chromium-webview/patches:
+35ec1f Update Chromium Webview to 109.0.5414.118 [Kevin F. Haggerty] (Sun Jan 29 14:51:49 2023)
+
+external/chromium-webview/prebuilt/arm:
+c23aaf Update Chromium Webview arm prebuilt to 109.0.5414.118 [Kevin F. Haggerty] (Sun Jan 29 14:50:07 2023)
+
+external/chromium-webview/prebuilt/arm64:
+1411b0 Update Chromium Webview arm64 prebuilt to 109.0.5414.118 [Kevin F. Haggerty] (Sun Jan 29 14:50:29 2023)
+
+external/chromium-webview/prebuilt/x86:
+4d206b Update Chromium Webview x86 prebuilt to 109.0.5414.118 [Kevin F. Haggerty] (Sun Jan 29 14:50:56 2023)
+
+external/cldr:
+7e7af5 DO NOT MERGE Update Android CLDR data from 2022f to 2022g. [T] [Almaz Mingaleev] (Sat Jan 7 18:29:56 2023)
+3a4e01 DO NOT MERGE Update Android CLDR data from 2022e to 2022f. [T] [Almaz Mingaleev] (Sat Jan 7 18:29:40 2023)
+
+external/icu:
+b7586c DO NOT MERGE Update Android ICU data from 2022f to 2022g. [T] [Almaz Mingaleev] (Sat Jan 7 18:29:35 2023)
+e5defd DO NOT MERGE Update Android ICU data from 2022e to 2022f. [T] [Almaz Mingaleev] (Sat Jan 7 18:29:30 2023)
+
+frameworks/av:
+fa8ac5 fixup! audioflinger: Fix audio for WifiDisplay [Michael Bestas] (Tue Feb 7 23:08:10 2023)
+318d20 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:36 2023)
+893516 Camera: Avoid roundBufferDimensionsNearest also for HAL_PIXEL_FORMAT_BLOB [SGCMarkus] (Tue Jan 10 17:32:59 2023)
+781a5b Camera: Skip stream size check for whitelisted apps [Arian] (Tue Jan 10 17:32:59 2023)
+
+frameworks/base:
+226aa7 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Thu Feb 9 09:50:39 2023)
+8f75bfa Fix stuck screen from display change timeout [Tommy Webb] (Fri Jan 20 16:19:59 2023)
+52f39a AlertWindowNotification: Correctly load app label [HZ] (Wed Jan 11 14:15:49 2023)
+d7ccae camera: Skip HFR checks for privileged apps. [Sai Kumar Sanagavarapu] (Tue Jan 10 17:33:23 2023)
+599b3c Camera: Skip stream size check for whitelisted apps.. [Gaoxiang Chen] (Tue Jan 10 17:33:23 2023)
+15ba52 Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:36 2023)
+
+frameworks/native:
+a20ee3 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:37 2023)
+
+hardware/interfaces:
+4b9d2e Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:38 2023)
+
+lineage-sdk:
+5bd11e sdk: Kill app: Actually kill app [Michael W] (Wed Feb 1 19:03:42 2023)
+1c6d5b sdk: add HFR privapp camera related resource to config.xml [SGCMarkus] (Tue Jan 10 17:33:27 2023)
+26d026 Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:43 2023)
+
+packages/apps/Aperture:
+500381 Aperture: Redo settings appbar using M3 guidelines [Sebastiano Barezzi] (Tue Feb 7 22:36:45 2023)
+a290b2 Aperture: Reformat code [LuK1337] (Tue Feb 7 21:57:37 2023)
+c02caf Aperture: Add support for Assistant actions [Alexander Martinz] (Tue Feb 7 21:50:32 2023)
+d5ed0c Aperture: Use ?attr/isLightTheme for light status bar [Sebastiano Barezzi] (Tue Feb 7 21:50:01 2023)
+836180 Aperture: Fix photo -> video shutter button color transition [Sebastiano Barezzi] (Sun Feb 5 18:29:38 2023)
+c9a4dc Aperture: Make video duration text more readable [LuK1337] (Sun Feb 5 17:13:19 2023)
+2fe339 Aperture: Use M3 colors for shutter button [Giovanni Ricca] (Sun Feb 5 16:58:43 2023)
+8bc073 Aperture: Fix lint error in string containing '%' sign [LuK1337] (Wed Feb 1 17:03:47 2023)
+cc51eb Aperture: Remove unused string [LuK1337] (Wed Feb 1 17:03:44 2023)
+d2bb84 Aperture: Add ripple animation for QR CardView [LuK1337] (Tue Jan 31 22:35:09 2023)
+af8d7d Aperture: Add Wi-Fi QR handling [Sebastiano Barezzi] (Tue Jan 31 22:35:09 2023)
+abf6bb Aperture: Use @android:color/{black,white} [LuK1337] (Tue Jan 31 17:20:34 2023)
+1abba9 Aperture: Set navigation bar color to black [LuK1337] (Tue Jan 31 17:16:30 2023)
+b836b4 Aperture: Add DPP QR handling [LuK1337] (Tue Jan 31 08:55:05 2023)
+c754f6 Aperture: Use a proper divider [Sebastiano Barezzi] (Fri Jan 27 18:24:26 2023)
+80c8de Aperture: Enable translucent navigation bar in settings [LuK1337] (Fri Jan 27 17:18:54 2023)
+cc3d0e Aperture: Draw under display cutouts [Sebastiano Barezzi] (Fri Jan 27 17:17:43 2023)
+205364 Aperture: Simplify camera mode buttons themes [Sebastiano Barezzi] (Fri Jan 27 17:17:43 2023)
+ccb802 Aperture: Don't set Roboto Mono everywhere [Sebastiano Barezzi] (Fri Jan 27 17:17:43 2023)
+3d2073 Aperture: Give light theme on settings for light mode users [Sebastiano Barezzi] (Fri Jan 27 17:17:43 2023)
+72781e Aperture: Get proper M3 dialogs in settings [Sebastiano Barezzi] (Fri Jan 27 10:16:28 2023)
+6523bb Aperture: Set status bar background color to transparent in settings [Sebastiano Barezzi] (Fri Jan 27 10:14:57 2023)
+f8a86a Aperture: Get dynamic colors going [Sebastiano Barezzi] (Fri Jan 27 10:14:56 2023)
+bcf92f Aperture: Fix InflateParams warning [Sebastiano Barezzi] (Wed Jan 25 23:37:20 2023)
+3900cf Aperture: LensSelectorLayout: Add JVM overloads for optional fields [Sebastiano Barezzi] (Wed Jan 25 23:36:57 2023)
+24cc0d Aperture: Remove useless activity themes parent definition [Sebastiano Barezzi] (Wed Jan 25 22:47:00 2023)
+8089e1 Aperture: Remove unused colors [Sebastiano Barezzi] (Wed Jan 25 22:47:00 2023)
+47cafc Aperture: Remove duplicate deps from libs [LuK1337] (Wed Jan 25 22:28:07 2023)
+1aea67 Aperture: Parse camera facing from CameraX CameraInfo [Sebastiano Barezzi] (Wed Jan 25 22:28:07 2023)
+c6f8ca Aperture: Use intrinsicZoomRatio from CameraX CameraInfo [LuK1337] (Wed Jan 25 22:28:06 2023)
+53cb58 Aperture: Update CameraX to 1.3.0-alpha03 [LuK1337] (Wed Jan 25 19:46:46 2023)
+a0548a Aperture: Update dependencies [LuK1337] (Wed Jan 25 19:18:02 2023)
+d06cea Aperture: Update Gradle and AGP [LuK1337] (Wed Jan 25 19:18:02 2023)
+640246 Aperture: Simplify View.smoothRotate [Sebastiano Barezzi] (Tue Jan 17 19:12:35 2023)
+a73084 Aperture: Fixup views rotation [Sebastiano Barezzi] (Tue Jan 17 19:12:35 2023)
+22438f Aperture: Rotate selected views [Sebastiano Barezzi] (Sun Jan 15 23:31:17 2023)
+b4c9d1 Aperture: Location permissions dialog [Sebastiano Barezzi] (Thu Jan 12 17:31:59 2023)
+d8c522 Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:45 2023)
+2b5de1 Aperture: Force portrait when launched from locked keyguard [LuK1337] (Sat Jan 7 21:24:28 2023)
+6198c8 Aperture: Overlap lockscreen only when the app is launched from it [Sebastiano Barezzi] (Sat Jan 7 14:20:51 2023)
+c313c1 Aperture: Override LocationListener methods w/o defaults for pre-R API [LuK1337] (Fri Jan 6 12:32:36 2023)
+785ac3 Aperture: Dedup some permissions stuff [Sebastiano Barezzi] (Thu Jan 5 15:48:33 2023)
+
+packages/apps/AudioFX:
+db29c4 Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:47 2023)
+
+packages/apps/Contacts:
+ee96f6 Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:48 2023)
+
+packages/apps/DeskClock:
+17ce63 DeskClock: Hide settings if unavailable [Michael W] (Sat Feb 4 15:37:38 2023)
+950718 DeskClock: Use getDefaultSensor() instead of getSensorList() [Michael W] (Sat Feb 4 15:35:47 2023)
+09c00e DeskClock: Don't duplicate code [Michael W] (Sat Feb 4 15:28:16 2023)
+0137eb DeskClock: Check for accelerometer instead of orientation [Michael W] (Sat Feb 4 15:03:30 2023)
+7b2140 DeskClock: Add newline at file ends [Michael W] (Sun Jan 22 16:42:26 2023)
+94509b DeskClock: Fixes for landscape [Michael W] (Sun Jan 22 16:42:26 2023)
+13fec0 DeskClock: Moar Timers! [Michael W] (Sun Jan 22 16:42:26 2023)
+39849c DeskClock: Add gradle [Michael W] (Sun Jan 22 10:54:01 2023)
+1a5536 DeskClock: Get rid of percentlayout [Michael W] (Sun Jan 22 10:54:01 2023)
+a4c848 DeskClock: Redesign Ringtone Picker [Michael W] (Sun Jan 22 10:53:59 2023)
+84bae0 DeskClock: Fix RingtonePicker [Michael W] (Sat Jan 21 14:04:15 2023)
+21783f DeskClock: Timer: Highlight the used input groups [Michael W] (Sat Jan 21 14:04:15 2023)
+ad88a8 DeskClock: Redesign ClockFragment [Michael W] (Sat Jan 21 14:04:15 2023)
+5f28f2 DeskClock: Convert AsyncTask(Loader) [Michael W] (Sat Jan 21 14:04:12 2023)
+f747fa DeskClock: Fix clock style change [Michael W] (Sat Jan 21 13:30:43 2023)
+04e8b7 DeskClock: Cleanup: Remove and reorder imports [Michael W] (Sat Jan 21 13:30:36 2023)
+483f12 DeskClock: Cleanup: Fix various warnings and tips [Michael W] (Sat Jan 21 13:07:52 2023)
+5e790f DeskClock: Cleanup: Use static and final (or don't) [Michael W] (Sat Jan 21 13:07:52 2023)
+ed2c09 DeskClock: Cleanup: Remove unused code and resources [Michael W] (Sat Jan 21 13:07:39 2023)
+357c3b DeskClock: Cleanup: Use Lambdas [Michael W] (Fri Jan 20 17:44:20 2023)
+b91869 DeskClock: Cleanup: Add/Fix annotations [Michael W] (Fri Jan 20 17:44:20 2023)
+8324ef DeskClock: Cleanup: Remove redundant casts [Michael W] (Fri Jan 20 17:44:20 2023)
+655947 DeskClock: Remove desk_clock_old resource [Michael W] (Fri Jan 20 17:44:20 2023)
+25dbc2 Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:50 2023)
+
+packages/apps/Dialer:
+ba9866 Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:53 2023)
+
+packages/apps/DocumentsUI:
+ec06fd Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:55 2023)
+
+packages/apps/Eleven:
+11519b Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:57 2023)
+
+packages/apps/EmergencyInfo:
+28be9a Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:38 2023)
+
+packages/apps/Etar:
+b650bf Automatic translation import [Michael Bestas] (Tue Jan 10 02:41:59 2023)
+
+packages/apps/FlipFlap:
+db1873 Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:01 2023)
+
+packages/apps/Jelly:
+6f2489 Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:02 2023)
+
+packages/apps/LineageCustomizer:
+449b59 LineageCustomizer: Remove minSdkVersion/targetSdkVersion [Michael Bestas] (Tue Jan 24 13:24:26 2023)
+08ff9a LineageCustomizer: Convert to Android.bp [Michael Bestas] (Tue Jan 24 13:23:56 2023)
+
+packages/apps/LineageParts:
+ea090e Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:04 2023)
+dca39a Regenerate contributors cloud (2023-01-03) [Kevin F. Haggerty] (Sat Jan 7 18:15:34 2023)
+
+packages/apps/Recorder:
+be505b Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:06 2023)
+
+packages/apps/Seedvault:
+840b8a Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas] (Wed Jan 18 10:41:55 2023)
+8367e9 Merge pull request #498 from chirayudesai/13-3.3 [Torsten Grote] (Tue Jan 17 17:31:31 2023)
+eebeff Bump version to 13-3.3 [Chirayu Desai] (Wed Jan 11 13:53:02 2023)
+ebed17 Mark Nextcloud as not recommended [Chirayu Desai] (Wed Jan 11 13:49:41 2023)
+5d0aca Warn before turning off backups [t-m-w] (Fri Jan 6 14:39:38 2023)
+87a800 Always start a new RestoreSet when initializing the device [Torsten Grote] (Fri Jan 6 14:39:16 2023)
+bedba0 Translated using Weblate (English (Australia)) [Denham McLaren] (Thu Jan 5 22:49:45 2023)
+2685d5 Translated using Weblate (Italian) [Translator-3000] (Thu Jan 5 22:49:45 2023)
+6a12cf Translated using Weblate (Hebrew) [Yaron Shahrabani] (Thu Jan 5 22:49:45 2023)
+45349e Translated using Weblate (Russian) [Егор Ермаков] (Thu Jan 5 22:49:45 2023)
+b7f187 Translated using Weblate (Ukrainian) [Dan] (Thu Jan 5 22:49:45 2023)
+2166ca Translated using Weblate (German) [nautilusx] (Thu Jan 5 22:49:45 2023)
+5c4da3 Translated using Weblate (Turkish) [Oğuz Ersen] (Thu Jan 5 22:49:45 2023)
+43ca12 Translated using Weblate (Spanish) [gallegonovato] (Thu Jan 5 22:49:45 2023)
+c43274 Translated using Weblate (German) [TobiGr] (Thu Jan 5 22:49:45 2023)
+3e25c3 Translated using Weblate (Chinese (Simplified)) [Eric] (Thu Jan 5 22:49:45 2023)
+2d2e9d Translated using Weblate (Lithuanian) [Gediminas Murauskas] (Thu Jan 5 22:49:45 2023)
+03ef65 Pre-grant ACCESS_MEDIA_LOCATION permission [Torsten Grote] (Thu Jan 5 18:45:03 2023)
+4b9e2b Show foreground notification right away when doing manual backup [Torsten Grote] (Thu Jan 5 18:32:58 2023)
+
+packages/apps/Settings:
+94e3d6 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:39 2023)
+2138ca Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:07 2023)
+
+packages/apps/SetupWizard:
+78eed3 Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:09 2023)
+
+packages/apps/Trebuchet:
+b2b30e Trebuchet: Allow changing app suggestion settings [Alexander Koskovich] (Thu Jan 19 14:27:54 2023)
+6eacd6 Skip glitchy search animation [Tommy Webb] (Thu Jan 19 08:45:06 2023)
+de15f5 Fix All Apps header protection and spacing again [Tommy Webb] (Tue Jan 17 06:09:33 2023)
+d9e8ef Revert "Reland "Fix spacing and header protection for All Apps" after QPR1 merge" [Bruno Martins] (Tue Jan 17 06:09:20 2023)
+
+packages/apps/Updater:
+468ff3 Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:11 2023)
+
+packages/inputmethods/LatinIME:
+eecbf8 Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:13 2023)
+
+packages/modules/Bluetooth:
+9bdfd0 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:39 2023)
+e7f12e gd: hci: Ignore unexpected status events [Peter Cai] (Sun Feb 5 07:22:12 2023)
+f5d0da Additionally check le_set_event_mask command resturn status with UNSUPPORTED_LMP_OR_LL_PARAMETER [tzu-hsien.huang] (Sun Feb 5 07:22:12 2023)
+479bfd BACKPORT: floss: Disable enhanced sco connection via sysprop [Abhishek Pandit-Subedi] (Sat Jan 21 10:54:20 2023)
+
+packages/modules/Permission:
+d6b19d Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:39 2023)
+
+packages/providers/DownloadProvider:
+be3cdf Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:14 2023)
+
+packages/resources/devicesettings:
+93542d Automatic translation import [Michael Bestas] (Tue Jan 10 02:42:16 2023)
+
+packages/services/Telecomm:
+c9a679 Merge tag 'android-13.0.0_r30' into staging/lineage-20.0_merge-android-13.0.0_r30 [Michael Bestas] (Tue Feb 7 16:57:40 2023)
+
+system/core:
+6ad879 init: Don't enable ADB by default on userdebug builds [Aaron Kling] (Mon Jan 30 15:50:00 2023)
+958198 liblp: Allow to flash on bigger block device [me-cafebabe] (Tue Jan 24 21:56:51 2023)
+
+system/sepolicy:
+9d9869 BACKPORT: Add bluetooth disable enhanced SCO connection [Katherine Lai] (Fri Jan 20 15:27:06 2023)
+046a03 private: Exempt system_app from adbd_config_prop neverallow [Nolen Johnson] (Sat Jan 14 13:24:30 2023)
+
+system/timezone:
+ef228b DO NOT MERGE Update Android TZDB from 2022f to 2022g. [T] [Almaz Mingaleev] (Sat Jan 7 18:30:49 2023)
+479733 DO NOT MERGE Update Android TZDB from 2022e to 2022f. [T] [Almaz Mingaleev] (Sat Jan 7 18:30:19 2023)
+
+vendor/gms:
+57a0ac gms: Add overlays [SamarV-121] (Thu Jan 26 04:28:00 2023)
+
+vendor/lineage:
+075f80 vars: Update floral to TP1A.221005.002.B2 [Michael Bestas] (Tue Feb 7 16:44:32 2023)
+957728 vars: February 2023 Security update [Michael Bestas] (Tue Feb 7 16:44:05 2023)
+8c75a4 Helplines: Improve Bulgarian helplines [Alexander K] (Sat Jan 28 11:12:47 2023)
+f4ca35 Use a RegEx to get carrier instead of XML parsing [Alexander Grund] (Sun Jan 22 18:55:02 2023)
+173af3 Include `carrier=` in carrier match string [Alexander Grund] (Sun Jan 22 18:55:02 2023)
+faca8c Fix custom_apns script [Alexander Grund] (Sun Jan 22 18:55:02 2023)
+ba1402 kernel: Force disable LLVM CUDA [Alessandro Astone] (Sun Jan 22 18:51:39 2023)
+ad2642 vars: Update qcom tags [Michael Bestas] (Thu Jan 19 15:48:59 2023)
+553c54 config: Split sdm660 from UM_4_4_FAMILY [Michael Bestas] (Thu Jan 19 15:48:59 2023)
+390c99 Split msm8937 from UM_3_18_FAMILY and fix it [me-cafebabe] (Thu Jan 19 15:48:59 2023)
+48d2a4 config: Only install theme packages on mobile [Aaron Kling] (Sun Jan 15 05:41:09 2023)
+7b1245 config: Only install audio files on mobile [Aaron Kling] (Sun Jan 15 05:40:21 2023)
+f83ae4 backuptool: Unmount v3 partitions during backup [TheHitMan7] (Wed Jan 11 09:26:45 2023)
+5924e8 config: common: Re-enable rsync [Nolen Johnson] (Tue Jan 10 12:02:02 2023)
+b5e83c overlay: Set default status bar height to 28dp [Michael Bestas] (Mon Jan 9 16:58:19 2023)
+bf20ee vars: January 2023 Security Update [Michael Bestas] (Thu Jan 5 16:56:39 2023)
+
+==========
 2023-01-05
 ==========
 android:
