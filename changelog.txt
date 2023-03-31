@@ -1,4 +1,459 @@
 ==========
+2023-03-30
+==========
+android:
+9c62a9 manifest: gs101 March 2023 Quarterly Platform Release and Security update [Michael Bestas] (Mon Mar 20 21:16:02 2023)
+757f40 manifest: March 2023 Quarterly Platform Release and Security update [Michael Bestas] (Sun Mar 19 15:38:24 2023)
+d49b6e manifest: Sync x86_64 webview prebuilts again [Kevin F. Haggerty] (Tue Mar 14 09:31:47 2023)
+d2c22f android: Track the NXP NFC repositories again [Alexander Koskovich] (Mon Feb 27 21:55:52 2023)
+aa0196 manifest: Track our own system/apex [LuK1337] (Wed Feb 22 01:13:27 2023)
+2ba66b manifest: Track our fork of packages/modules/Virtualization [Michael Bestas] (Thu Feb 16 16:11:05 2023)
+620e51 manifest: February 2023 Security update [Michael Bestas] (Mon Feb 13 10:03:05 2023)
+
+bootable/recovery:
+58e865 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:48:53 2023)
+
+build/make:
+083e8a Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:49:35 2023)
+4b38ab Version bump to TQ2A.230305.008.C1 [core/build_id.mk] [Android Build Coastguard Worker] (Fri Feb 17 02:40:31 2023)
+5ca47f Version bump to TQ2A.230305.008 [core/build_id.mk] [Android Build Coastguard Worker] (Sat Feb 11 18:28:31 2023)
+
+build/soong:
+28feca Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:48:43 2023)
+
+device/google/atv:
+d8e63e Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:48:58 2023)
+
+external/android-nn-driver:
+239af5 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:49:00 2023)
+
+external/chromium-webview/patches:
+ca03b9 Update Chromium Webview to 111.0.5563.58 [Kevin F. Haggerty] (Thu Mar 9 22:59:38 2023)
+
+external/chromium-webview/prebuilt/arm:
+452f93 Update Chromium Webview arm prebuilt to 111.0.5563.58 [Kevin F. Haggerty] (Tue Mar 14 11:59:20 2023)
+04f064 Import Chromium Webview arm prebuilt 109.0.5414.118 [Chirayu Desai] (Fri Mar 10 21:18:18 2023)
+dc64f4 Set up lfs [Michael Bestas] (Fri Mar 10 21:02:17 2023)
+16e2b4 Initial empty repository [Michael Bestas] (Fri Mar 10 21:00:55 2023)
+
+external/chromium-webview/prebuilt/arm64:
+8b850a Update Chromium Webview arm64 prebuilt to 111.0.5563.58 [Kevin F. Haggerty] (Tue Mar 14 11:59:22 2023)
+9bd56e Import Chromium Webview arm64 prebuilt 109.0.5414.118 [Chirayu Desai] (Fri Mar 10 21:23:40 2023)
+d15828 Set up lfs [Michael Bestas] (Fri Mar 10 21:04:50 2023)
+91aa26 Initial empty repository [Michael Bestas] (Fri Mar 10 21:03:35 2023)
+
+external/chromium-webview/prebuilt/x86:
+7e01ed Update Chromium Webview x86 prebuilt to 111.0.5563.58 [Kevin F. Haggerty] (Tue Mar 14 11:59:22 2023)
+5d72e0 Import Chromium Webview x86 prebuilt 109.0.5414.118 [Michael Bestas] (Fri Mar 10 20:56:50 2023)
+700658 Set up lfs [Michael Bestas] (Fri Mar 10 20:56:47 2023)
+4f6df3 Initial empty repository [Michael Bestas] (Fri Mar 10 20:36:18 2023)
+
+external/chromium-webview/prebuilt/x86_64:
+0389a8 Update Chromium Webview x86_64 prebuilt to 111.0.5563.58 [Kevin F. Haggerty] (Tue Mar 14 11:59:24 2023)
+3fad6d Update Chromium Webview x86_64 prebuilt to 109.0.5414.118 [Kevin F. Haggerty] (Fri Mar 10 23:03:17 2023)
+dc62a3 Set up lfs [Michael Bestas] (Fri Mar 10 23:03:16 2023)
+91aa26 Initial empty repository [Michael Bestas] (Fri Mar 10 21:03:35 2023)
+
+external/cldr:
+7518f3 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:49:08 2023)
+
+external/icu:
+a235bf Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:49:24 2023)
+
+external/ih8sn:
+5d2b98 Override system_dlkm properties as well [Michael Bestas] (Tue Feb 28 16:53:07 2023)
+1199fa Allow overriding product brand and device [Michael Bestas] (Tue Feb 28 16:53:07 2023)
+ec2e09 Allow overriding product model [Bruno Martins] (Sat Feb 11 19:36:27 2023)
+
+external/setupcompat:
+a096db Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:49:40 2023)
+
+frameworks/av:
+1573aa Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 02:55:12 2023)
+4e4fd6 fixup! audioflinger: Fix audio for WifiDisplay [Michael Bestas] (Mon Feb 13 10:03:17 2023)
+
+frameworks/base:
+d36faa JobScheduler: Respect allow-in-power-save perm [Tommy Webb] (Wed Mar 29 18:49:40 2023)
+f0a320 Apply monet to fingerprint authentication ripple animation [SagarMakhar] (Thu Mar 23 16:29:35 2023)
+47d0eb8 SystemUI: Follow light/dark theme in new QS footer actions [Tim Zimmermann] (Thu Mar 23 16:29:35 2023)
+337589 SystemUI: Follow light/dark theme in SplitShade Header [ReallySnow] (Thu Mar 23 16:29:34 2023)
+2486506 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:19 2023)
+741dcf fixup! Keyguard: Add option to scramble pin layout when unlocking (2/2). [Tommy Webb] (Tue Mar 21 20:57:08 2023)
+698c61 Adapt tuner prefs to S settings style & cleanup [SagarMakhar] (Tue Mar 21 16:18:05 2023)
+4d1895 Remove wtf if no display nits mapping exists [Alistair Delva] (Tue Mar 21 15:55:03 2023)
+add72c fixup! Show the vibrate icon in the Status Bar by default [Michael Bestas] (Tue Mar 21 02:39:12 2023)
+eda205 SystemUI: Bring in drawable for statusbar firewall toggle [Michael Bestas] (Mon Mar 20 18:17:14 2023)
+244a79 Implement firewall status bar indicator [Oliver Scott] (Mon Mar 20 18:17:10 2023)
+526e91 SystemUI: DreamTile: Enable for everyone [Ido Ben-Hur] (Mon Mar 20 18:14:18 2023)
+f855268 SystemUI: Make edit button click ripple effect rounded [DarkJoker360] (Mon Mar 20 18:14:09 2023)
+2c9148 SystemUI: Show the alarm icon on QS as well [Ido Ben-Hur] (Mon Mar 20 18:13:56 2023)
+5cb55b0 Revert "Revert "SystemUI: Bring back good ol' circle battery style"" [Bruno Martins] (Fri Mar 17 22:18:48 2023)
+67fde0 fixup! SystemUI: screenshot: open long screenshot activity for partial screenshots [Michael Bestas] (Wed Mar 15 18:05:08 2023)
+291902 Revert "SystemUI: Port statusbar brightness control" [Michael Bestas] (Wed Mar 15 16:12:16 2023)
+6a55b9d fixup! Implement edge long swipe gesture [Michael Bestas] (Wed Mar 15 16:12:04 2023)
+90b341 fixup! SystemUI: Calculate paged QS tiles height properly [Michael Bestas] (Wed Mar 15 16:11:50 2023)
+22901ca fixup! SystemUI: Add API for runtime taskbar config [Michael Bestas] (Wed Mar 15 16:11:37 2023)
+544114 fixup! SystemUI: Allow to enable Lockscreen Media Art [Michael Bestas] (Wed Mar 15 16:11:26 2023)
+b1b890 fixup! udfps: Restore illumination dot for global hbm [Michael Bestas] (Wed Mar 15 16:10:55 2023)
+75e7f9 fixup! SystemUI: Add heads up tile [Michael Bestas] (Wed Mar 15 16:10:45 2023)
+3a837f fixup! SystemUI: Add AOD QS tile [Michael Bestas] (Wed Mar 15 16:10:40 2023)
+e33699 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Wed Mar 15 16:10:02 2023)
+0b34a5 Revert "SystemUI: Bring back good ol' circle battery style" [Michael Bestas] (Tue Mar 14 21:46:43 2023)
+3e9e84 Revert "Save user preferred resolution into persistent data store" [Michael Bestas] (Tue Mar 14 21:45:16 2023)
+4f48f5 Revert "frameworks: Add unlinked ringtone and notification volumes" [Michael Bestas] (Tue Mar 14 04:14:57 2023)
+4a3480 Revert "Keyguard: Allow disabling fingerprint wake-and-unlock" [Michael Bestas] (Tue Mar 14 04:09:12 2023)
+202c2c0 Revert "Keyguard: Allow user configurable fingerprint wake-and-unlock" [Michael Bestas] (Tue Mar 14 04:04:10 2023)
+943708 Revert "SystemUI: Import Pixel display interfaces" [Michael Bestas] (Tue Mar 14 04:02:44 2023)
+c165e4 Revert "SystemUI: Add display mode provider for UDFPS on Pixel devices" [Michael Bestas] (Tue Mar 14 04:00:51 2023)
+9566dc5 Revert "udfps: Implement default udfps display mode provider" [Michael Bestas] (Tue Mar 14 03:59:41 2023)
+fbb73c7 Revert "SystemUI: Fix QS status font weight mismatch in dark mode" [Michael Bestas] (Tue Mar 14 03:54:15 2023)
+74985ea Revert "SystemUI: ic_brightness_*: drawables get surface color" [Michael Bestas] (Tue Mar 14 03:49:33 2023)
+0c2cad SystemUI: Update string for add tiles with one click [mydongistiny] (Sun Mar 12 16:13:08 2023)
+6150a1 SystemUI: Allow user to add/remove QS with one click [Andrzej Ressel] (Sun Mar 12 16:13:08 2023)
+e0e6ca Toast app icon display is inconsistent for system apps [Edward Savage-Jones] (Sun Mar 12 16:13:08 2023)
+e3c78f SystemUI: Fix uneven DND icon padding in status bar [Ido Ben-Hur] (Sun Mar 12 16:13:08 2023)
+90d682 Remove sensitive info from SUPL requests [Tommy Webb] (Sun Mar 12 14:25:47 2023)
+cc082e Don't fail setDeviceConnectionState if not implemented in hal [Aaron Kling] (Tue Mar 7 16:01:10 2023)
+f58169 SystemUI: Fix position and orientation of arrow keys in navbar [Wolfram Liebchen] (Tue Feb 28 21:28:46 2023)
+d2b85b BootAnimation: Check for resolution override [Aaron Kling] (Fri Feb 17 20:28:31 2023)
+af0429f Merge cherrypicks of ['googleplex-android-review.googlesource.com/21465508'] into sparse-9595452-L55900000958663479. SPARSE_CHANGE: Iea66d7782b3365dea827b854783aeddaa5c6699c [Android Build Coastguard Worker] (Fri Feb 17 02:40:10 2023)
+63cf68 Revert change that would detectFp when FP is locked out [Beverly] (Fri Feb 17 02:39:44 2023)
+72ea30 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:17 2023)
+1aadc86a Include LineageSettings in settings dump [Tommy Webb] (Mon Feb 13 10:32:43 2023)
+
+frameworks/libs/systemui:
+c95400 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:50:56 2023)
+
+frameworks/native:
+94dd1b inputflinger: allow disabling input devices via idc [Billy Laws] (Wed Mar 22 17:52:22 2023)
+f2af55 SF: Fix display on Pixel 4 [Chirayu Desai] (Fri Mar 17 17:13:06 2023)
+18b2ed Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 02:57:03 2023)
+f3028e Revert "Remove BLASTBufferQueue debug log line" [Michael Bestas] (Tue Mar 14 02:56:34 2023)
+e9c2c2 Remove BLASTBufferQueue debug log line [Tommy Webb] (Mon Feb 13 10:41:06 2023)
+
+frameworks/opt/telephony:
+be0169 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:51:13 2023)
+
+hardware/google/gchips:
+5ff4c7 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:51:23 2023)
+
+hardware/google/graphics/common:
+0af754 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:51:27 2023)
+
+hardware/google/pixel:
+2c9368 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:51:32 2023)
+
+hardware/google/pixel-sepolicy:
+498d82 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:51:38 2023)
+
+hardware/interfaces:
+091da4 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:51:44 2023)
+54db61 audio: Verify that hal implements get_audio_port before calling [Aaron Kling] (Tue Mar 7 16:01:16 2023)
+
+hardware/libhardware:
+0eb202 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:51:51 2023)
+
+libcore:
+2a7d66 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:53:18 2023)
+
+lineage-sdk:
+8eb16e Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:26 2023)
+9f63a5 Fix FINGERPRINT_WAKE_UNLOCK migration for devices not supporting it [Michael Bestas] (Mon Mar 20 01:37:31 2023)
+dc0c1d Migrate FINGERPRINT_WAKE_UNLOCK to the new AOSP setting [Michael Bestas] (Wed Mar 15 00:18:31 2023)
+386531 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:25 2023)
+
+packages/apps/Aperture:
+9829b6 Aperture: Ensure output is truncated [Tommy Webb] (Mon Mar 27 22:33:45 2023)
+c02478 Aperture: Ignore already deleted last saved uri [LuK1337] (Mon Mar 27 13:43:18 2023)
+2487a0 Aperture: Force CameraX to create new VideoCapture instance [LuK1337] (Sat Mar 25 11:34:24 2023)
+8eec11 Aperture: Update CameraX to 1.3.0-alpha05 [LuK1337] (Sat Mar 25 00:17:43 2023)
+b382a8 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:28 2023)
+423e6b Aperture: Upgrade AGP to 7.4.2 [Sebastiano Barezzi] (Mon Mar 13 23:05:25 2023)
+582b55 Aperture: Comply with Camera Intents tests [Sebastiano Barezzi] (Mon Mar 13 19:43:26 2023)
+ccb903 Aperture: Use WiFi QR parsing implementation from ZXing [LuK1337] (Sat Mar 4 19:43:32 2023)
+0fe6fa Aperture: Animate SecondaryTopBarButton's verticalBias on rotation [LuK1337] (Sat Mar 4 17:39:07 2023)
+6d39d8 Aperture: Update dependencies [LuK1337] (Wed Feb 22 22:04:13 2023)
+a28ad6 Aperture: Update CameraX to 1.3.0-alpha04 [LuK1337] (Wed Feb 22 22:04:12 2023)
+636f22 Aperture: Do not store photos captured via other apps [Tommy Webb] (Wed Feb 15 17:53:26 2023)
+be9672 Aperture: Insta hide secondaryTopBarLayout on camera mode change [LuK1337] (Wed Feb 15 13:43:10 2023)
+bb105d Aperture: Make SecondaryTopBarButton square [LuK1337] (Wed Feb 15 13:43:10 2023)
+42bc07 Aperture: Set SecondaryTopBarButton height to wrap_content [LuK1337] (Wed Feb 15 13:43:10 2023)
+dd63b4 Aperture: Remove OIS handling [Sebastiano Barezzi] (Wed Feb 15 12:36:05 2023)
+006c73 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:26 2023)
+eadaf7 Aperture: Add Google Lens icon [LuK1337] (Fri Feb 10 23:53:40 2023)
+
+packages/apps/AudioFX:
+bb6519 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:28 2023)
+
+packages/apps/Backgrounds:
+0dc1e5 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:30 2023)
+c2e161 Revert "Backgrounds: Update resource name to match AOSP changes in WallpaperPicker2" [Michael Bestas] (Wed Mar 15 00:12:56 2023)
+
+packages/apps/Camera2:
+930eb8 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:31 2023)
+
+packages/apps/Car/Settings:
+fbb179 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:53:32 2023)
+
+packages/apps/CellBroadcastReceiver:
+af755e Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:53:38 2023)
+
+packages/apps/Contacts:
+9e9460 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:53:45 2023)
+
+packages/apps/DeskClock:
+b2d7e2 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:34 2023)
+b6ac55 DeskClock: Set FLAG_ACTIVITY_NEW_TASK explicitly [Michael W] (Wed Feb 22 20:20:40 2023)
+f713c8 DeskClock: Fix stopwatch notification [Michael W] (Wed Feb 22 19:49:26 2023)
+ab6b2b DeskClock: Don't delete expired timers [Michael W] (Fri Feb 17 20:34:47 2023)
+a2fd78 DeskClock: Fix upcoming alarm notification [Michael W] (Thu Feb 16 21:45:04 2023)
+2d773b DeskClock: Fix timer notification [Michael W] (Tue Feb 14 21:42:53 2023)
+943a2d Automatic translation import [Michael Bestas] (Mon Feb 13 21:11:05 2023)
+1094c2 DeskClock: Remove FAB from ExpiredTimersActivity [Michael W] (Sat Feb 11 13:19:05 2023)
+
+packages/apps/Dialer:
+cb8576 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:36 2023)
+eadac5 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:32 2023)
+
+packages/apps/DocumentsUI:
+9266bb Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:39 2023)
+abab7d Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:53:59 2023)
+67a7b0 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:34 2023)
+
+packages/apps/Eleven:
+b6dbaa Eleven: Make the square widget a true square [Tim Schumacher] (Tue Mar 28 23:47:44 2023)
+c89649 Eleven: Fix hidden shuffle and repeat in some densities [Tommy Webb] (Tue Mar 28 20:41:09 2023)
+58686f Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:41 2023)
+cdab07 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:36 2023)
+
+packages/apps/EmergencyInfo:
+224f18 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:54:05 2023)
+
+packages/apps/Etar:
+9c02b4 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:43 2023)
+35931d Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:39 2023)
+
+packages/apps/FlipFlap:
+a83f2a Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:44 2023)
+e09235 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:41 2023)
+
+packages/apps/Gallery2:
+0745df Gallery2: Ensure cropped output is truncated [Tommy Webb] (Mon Mar 27 22:10:04 2023)
+0477af Gallery2: Get rid of read only view [LuK1337] (Sun Mar 26 22:14:07 2023)
+
+packages/apps/Jelly:
+e91ead Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:46 2023)
+bfd393 Jelly: Stop using restricted APIs [Sebastiano Barezzi] (Mon Mar 20 16:09:24 2023)
+d4f129 Jelly: Use Java 1.8 for Gradle builds [Sebastiano Barezzi] (Mon Mar 20 16:09:24 2023)
+998029 Jelly: Upgrade AGP + dependencies [Sebastiano Barezzi] (Mon Mar 20 16:09:24 2023)
+f4328a Jelly: Fix "Missing PendingIntent mutability flag" warning [Sebastiano Barezzi] (Mon Mar 20 16:09:24 2023)
+9f234c Jelly: Fix Kotlin style warnings [Sebastiano Barezzi] (Mon Mar 20 16:09:24 2023)
+e944bf Jelly: Remove unused symbols [Sebastiano Barezzi] (Mon Mar 20 16:09:24 2023)
+b51cbc Jelly: Fix warnings [Michael W] (Mon Mar 20 16:09:09 2023)
+7f72e2 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:43 2023)
+
+packages/apps/LineageCustomizer:
+6d78f7 Add an exported flag in manifest [Michael Bestas] (Thu Feb 16 05:50:27 2023)
+
+packages/apps/LineageParts:
+06765d Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:48 2023)
+d2ed9b Temporarily hide status bar brightness control setting [Michael Bestas] (Sun Mar 19 15:30:25 2023)
+cbf59a Temporary changes for volume_link_notification removal [Michael Bestas] (Sun Mar 19 15:30:17 2023)
+02a889 StatusBarSettings: Quick pulldown side selection in RTL [Wolfram Liebchen] (Tue Feb 21 20:28:47 2023)
+7db9d7 StatusBarSettings: Correct clock position setting label in RTL [Wolfram Liebchen] (Tue Feb 21 20:28:47 2023)
+f893da Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:45 2023)
+
+packages/apps/Nfc:
+ee09c1 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:54:18 2023)
+
+packages/apps/Recorder:
+5b1b69 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:50 2023)
+21ad3d Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:47 2023)
+
+packages/apps/Seedvault:
+06dc30 Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas] (Tue Feb 28 02:08:54 2023)
+
+packages/apps/Settings:
+0fe693 Revert "Bring back font and icon shape customization" [SamarV-121] (Thu Mar 23 17:14:32 2023)
+b2fd24 Settings: Fixup start padding for battery usage graph [Adithya R] (Thu Mar 23 17:14:29 2023)
+89d6b2 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:54 2023)
+99c7af Hide SFPS wakeup setting when it's not supported [Michael Bestas] (Mon Mar 20 14:34:13 2023)
+d3104d Revert "Settings: Allow user configurable fingerprint wake-and-unlock" [Michael Bestas] (Tue Mar 14 22:03:18 2023)
+396c09e Revert "Settings: Add switch for linked ring and media notification volumes" [Michael Bestas] (Tue Mar 14 04:20:09 2023)
+d4f599 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 03:25:49 2023)
+fe00b5 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:49 2023)
+
+packages/apps/SettingsIntelligence:
+c827f3 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:54:33 2023)
+
+packages/apps/SetupWizard:
+78b01d Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:57 2023)
+6a4d8b Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:51 2023)
+
+packages/apps/ThemePicker:
+a546eb ThemePicker: Show our apps in icon previews [Demon000] (Fri Mar 24 01:25:54 2023)
+093102 ThemePicker: Unify font/icon label sizes and scroll the text [Ido Ben-Hur] (Fri Mar 24 01:25:54 2023)
+b3d40e ThemePicker: Fixup font and icon picking wrong user ID [Ido Ben-Hur] (Fri Mar 24 01:25:54 2023)
+055837 ThemePicker: Vertically center the text of customization options [Ido Ben-Hur] (Fri Mar 24 01:25:54 2023)
+a562c1 ThemePicker: Fix crash when applying default icon pack [Adithya R] (Fri Mar 24 01:25:54 2023)
+040ac3 ThemePicker: Don't setEnabledExclusiveInCategory for default icon pack [palaych] (Fri Mar 24 01:25:53 2023)
+b6aad8 ThemePicker: Bring back fonts, icon pack, shape customization [Anay Wadhera] (Fri Mar 24 01:25:53 2023)
+432425 ThemePicker: Remove beta tag for themed icons [Pranav Vashi] (Thu Mar 23 17:18:47 2023)
+b80203 Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:58 2023)
+a76cd3 Remove custom themes stub from package query allowlist [Michael Bestas] (Tue Mar 21 19:52:41 2023)
+d7a85a stub: Import extra color bundles from TQ1A.221205.011 [Michael Bestas] (Tue Mar 21 19:51:27 2023)
+1e72da Add new priv-app permission added in QPR2 [Michael Bestas] (Tue Mar 14 03:01:14 2023)
+3067de Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 03:00:57 2023)
+
+packages/apps/Trebuchet:
+ed744e Add .gitupstream file [Michael Bestas] (Tue Mar 28 20:11:47 2023)
+d4f81d Automatic translation import [Michael Bestas] (Thu Mar 23 15:39:01 2023)
+0a087e fixup! Trebuchet: allow disabling workspace edit [Michael Bestas] (Fri Mar 17 16:05:58 2023)
+e3f418 fixup! Fix All Apps header protection and spacing again [Tommy Webb] (Fri Mar 17 16:05:55 2023)
+bd8d54 fixup! Trebuchet: implement hidden & protected apps [Michael Bestas] (Fri Mar 17 16:05:52 2023)
+fa9254 fixup! Trebuchet: add toggle for desktop and drawer labels [Michael Bestas] (Fri Mar 17 16:05:48 2023)
+656758 fixup! QuickStep: Google Feed integration [Michael Bestas] (Fri Mar 17 16:05:45 2023)
+f42b00 fixup! Don't discard custom grid on config changes [Michael Bestas] (Fri Mar 17 16:05:41 2023)
+3803d3 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Fri Mar 17 16:04:37 2023)
+70e0e6 Revert "Fix Personal/Work profile tab colors in All Apps" [Michael Bestas] (Tue Mar 14 03:29:19 2023)
+1d8c6c Hide scrollbar when searching All Apps [Tommy Webb] (Tue Mar 7 15:42:46 2023)
+8bd571 Launcher3: Ability to toggle themed icons for all apps [Trishiraj] (Tue Mar 7 15:42:11 2023)
+71f45a Trebuchet: Fix sorting in zh-Hans-CN [dantmnf] (Sat Feb 18 09:03:36 2023)
+4ca5f8 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:52 2023)
+
+packages/apps/TvSettings:
+76aa05 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:54:56 2023)
+
+packages/apps/Updater:
+e83f74 Automatic translation import [Michael Bestas] (Thu Mar 23 15:39:02 2023)
+304b45 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:54 2023)
+
+packages/apps/WallpaperPicker2:
+fa1a3f Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:55:02 2023)
+
+packages/inputmethods/LatinIME:
+b7aee5 Fix spellcheck on sentence end [icburns] (Thu Mar 23 17:38:29 2023)
+60285c Automatic translation import [Michael Bestas] (Thu Mar 23 15:39:04 2023)
+a0efe9 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:56 2023)
+
+packages/modules/Bluetooth:
+c05bc8 Add property to disable APCF extended features [me-cafebabe] (Mon Mar 20 12:57:10 2023)
+4ced7f fixup! bluetooth: abandon app local certificate [Michael Bestas] (Tue Mar 14 03:09:44 2023)
+be9e5b Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 03:06:59 2023)
+47fc99 Controller: Warn on LeSetEventMask error codes [Myles Watson] (Thu Feb 16 17:52:39 2023)
+f1e145 Revert "Additionally check le_set_event_mask command resturn status with UNSUPPORTED_LMP_OR_LL_PARAMETER" [Michael Bestas] (Thu Feb 16 17:52:25 2023)
+
+packages/modules/Connectivity:
+52160b Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:55:43 2023)
+
+packages/modules/Permission:
+24f8c7 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:55:48 2023)
+
+packages/modules/Virtualization:
+48e195 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:57:51 2023)
+68a154 sign_virt_apex: Set hash_algorithm flag to sha256 [Shikha Panwar] (Thu Feb 16 15:29:21 2023)
+9c5065 Set avb_hash_algorithm=sha256 for system & vendor img [Shikha Panwar] (Thu Feb 16 15:29:14 2023)
+7f34da Fix the task graph of sign_virt_apex [Jooyung Han] (Thu Feb 16 15:29:05 2023)
+
+packages/modules/Wifi:
+5a636a Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:57:59 2023)
+
+packages/modules/common:
+62839e Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:55:35 2023)
+
+packages/overlays/Lineage:
+6958fd overlays: IconPack: Rename config_signalXPath [Adithya R] (Fri Mar 24 14:45:29 2023)
+53c60f IconPack*: Remove ThemePicker overlays [Tim Zimmermann] (Thu Mar 23 03:07:58 2023)
+0aa451 IconPack*: Google Apps -> AOSP Apps [Tim Zimmermann] (Thu Mar 23 03:07:58 2023)
+57303b IconPack{Kai,Victor}: Fix clock icon [DarkJoker360] (Thu Mar 23 03:07:57 2023)
+f8c3e7 IconPack{Sam,Victor}: Inverse vol collapse/expand anim path data [Dhina17] (Thu Mar 23 03:07:57 2023)
+9fc58a overlays: Fix background colouring for settings themed icons [Adithya R] (Thu Mar 23 03:07:57 2023)
+1b7449 SystemUI: Fix size of icon of vibrate ringer mode for additional icon packs [Volodymyr Zhdanov] (Thu Mar 23 03:07:57 2023)
+8759c4 overlays: Import icon pack overlays [SamarV-121] (Thu Mar 23 03:07:57 2023)
+292b54 Remove themes stub [Michael Bestas] (Tue Mar 21 23:24:49 2023)
+
+packages/providers/ContactsProvider:
+41edc6 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:58:27 2023)
+
+packages/providers/DownloadProvider:
+2ef2bc Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:58:34 2023)
+
+packages/providers/MediaProvider:
+380346 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:58:39 2023)
+
+packages/providers/TelephonyProvider:
+5ea810 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:58:45 2023)
+
+packages/resources/devicesettings:
+146952 Automatic translation import [Michael Bestas] (Thu Mar 23 15:39:07 2023)
+080152 Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:58 2023)
+
+packages/screensavers/PhotoTable:
+d5a731 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:58:51 2023)
+
+packages/services/Mms:
+0cb2b8 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:58:56 2023)
+
+packages/services/Telecomm:
+e6ffc3 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:59:02 2023)
+
+packages/services/Telephony:
+512b85 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:59:09 2023)
+
+packages/wallpapers/LivePicker:
+6d504c Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:59:14 2023)
+
+system/apex:
+769a5f Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:59:26 2023)
+15d1b7 Improve logic around pre-allocation loop devices [Nikita Ioffe] (Wed Feb 22 01:10:22 2023)
+
+system/core:
+a58086 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:59:33 2023)
+942dd2 first_stage_mount: Skip dm-verity setup if AVB is not enabled [me-cafebabe] (Thu Mar 2 20:50:25 2023)
+
+system/libhidl:
+e4f413 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 01:59:52 2023)
+
+system/logging:
+373d54 fixup! liblog: Always report as debuggable when building userdebug/eng [Michael Bestas] (Wed Mar 15 01:01:38 2023)
+ccc0aa Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 02:00:01 2023)
+
+system/media:
+b9a65d Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 02:00:07 2023)
+
+system/memory/lmkd:
+f0efa1 Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 02:00:11 2023)
+
+system/sepolicy:
+489e14 Add property to disable APCF extended features [me-cafebabe] (Mon Mar 20 13:02:20 2023)
+a275dd Merge tag 'android-13.0.0_r35' into staging/lineage-20.0_merge-android-13.0.0_r35 [Michael Bestas] (Tue Mar 14 02:00:23 2023)
+
+vendor/gms:
+fef338 gms: Add Digital Wellbeing [SamarV-121] (Mon Feb 20 12:11:54 2023)
+5bb045 gms: Enable game dashboard [SamarV-121] (Sat Feb 18 15:26:37 2023)
+
+vendor/lineage:
+e67a03 vars: Update qcom tags [Michael Bestas] (Tue Mar 28 19:29:01 2023)
+accea8 config: Drop ThemePicker icon pack overlays [Tim Zimmermann] (Thu Mar 23 17:18:00 2023)
+dd562f config: Build icon pack overlays [SamarV-121] (Thu Mar 23 17:18:00 2023)
+330824 config: Inherit window_extensions.mk [Tim Zimmermann] (Thu Mar 23 17:18:00 2023)
+3450d3 Switch to AOSP themes stub package [Michael Bestas] (Tue Mar 21 20:01:17 2023)
+5ae755 Revert "config: Build NavigationBarMode2ButtonOverlay" [Chirayu Desai] (Tue Mar 21 17:21:22 2023)
+d51e91 overlay: Relocate config_displayLightSensorType to no-rro [Michael Bestas] (Tue Mar 21 17:21:20 2023)
+6aaeca vars: Pixel 6, 6a: March 2023 Security update [Chirayu Desai] (Mon Mar 20 21:06:01 2023)
+f8663e overlay: Set config_displayLightSensorType to android.sensor.light [LuK1337] (Sat Mar 18 12:24:58 2023)
+eb24a5 vars: Use merge method instead of squash [Michael Bestas] (Tue Mar 14 23:55:39 2023)
+e5a041 vars: March 2023 Quarterly Platform Release and Security update [Chirayu Desai] (Tue Mar 14 22:14:03 2023)
+1fa2c7 apn: fix AMC APN [Arbri Çoçka] (Sun Mar 5 15:38:54 2023)
+7395c7 roomservice: Use mirror manifest instead of search API [LuK1337] (Sat Mar 4 13:19:33 2023)
+62c137 kernel: Check HIP support of clang before disabling it [dianlujitao] (Thu Mar 2 13:43:04 2023)
+ef6867 kernel: Force disable LLVM HIP [dianlujitao] (Wed Mar 1 16:07:23 2023)
+eb86bd apn: Add Wintel [Le Hong Duc] (Thu Feb 23 20:40:25 2023)
+e91d67 apn: Don't set type default for Vodafone MMS 404/43 [Dhina17] (Wed Feb 22 21:44:10 2023)
+d9d76b vars: Update floral to TP1A.221005.002.B2 [Michael Bestas] (Mon Feb 13 10:02:58 2023)
+d6209a vars: February 2023 Security update [Michael Bestas] (Mon Feb 13 10:02:58 2023)
+
+==========
 2023-02-10
 ==========
 android:

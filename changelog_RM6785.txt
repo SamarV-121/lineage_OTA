@@ -1,4 +1,26 @@
 ==========
+2023-03-31
+==========
+device/realme/RM6785:
+db49a5 RM6785: vibrator: Only handle actually supported effects [Tim Zimmermann] (Wed Mar 29 18:29:22 2023)
+5c2df2 RM6785: overlay: Set config_displayLightSensorType [LuK1337] (Wed Mar 29 18:29:09 2023)
+01e773 RM6785: Defer auto brightness light sensor reading for 1s after screen on [bengris32] (Wed Mar 29 18:25:34 2023)
+b8da1a RM6785: overlay: Kang auto brightness configuration from begonia [bengris32] (Wed Mar 29 18:25:34 2023)
+d1b2fc RM6785: Enable zygote critical window [Woody Lin] (Wed Mar 29 18:25:33 2023)
+f56205 RM6785: Increase rounded_corner_radius_adjustment [razorloves] (Wed Mar 29 18:25:33 2023)
+
+kernel/realme/mt6785:
+269709 Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common [SamarV-121] (Fri Mar 31 14:59:14 2023)
+8e2986 power: oplus: Report discharging status on ui soc update [LuK1337] (Fri Mar 17 16:09:29 2023)
+78a779c Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common [SamarV-121] (Fri Mar 17 15:09:05 2023)
+bfe16df Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common [SamarV-121] (Sun Feb 26 12:00:25 2023)
+9edecf2 Merge branch 'android-4.14-stable' of https://android.googlesource.com/kernel/common [SamarV-121] (Tue Feb 21 08:30:49 2023)
+381c04 soc: mediatek: Fix incompatible integer to pointer conversion [Rama Bondan Prakoso] (Wed Feb 15 16:06:06 2023)
+0c6b56 drivers: mediatek/gpu: ged_ski: Change freq info to Mhz [Rama Bondan Prakoso] (Wed Feb 15 14:59:17 2023)
+e67b0e mt6785: drivers: mtk: ged_ski: Add GPU name for MT6785 [bengris32] (Wed Feb 15 14:59:08 2023)
+89aead mt6785: drivers: mediatek/gpu: Add GED_SKI support * From Samsung drop. [Rama Bondan Prakoso] (Wed Feb 15 14:58:59 2023)
+
+==========
 2023-02-10
 ==========
 device/realme/RM6785:

@@ -1,4 +1,26 @@
 ==========
+2023-03-30
+==========
+device/samsung/universal7904-common:
+97e095 fixup! universal7904: Enable config_vibrateOnIconAnimation [SamarV-121] (Thu Mar 30 11:31:15 2023)
+0c93d4 universal7904: Change vibration durations where needed [Tim Zimmermann] (Thu Mar 30 09:17:28 2023)
+c49d02 universal7904: Switch back to common samsung vibrator service [SamarV-121] (Thu Mar 16 06:55:26 2023)
+49d04d universal7904: Switch to default skiaglthreaded renderengine backend [SamarV-121] (Wed Feb 15 15:09:51 2023)
+e8e7f3 universal7904: vibrator: Tune effects [SamarV-121] (Tue Feb 14 10:10:00 2023)
+a49bde universal7904: vibrator: Remove DOUBLE_CLICK effect handling [bengris32] (Tue Feb 14 10:09:57 2023)
+094af2 universal7904: vibrator: Switch from 0-255 to 0.0f-1.0f range for amplitude [SamarV-121] (Sun Feb 12 09:41:20 2023)
+
+device/samsung_slsi/sepolicy:
+eeb006 common: Fix neverallows of fastcharge rules [roynatech2544] (Sat Feb 11 09:09:24 2023)
+
+hardware/samsung:
+3ed0dd Automatic translation import [Michael Bestas] (Thu Mar 23 15:38:24 2023)
+2359bd Automatic translation import [Michael Bestas] (Mon Feb 13 15:05:23 2023)
+31d105 vibrator: Switch from 0-255 to 0.0f-1.0f range for amplitude [SamarV-121] (Fri Jan 27 07:19:38 2023)
+237011 mkbootimg: Boot image depends on kernel [Aaron Kling] (Wed Jan 25 17:29:40 2023)
+a199e5 Automatic translation import [Michael Bestas] (Tue Jan 10 03:41:41 2023)
+
+==========
 2023-01-05
 ==========
 device/samsung/universal7904-common:
