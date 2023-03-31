@@ -63,7 +63,7 @@ fi
 TEMP_FILE=$(mktemp)
 
 function git_log() {
-	LOG=$(git -C "$PROJECT" log --after="$LAST_DATE" --abbrev=6 --date=local --format=tformat:"%h %s [%an] (%cd)")
+	LOG=$(git -C "$PROJECT" log --first-parent --after="$LAST_DATE" --abbrev=6 --date=local --format=tformat:"%h %s [%an] (%cd)")
 	if [ -n "$LOG" ]; then
 		echo "$PROJECT"
 		echo "$PROJECT:" >>"$TEMP_FILE"
