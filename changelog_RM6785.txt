@@ -1,4 +1,14 @@
 ==========
+2023-04-26
+==========
+device/realme/RM6785:
+cf2ea3 RM6785: Remove some useless doze overlays [Tim Zimmermann] (Wed Apr 26 07:23:18 2023)
+
+kernel/realme/mt6785:
+442d59 Merge '4.14.313' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Wed Apr 26 08:44:55 2023)
+7ec492 Merge '4.14.312' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Wed Apr 26 08:42:09 2023)
+
+==========
 2023-03-31
 ==========
 device/realme/RM6785:

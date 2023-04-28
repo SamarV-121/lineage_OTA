@@ -1,4 +1,23 @@
 ==========
+2023-04-26
+==========
+device/samsung/m20lte:
+2d85c3 m20lte: Update blobs from M205FDDS9CWB2 [SamarV-121] (Tue Apr 25 13:11:22 2023)
+
+device/samsung/universal7904-common:
+73d026 universal7904: Reorganize libshims [SamarV-121] (Tue Apr 25 16:53:12 2023)
+8ad49b universal7904: Update blobs from A405FNXXS4CWB5 [SamarV-121] (Tue Apr 25 16:53:12 2023)
+1d78d6 universal7904: Change vibration durations where needed [Tim Zimmermann] (Tue Apr 25 16:53:12 2023)
+44730e universal7904: Switch back to common samsung vibrator service [SamarV-121] (Tue Apr 25 16:53:12 2023)
+796714 universal7904: sepolicy: Drop vendor_hwc_prop label [roynatech2544] (Tue Apr 25 16:53:11 2023)
+
+hardware/samsung:
+0951e7 vibrator: Re-implement TEXTURE_TICK effect [SamarV-121] (Tue Apr 25 11:30:20 2023)
+b79d02 Automatic translation import [LineageOS Infra] (Mon Apr 24 08:41:31 2023)
+0efab5 aidl: vibrator: Add click and tick duration config properties [Tim Zimmermann] (Wed Apr 5 17:35:51 2023)
+c48c38 aidl: vibrator: Only handle actually supported effects [Tim Zimmermann] (Wed Apr 5 17:35:51 2023)
+
+==========
 2023-03-30
 ==========
 device/samsung/universal7904-common:
