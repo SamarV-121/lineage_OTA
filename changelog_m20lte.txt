@@ -1,4 +1,22 @@
 ==========
+2023-05-28
+==========
+device/samsung/universal7904-common:
+6521a9 fixup! universal7904: Set fdsan level to warn once [SamarV-121] (Sun May 28 05:08:41 2023)
+6780a5 universal7904: Setup task profiles [SamarV-121] (Sat May 27 16:54:36 2023)
+907463 universal7904: overlay: Enable vibrator strength intensity control [SamarV-121] (Thu May 25 08:16:17 2023)
+0e9d0f universal7904: Enable duration based amplitude control [SamarV-121] (Sun May 21 07:22:36 2023)
+1a26a5 universal7904: overlay: Enable config_unplugTurnsOnScreen [SamarV-121] (Sun May 21 07:22:36 2023)
+
+kernel/samsung/universal7904:
+1b82d69 arm64: configs: Enable CONFIG_BLK_CGROUP [Jprimero15] (Fri May 26 06:29:01 2023)
+631bb0e3 Revert "arch/arm64: configs: disable CONFIG_RT_GROUP_SCHED" [SamarV-121] (Fri May 26 06:27:40 2023)
+37732fb Merge A405FNXXS4CWB5 [SamarV-121] (Thu May 25 08:13:15 2023)
+
+hardware/samsung:
+e37874 vibrator: Add support for duration based amplitude control [SamarV-121] (Sun May 21 07:35:53 2023)
+
+==========
 2023-04-26
 ==========
 device/samsung/m20lte:

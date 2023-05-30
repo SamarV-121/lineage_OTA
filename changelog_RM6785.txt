@@ -1,4 +1,61 @@
 ==========
+2023-04-30
+==========
+device/realme/RM6785:
+846df1 RM6785: Allow {system_server, zygote} to read vendor_power_profile_prop [SamarV-121] (Tue May 30 12:09:39 2023)
+d66b04 RM6785: Force disable LTE+ icon [SamarV-121] (Mon May 29 13:01:29 2023)
+569413 RM6785: Refactor libinit [SamarV-121] (Mon May 29 13:01:28 2023)
+d1e234 RM6785: init: Fix power_profile for narzo 30 [SamarV-121] (Mon May 29 13:01:28 2023)
+702d0b RM6785: Optimize everything on preopt [Park Ju Hyung] (Mon May 29 13:01:28 2023)
+54ac5e RM6785: Increase 5 GHz network signal tolerance [Danny Lin] (Mon May 29 13:01:28 2023)
+551d26 RM6785: Silence mtk_pdc_check_charger logspam [alibei] (Mon May 29 13:01:28 2023)
+00cdb5 RM6785: Silence SpeechMessengerNormal logspam [alibei] (Mon May 29 13:01:28 2023)
+729603 RM6785: Replace obsolete vendor properties flag [Bharath] (Mon May 29 13:01:19 2023)
+ee79e3 Revert "RM6785: Set default vibration intensity level to high for all 5 modes" [SamarV-121] (Wed May 17 03:30:00 2023)
+b0eafd RM6785: sepolicy: Allow vendor_init to write proc_dirty and proc_sched [SamarV-121] (Wed May 17 03:30:00 2023)
+a7e29f RM6785: sepolicy: Allow init to write discard_max_bytes [SamarV-121] (Wed May 17 03:30:00 2023)
+0bfb52 RM6785: sepolicy: Allow kernel to write block_device [SamarV-121] (Wed May 17 03:30:00 2023)
+098d7a RM6785: sepolicy: Label wakeup nodes [SamarV-121] (Wed May 17 03:30:00 2023)
+ca4699 RM6785: sepolicy: Label extcon node [SamarV-121] (Wed May 17 03:30:00 2023)
+437ddc RM6785: sepolicy: Label media props [SamarV-121] (Wed May 17 03:29:59 2023)
+70e595 RM6785: Switch to device/mediatek/sepolicy_vndr [SamarV-121] (Wed May 17 03:29:59 2023)
+1274d7 RM6785: Switch to common memtrack HAL [SamarV-121] (Wed May 17 03:29:59 2023)
+d62bc5 RM6785: Switch to common mediatek power-libperfmgr HAL [SamarV-121] (Wed May 17 03:29:59 2023)
+6057e6 RM6785: Switch to common mediatek vibrator service HAL [SamarV-121] (Wed May 17 03:29:58 2023)
+4aa847 RM6785: Include hardware/mediatek [SamarV-121] (Wed May 17 03:29:51 2023)
+
+device/mediatek/sepolicy_vndr:
+431046 sepolicy: Add rules for mediatek mali memtrack HAL [SamarV-121] (Sun May 7 19:14:05 2023)
+168dfe sepolicy: Initial sepolicy for power-libperfmgr [Vaisakh Murali] (Thu Apr 27 16:56:16 2023)
+d3173a sepolicy: Label stub mtkpower service [bengris32] (Thu Apr 27 16:55:50 2023)
+cd4658 sepolicy: Label thunderquake_engine nodes [SamarV-121] (Thu Apr 27 16:55:38 2023)
+6c1dc1 sepolicy: Allow init to create xcap sockets [SamarV-121] (Thu Apr 27 09:13:59 2023)
+8c7062 sepolicy: Add rules for xcap [SamarV-121] (Thu Apr 27 09:13:54 2023)
+22b305 sepolicy: Allow init to create wfca_rds sockets [SamarV-121] (Thu Apr 27 09:13:49 2023)
+
+hardware/mediatek:
+6ac402 memtrack: Rebrand to mediatek mali and merge into one module [Tim Zimmermann] (Mon May 8 07:22:19 2023)
+99d3b2 aidl: Import gs101 memtrack HAL [Tim Zimmermann] (Mon May 8 07:22:19 2023)
+455ef9 power-libperfmgr: Allow certain hints to be processed always [Adithya R] (Mon May 8 07:22:19 2023)
+38c257 power-libperfmgr: Properly handle sustained performance mode [Adithya R] (Mon May 8 07:22:19 2023)
+c79eb5 power-libperfmgr: Disable boosting when battery saver is on [Adithya R] (Mon May 8 07:22:19 2023)
+600b25 vibrator: Report amplitude control capability [SamarV-121] (Fri May 5 15:27:34 2023)
+a7fd40 vibrator: Remove unneeded typoed init.rc cmd [SamarV-121] (Wed May 3 16:20:55 2023)
+fded26 vibrator: Add TEXTURE_TICK effect [SamarV-121] (Wed May 3 16:20:55 2023)
+a4cbf6 vibrator: Add click and tick duration config properties [SamarV-121] (Wed May 3 16:20:55 2023)
+c48466 vibrator: Let framework handle HEAVY_CLICK effect [SamarV-121] (Wed May 3 16:20:55 2023)
+d2f0a5 vibrator: Properly enable strength control [SamarV-121] (Wed May 3 16:20:55 2023)
+10f6a3 vibrator: Change logging level in perform function [SamarV-121] (Wed May 3 16:20:55 2023)
+701fe6 power-libperfmgr: Fix use-after-free crash [Jimmy Shiu] (Wed May 3 16:20:55 2023)
+0d0716 power-libperfmgr: Optimize the wakeup performance and fix unstable boost [jimmyshiu] (Wed May 3 16:20:55 2023)
+c5216a power-libpergmgr: ADPF: extend non-stale session timer in wakeup [Wei Wang] (Wed May 3 16:20:55 2023)
+c75780 Automatic translation import [LineageOS Infra] (Mon May 1 10:23:53 2023)
+
+kernel/realme/mt6785:
+80a473 Merge '4.14.315' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Sun May 21 20:35:03 2023)
+d2b99c Merge '4.14.314' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Sun Apr 30 15:17:11 2023)
+
+==========
 2023-04-26
 ==========
 device/realme/RM6785:

@@ -1,4 +1,265 @@
 ==========
+2023-05-28
+==========
+android:
+460989 manifest: Remove unused qcom GPS HALs [Michael Bestas] (Wed May 24 16:51:56 2023)
+cc6b86 manifest: Switch to our forks of qcom GPS [Michael Bestas] (Wed May 24 16:51:56 2023)
+818f2e lineage: Bring back unrar [DroidFreak32] (Thu May 11 21:27:03 2023)
+cd13b1 Track external/zstd [DroidFreak32] (Thu May 11 21:27:01 2023)
+8f033d manifest: May 2023 Security update [Michael Bestas] (Tue May 2 16:49:44 2023)
+
+build/make:
+3367d1 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas] (Mon May 1 22:07:55 2023)
+
+external/chromium-webview/patches:
+b735f7 Update Chromium Webview to 113.0.5672.163 [Kevin F. Haggerty] (Wed May 24 01:24:40 2023)
+d11ed5 Update Chromium Webview to 113.0.5672.132 [Kevin F. Haggerty] (Thu May 18 12:00:54 2023)
+9b76b4 Update Chromium Webview to 113.0.5672.77 [Kevin F. Haggerty] (Fri May 5 12:46:13 2023)
+
+external/chromium-webview/prebuilt/arm:
+9936a9 Update Chromium Webview arm prebuilt to 113.0.5672.163 [Kevin F. Haggerty] (Wed May 24 11:47:21 2023)
+f4b7cc Update Chromium Webview arm prebuilt to 113.0.5672.132 [Kevin F. Haggerty] (Thu May 18 11:49:05 2023)
+04df62 Update Chromium Webview arm prebuilt to 113.0.5672.77 [Kevin F. Haggerty] (Fri May 5 12:47:06 2023)
+
+external/chromium-webview/prebuilt/arm64:
+6f66a7 Update Chromium Webview arm64 prebuilt to 113.0.5672.163 [Kevin F. Haggerty] (Wed May 24 11:47:27 2023)
+088261 Update Chromium Webview arm64 prebuilt to 113.0.5672.132 [Kevin F. Haggerty] (Thu May 18 11:49:06 2023)
+ed8809 Update Chromium Webview arm64 prebuilt to 113.0.5672.77 [Kevin F. Haggerty] (Fri May 5 12:47:08 2023)
+
+external/chromium-webview/prebuilt/x86:
+7b63b3 Update Chromium Webview x86 prebuilt to 113.0.5672.163 [Kevin F. Haggerty] (Wed May 24 11:47:29 2023)
+aebf91 Update Chromium Webview x86 prebuilt to 113.0.5672.132 [Kevin F. Haggerty] (Thu May 18 11:49:07 2023)
+ff1047 Update Chromium Webview x86 prebuilt to 113.0.5672.77 [Kevin F. Haggerty] (Fri May 5 12:47:08 2023)
+
+external/chromium-webview/prebuilt/x86_64:
+a040a7 Update Chromium Webview x86_64 prebuilt to 113.0.5672.163 [Kevin F. Haggerty] (Wed May 24 11:47:32 2023)
+a87595 Update Chromium Webview x86_64 prebuilt to 113.0.5672.132 [Kevin F. Haggerty] (Thu May 18 11:49:08 2023)
+9e4b16 Update Chromium Webview x86_64 prebuilt to 113.0.5672.77 [Kevin F. Haggerty] (Fri May 5 12:47:10 2023)
+
+external/openssh:
+e6133b Merge commit 'abcaa080a6f53c70e70d21b22ad704df5f810b95' of https://android.googlesource.com/platform/external/openssh into lineage-20.0 [DroidFreak32] (Thu May 11 21:40:06 2023)
+
+external/rsync:
+cdb7e9 rsync: Move to /system_ext [Nolen Johnson] (Tue May 16 12:13:46 2023)
+c01995 rsync: Enable support for zstd compression [DroidFreak32] (Thu May 11 19:39:49 2023)
+
+external/unrar:
+33790f unrar: Remove CleanSpec.mk [Michael Bestas] (Wed May 24 14:11:43 2023)
+45b4c7 unrar: Move to /system_ext [Nolen Johnson] (Tue May 16 20:03:43 2023)
+0a7aa4 unrar: Re-Enable Volume and Crypt modules [DroidFreak32] (Tue May 9 19:13:07 2023)
+17930f unrar: Add support for Android [DroidFreak32] (Tue May 9 19:13:07 2023)
+156872 Updated to 6.2.6 [Peter Chapman] (Wed May 3 10:10:22 2023)
+06b871 Updated to 6.2.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+928687 Updated to 6.2.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+a61358 Updated to 6.2.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+349d9a Updated to 6.2.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+2e4c68 Updated to 6.2.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+623246 Updated to 6.1.7 [Peter Chapman] (Wed May 3 10:10:22 2023)
+f27ab1 Updated to 6.1.6 [Peter Chapman] (Wed May 3 10:10:22 2023)
+2c5516 Updated to 6.1.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+79fae4 Updated to 6.1.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+92ad3c Updated to 6.1.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+81c073 Updated to 6.1.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+ff8667 Updated to 6.1.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+26e266 Updated to 6.0.7 [Peter Chapman] (Wed May 3 10:10:22 2023)
+84afbb Updated to 6.0.6 [Peter Chapman] (Wed May 3 10:10:22 2023)
+6d10de Updated to 6.0.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+959275 Updated to 6.0.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+4e45aa Updated to 6.0.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+550299 Updated to 6.0.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+8ecb65 Updated to 6.0.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+1e6374 Updated to 5.9.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+275e1d Updated to 5.9.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+60e462 Updated to 5.9.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+941a82 Updated to 5.9.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+f749dc Updated to 5.8.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+46e3f1 Updated to 5.8.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+989b66 Updated to 5.8.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+928e6f Updated to 5.8.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+ac7ce3 Updated to 5.8.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+8e3231 Updated to 5.7.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+5b7016 Updated to 5.7.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+cd84b3 Updated to 5.7.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+22f004 Updated to 5.7.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+dfb39e Updated to 5.7.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+9f41c9 Updated to 5.6.8 [Peter Chapman] (Wed May 3 10:10:22 2023)
+60bed4 Updated to 5.6.7 [Peter Chapman] (Wed May 3 10:10:22 2023)
+540581 Updated to 5.6.6 [Peter Chapman] (Wed May 3 10:10:22 2023)
+311cd7 Updated to 5.6.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+02bdd2 Updated to 5.6.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+a40adb Updated to 5.6.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+c706ee Updated to 5.6.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+5b0827 Updated to 5.6.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+eb3e0e Updated to 5.5.8 [Peter Chapman] (Wed May 3 10:10:22 2023)
+a4a692 Updated to 5.5.7 [Peter Chapman] (Wed May 3 10:10:22 2023)
+80135e Updated to 5.5.6 [Peter Chapman] (Wed May 3 10:10:22 2023)
+57aeda Updated to 5.5.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+9de3d7 Updated to 5.5.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+82cc85 Updated to 5.5.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+a26969 Updated to 5.5.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+10e251 Updated to 5.5.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+8b14e3 Updated to 5.4.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+38db2e Updated to 5.4.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+6980a1 Updated to 5.4.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+b2b7e3 Updated to 5.4.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+105ab6 Updated to 5.4.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+2a99a8 Updated to 5.3.11 [Peter Chapman] (Wed May 3 10:10:22 2023)
+866d77 Updated to 5.3.10 [Peter Chapman] (Wed May 3 10:10:22 2023)
+b231b8 Updated to 5.3.9 [Peter Chapman] (Wed May 3 10:10:22 2023)
+b801f6 Updated to 5.3.8 [Peter Chapman] (Wed May 3 10:10:22 2023)
+e3a1c1 Updated to 5.3.7 [Peter Chapman] (Wed May 3 10:10:22 2023)
+7e2de8 Updated to 5.3.6 [Peter Chapman] (Wed May 3 10:10:22 2023)
+a40609 Updated to 5.3.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+db2914 Updated to 5.3.4 [Peter Chapman] (Wed May 3 10:10:22 2023)
+55fb89 Updated to 5.3.3 [Peter Chapman] (Wed May 3 10:10:22 2023)
+2dec09 Updated to 5.3.2 [Peter Chapman] (Wed May 3 10:10:22 2023)
+e42f47 Updated to 5.3.1 [Peter Chapman] (Wed May 3 10:10:22 2023)
+402814 Updated to 5.2.7 [Peter Chapman] (Wed May 3 10:10:22 2023)
+e714d3 Updated to 5.2.6 [Peter Chapman] (Wed May 3 10:10:22 2023)
+7c4d72 Updated to 5.2.5 [Peter Chapman] (Wed May 3 10:10:22 2023)
+f2b5d6 Updated to 5.2.4 [Peter Chapman] (Wed May 3 10:04:50 2023)
+8f800a Updated to 5.2.3 [Peter Chapman] (Wed May 3 10:04:43 2023)
+205b38 Updated to 5.2.2 [Peter Chapman] (Wed May 3 10:04:43 2023)
+479fb0 Updated to 5.2.1 [Peter Chapman] (Wed May 3 10:04:43 2023)
+839b36 Updated to 5.1.7 [Peter Chapman] (Wed May 3 10:04:43 2023)
+792d52 Updated to 5.1.6 [Peter Chapman] (Wed May 3 10:04:43 2023)
+757c86 Updated to 5.1.5 [Peter Chapman] (Wed May 3 10:04:43 2023)
+99db5f Updated to 5.1.4 [Peter Chapman] (Wed May 3 10:04:43 2023)
+d5745a Updated to 5.1.3 [Peter Chapman] (Wed May 3 10:04:43 2023)
+51cfb8 Updated to 5.1.2 [Peter Chapman] (Wed May 3 10:04:43 2023)
+454976 Updated to 5.1.1 [Peter Chapman] (Wed May 3 10:04:43 2023)
+919eaf Updated to 5.0.14 [Peter Chapman] (Wed May 3 10:04:43 2023)
+4bd438 Updated to 5.0.13 [Peter Chapman] (Wed May 3 10:04:43 2023)
+5a5cf2 Updated to 5.0.12 [Peter Chapman] (Wed May 3 10:04:43 2023)
+b8e777 Updated to 5.0.11 [Peter Chapman] (Wed May 3 10:04:43 2023)
+aeaa1c Updated to 5.0.10 [Peter Chapman] (Wed May 3 10:04:43 2023)
+e1005a Updated to 5.0.9 [Peter Chapman] (Wed May 3 10:04:43 2023)
+e07444 Updated to 5.0.8 [Peter Chapman] (Wed May 3 10:04:43 2023)
+4f6e49 Updated to 5.0.7 [Peter Chapman] (Wed May 3 10:04:43 2023)
+7a3784 Updated to 5.0.6 [Peter Chapman] (Wed May 3 10:04:43 2023)
+1fe1cf Updated to 5.0.5 [Peter Chapman] (Wed May 3 10:04:43 2023)
+ffe391 Updated to 5.0.4 [Peter Chapman] (Wed May 3 10:04:43 2023)
+d76bc7 Updated to 5.0.3 [Peter Chapman] (Wed May 3 10:04:43 2023)
+f5c678 Updated to 5.0.2 [Peter Chapman] (Wed May 3 10:04:43 2023)
+941b63 Updated to 5.0.1 [Peter Chapman] (Wed May 3 10:04:43 2023)
+a50372 Updated to 5.0.0 [Peter Chapman] (Wed May 3 10:04:43 2023)
+200cc8 Updated to 4.2.4 [Peter Chapman] (Wed May 3 10:04:43 2023)
+365470 Updated to 4.2.3 [Peter Chapman] (Wed May 3 10:04:43 2023)
+a6a83f Updated to 4.2.2 [Peter Chapman] (Wed May 3 10:04:34 2023)
+dcf8eb Updated to 4.2.1 [Peter Chapman] (Wed May 3 10:03:32 2023)
+42618e Revert "UnRAR - Add support for Bionic (Android)" [DroidFreak32] (Wed May 3 10:02:04 2023)
+52671d unrar: Silence even more warnings [Michael Bestas] (Wed May 3 10:00:55 2023)
+f3440e unrar: Silence more build warnings [Michael Bestas] (Wed May 3 10:00:55 2023)
+2cf68d unrar: don't spam warnings as errors [Rashed Abdel-Tawab] (Wed May 3 10:00:55 2023)
+f4bbb2 unrar: Really disable clang [Michael Bestas] (Wed May 3 09:59:20 2023)
+9bd5d2 unrar: Disable Clang build [Steve Kondik] (Wed May 3 09:59:20 2023)
+c27c93 unrar: Remove FILE_OFFSET_BITS=64 CFLAG [Brandon McAnsh] (Wed May 3 09:59:20 2023)
+ec9fa6 UnRAR - Add support for Bionic (Android) [Jorge Ruesga] (Wed May 3 09:59:04 2023)
+43ae44 Initial commit - UNRAR 4.20 [Jorge Ruesga] (Wed May 3 09:45:36 2023)
+
+external/zstd:
+e6a035 zstd: Move to /system_ext [Nolen Johnson] (Tue May 16 13:03:33 2023)
+d548d3 zstd: Android.bp: Allow rsync to add zstd compression support [DroidFreak32] (Sat May 6 08:31:46 2023)
+5ffe5c zstd: Allow to build zstd cmdline tools [DroidFreak32] (Sat May 6 08:31:41 2023)
+
+frameworks/base:
+ec5418 Automatic translation import [LineageOS Infra] (Mon May 15 09:16:25 2023)
+6ea6d1a VolumeDialogImpl: Fix cut layout when on setup or lock task mode [jhenrique09] (Fri May 5 01:17:22 2023)
+106dca4 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas] (Mon May 1 22:08:44 2023)
+
+frameworks/native:
+34602f libgui: reset buffer count to max slots instead of returning BAD_VALUE. [Rajat Yadav] (Sun May 14 05:46:32 2023)
+5a0775 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas] (Mon May 1 22:08:49 2023)
+
+lineage-sdk:
+d5e796 sdk: remove aar target [Joey] (Wed May 17 18:55:33 2023)
+
+packages/apps/Aperture:
+78e3fc Automatic translation import [LineageOS Infra] (Mon May 15 09:16:29 2023)
+dc1a29 Aperture: Get supported camera video frame rates from CameraX [Sebastiano Barezzi] (Sat May 6 18:09:27 2023)
+1b40d2 Aperture: Update CameraX to 1.3.0-alpha06 [LuK1337] (Sat May 6 18:09:27 2023)
+1a5cfb Aperture: Drop Media3's UnstableApi annotation [Sebastiano Barezzi] (Sat May 6 18:09:27 2023)
+dcfacd Aperture: Update androidx.media3 to 1.0.1 [Sebastiano Barezzi] (Sat May 6 18:09:27 2023)
+e6ad7e Aperture: Move to androidx.core.location compats [Sebastiano Barezzi] (Sat May 6 18:09:27 2023)
+52092b Aperture: Split ZSL toggle from photo capture mode [Sebastiano Barezzi] (Sat May 6 18:09:27 2023)
+4f4f41 Revert "Aperture: Set video framerate button enabled only on one place" [LuK1337] (Tue May 2 18:29:55 2023)
+672a3c Automatic translation import [LineageOS Infra] (Mon May 1 10:23:53 2023)
+
+packages/apps/DeskClock:
+5dd78e Automatic translation import [LineageOS Infra] (Mon May 15 09:16:30 2023)
+d65b3b DeskClock: Digital widget: Redesign [Michael W] (Fri May 5 17:25:21 2023)
+a9e6a1 DeskClock: update digital widget [Timi Rautamäki] (Fri May 5 17:25:21 2023)
+
+packages/apps/Eleven:
+2a7cb7 Automatic translation import [LineageOS Infra] (Mon May 15 09:16:31 2023)
+47cc00 Eleven: Minor redesign of widgets [Michael W] (Fri May 5 17:25:35 2023)
+c7552c Automatic translation import [LineageOS Infra] (Mon May 1 10:23:55 2023)
+
+packages/apps/Etar:
+54fec3 Automatic translation import [LineageOS Infra] (Mon May 15 09:16:32 2023)
+
+packages/apps/FMRadio:
+244a7d FMRadio: Generalize Built-In FM Antenna support [me-cafebabe] (Thu May 18 12:35:42 2023)
+
+packages/apps/LineageParts:
+779f45 LineageParts: Increase trust preference priority [Nicholas Lim] (Tue May 23 19:03:19 2023)
+50f5ca LineageParts: Add bt dev/devclass null checks in trigger fragment [TheScarastic] (Thu May 18 16:49:01 2023)
+cfc8f8 LineageParts: Add proper offset for trigger pager [TheScarastic] (Thu May 18 00:14:57 2023)
+870d42 BootReceiver: Only restore tunables when user is the primary one [DroidFreak32] (Wed May 3 11:13:22 2023)
+214dac LineageParts: Restrict activities to primary profile only [DroidFreak32] (Tue May 2 20:53:44 2023)
+
+packages/apps/Settings:
+69e7359 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas] (Mon May 1 22:10:13 2023)
+
+packages/apps/SetupWizard:
+947107 Automatic translation import [LineageOS Infra] (Mon May 1 10:23:56 2023)
+
+packages/apps/ThemePicker:
+7e69db Automatic translation import [LineageOS Infra] (Mon May 15 09:16:33 2023)
+
+packages/apps/Trebuchet:
+f2f228 Automatic translation import [LineageOS Infra] (Mon May 15 09:16:34 2023)
+1c6114 Automatic translation import [LineageOS Infra] (Mon May 1 10:23:56 2023)
+
+packages/apps/Updater:
+cdcb51 Updater: Drop usage of NetworkInfo [althafvly] (Mon May 22 13:05:02 2023)
+e32b81 Updater: Check if network is really metered [Bruno Martins] (Mon May 22 13:04:54 2023)
+9ddb4f Automatic translation import [LineageOS Infra] (Mon May 15 09:16:34 2023)
+
+packages/inputmethods/LatinIME:
+5d2b54 Automatic translation import [LineageOS Infra] (Mon May 15 09:16:35 2023)
+
+packages/modules/Bluetooth:
+ec322f Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas] (Mon May 1 22:10:55 2023)
+
+packages/modules/adb:
+d1e965 adb_root: Simplify the way we parse enabled state file [nift4] (Tue May 23 17:48:08 2023)
+
+packages/providers/TelephonyProvider:
+185c62 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas] (Mon May 1 22:13:41 2023)
+
+packages/services/Telecomm:
+ccbfa3 Merge tag 'android-13.0.0_r43' into staging/lineage-20.0_merge-android-13.0.0_r43 [Michael Bestas] (Mon May 1 22:13:48 2023)
+
+system/extras:
+e575f4 partition_tools: extend lpunpack for split partitions [Daniel Köster] (Wed May 3 17:17:39 2023)
+
+vendor/lineage:
+11eaea repopick: Don't ignore change status for query mode (-Q) [Chirayu Desai] (Fri May 26 23:45:30 2023)
+57a063 kernel: Restore TARGET_KERNEL_VERSION [Michael Bestas] (Fri May 26 18:33:48 2023)
+2a7b32 kernel: Go full LLVM build on 5.10+ kernels [Bruno Martins] (Wed May 24 10:31:08 2023)
+e6678e Include build manifest on target [Aaron Kling] (Thu May 18 18:49:27 2023)
+9fd8e2 apn: Update mcc525 [Nicholas Lim] (Wed May 17 05:26:48 2023)
+b9d44c vars: Pixel 7a [Chirayu Desai] (Tue May 16 19:25:40 2023)
+055bec config: common-full: unrar undead [DroidFreak32] (Thu May 11 18:58:58 2023)
+dcf0e8 config: common-full: Build zstd cmdline tools [DroidFreak32] (Thu May 11 18:54:57 2023)
+4d8502 vars: Update kernels for May security update [Michael Bestas] (Thu May 4 16:13:13 2023)
+726135 vars: Drop unused prev_* vars [Michael Bestas] (Thu May 4 16:13:13 2023)
+f03314 vars: May 2023 Security update [Michael Bestas] (Thu May 4 16:13:13 2023)
+163706 vars: Add some vars to remove hardcoding in scripts [Chirayu Desai] (Thu May 4 16:13:13 2023)
+d7fa6a lineage: Fix SDK Addon build on x86/x86_64 targets [DroidFreak32] (Wed May 3 20:08:40 2023)
+
+==========
 2023-04-26
 ==========
 android:
