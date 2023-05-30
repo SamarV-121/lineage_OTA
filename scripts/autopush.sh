@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright © 2022, Samar Vispute "SamarV-121" <samarvispute121@pm.me>
+# Copyright © 2022-2023, Samar Vispute "SamarV-121" <samarvispute121@pm.me>
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -19,7 +19,7 @@ for DEVICE in "${DEVICES[@]}"; do
 		lineage_OTA/scripts/github-release.sh -r SamarV-121/lineage_OTA -t "$TAG" -b master -d "Date: $(date)" -f "$BUILD"
 
 		FILENAME=$(basename "$BUILD")
-		BUILD_URL="https://lineage.samarv121.wtf/$TAG/$FILENAME"
+		BUILD_URL="https://lineage.samarv121.dev/$TAG/$FILENAME"
 		if [[ $FILENAME =~ gms ]]; then
 			DEVICE_JSON="${DEVICE}_gms.json"
 		else

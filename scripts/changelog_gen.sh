@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright © 2022, Samar Vispute "SamarV-121" <samarvispute121@pm.me>
+# Copyright © 2022-2023, Samar Vispute "SamarV-121" <samarvispute121@pm.me>
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -40,25 +40,10 @@ if [ ! -e "$CHANGELOG" ]; then
 	curl -s "https://raw.githubusercontent.com/SamarV-121/lineage_OTA/master/$CHANGELOG" -o "$CHANGELOG"
 fi
 
-if [ "$DEVICE" = m20lte ]; then
-	device_repos=(
-		device/samsung/m20lte
-		device/samsung/universal7904-common
-		device/samsung_slsi/sepolicy
-		kernel/samsung/universal7904
-		hardware/samsung
-		hardware/samsung_slsi/scsc_wifibt/wifi_hal
-		hardware/samsung_slsi/libbt
-		hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
-	)
-elif [ "$DEVICE" = RM6785 ]; then
-	device_repos=(
-		device/realme/RM6785
-		device/mediatek/sepolicy
-		kernel/realme/mt6785
-		vendor/realme-firmware
-	)
-fi
+declare -A device_repos=(
+	["m20lte"]="device/samsung/m20lte device/samsung/universal7904-common device/samsung_slsi/sepolicy kernel/samsung/universal7904 hardware/samsung hardware/samsung_slsi/scsc_wifibt/wifi_hal hardware/samsung_slsi/libbt hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
+	["RM6785"]="device/realme/RM6785 device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
+)
 
 TEMP_FILE=$(mktemp)
 
@@ -75,7 +60,7 @@ LAST_DATE=$(head -n2 "$CHANGELOG" | tail -n1)
 echo -e "==========\n$(date +%F)\n==========" >"$TEMP_FILE"
 
 if [ "$DEVICE" ]; then
-	for PROJECT in "${device_repos[@]}"; do
+	for PROJECT in ${device_repos[$DEVICE]}; do
 		git_log
 	done
 else
