@@ -1,4 +1,343 @@
 ==========
+2023-06-15
+==========
+android:
+2626bc manifest: June 2023 Quarterly Platform Release and Security update [Michael Bestas] (Wed Jun 14 17:49:25 2023)
+
+bionic:
+7e1668 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:52:38 2023)
+
+bootable/recovery:
+e3cb6c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:52:40 2023)
+
+build/make:
+e99dbe Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:17:30 2023)
+
+build/soong:
+396c61 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 22:32:00 2023)
+
+device/google/atv:
+8606cc Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:52:46 2023)
+
+external/chromium-webview/patches:
+483f6a Update Chromium Webview to 114.0.5735.61 [Kevin F. Haggerty] (Thu Jun 8 13:45:19 2023)
+d295af Update Chromium Webview to 114.0.5735.58 [Kevin F. Haggerty] (Mon Jun 5 14:06:44 2023)
+
+external/chromium-webview/prebuilt/arm:
+25651a Update Chromium Webview arm prebuilt to 114.0.5735.61 [Kevin F. Haggerty] (Thu Jun 8 13:46:16 2023)
+f3c702 Update Chromium Webview arm prebuilt to 114.0.5735.58 [Kevin F. Haggerty] (Sat Jun 3 22:37:30 2023)
+
+external/chromium-webview/prebuilt/arm64:
+7422f5 Update Chromium Webview arm64 prebuilt to 114.0.5735.61 [Kevin F. Haggerty] (Thu Jun 8 13:46:18 2023)
+9b8869 Update Chromium Webview arm64 prebuilt to 114.0.5735.58 [Kevin F. Haggerty] (Sat Jun 3 22:37:48 2023)
+
+external/chromium-webview/prebuilt/x86:
+03ed98 Update Chromium Webview x86 prebuilt to 114.0.5735.61 [Kevin F. Haggerty] (Thu Jun 8 13:46:18 2023)
+d4b9aa Update Chromium Webview x86 prebuilt to 114.0.5735.58 [Kevin F. Haggerty] (Sat Jun 3 22:37:52 2023)
+
+external/chromium-webview/prebuilt/x86_64:
+7dd37c Update Chromium Webview x86_64 prebuilt to 114.0.5735.61 [Kevin F. Haggerty] (Thu Jun 8 13:46:20 2023)
+40ce5f Update Chromium Webview x86_64 prebuilt to 114.0.5735.58 [Kevin F. Haggerty] (Sat Jun 3 22:37:55 2023)
+
+external/gptfdisk:
+7d31ef sgdisk: Make sgdisk recovery_available [Nolen Johnson] (Tue Jun 13 18:19:58 2023)
+
+external/icu:
+39d6c3 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:03 2023)
+
+frameworks/av:
+ba6359 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:22 2023)
+
+frameworks/base:
+c2bbf3 Revert "Partially revert "Assume sensors perform prox check"" [Michael Bestas] (Thu Jun 15 13:34:50 2023)
+86f2b7c fixup! SystemUI: Re-evaluate system theme on UI mode change [Michael Bestas] (Thu Jun 15 13:33:33 2023)
+e0b892 fixup! SystemUI: screenshot: open long screenshot activity for partial screenshots [Michael Bestas] (Thu Jun 15 13:33:33 2023)
+7ed5d51 fixup! SystemUI: add FloatingRotationButton for hw-key devices [Michael Bestas] (Thu Jun 15 13:33:33 2023)
+4a4f20e fixup! Add support for runtime toggle of navbar [Michael Bestas] (Thu Jun 15 13:33:33 2023)
+dca0e3 fixup! Keyguard: don't use large clock on landscape [Michael Bestas] (Thu Jun 15 11:51:48 2023)
+9b281e fixup! SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds [Michael Bestas] (Wed Jun 14 17:42:32 2023)
+89e2e6 fixup! Implement edge long swipe gesture [Michael Bestas] (Wed Jun 14 17:41:46 2023)
+9f0f2d fixup! SystemUI: Add VPN tile [Michael Bestas] (Wed Jun 14 17:41:17 2023)
+bee0b86 fixup! SystemUI: Add Profiles tile [Michael Bestas] (Wed Jun 14 17:39:34 2023)
+45e3ad SystemUI: Restore wifi and cellular QS tiles [Michael Bestas] (Wed Jun 14 17:37:43 2023)
+d5e1ae fixup! SystemUI: Add reading mode tile [Michael Bestas] (Wed Jun 14 17:37:29 2023)
+1f1bc7 fixup! SystemUI: Add powershare QS tile [Michael Bestas] (Wed Jun 14 17:37:16 2023)
+dd8e6a fixup! SystemUI: Add AOD QS tile [Michael Bestas] (Wed Jun 14 17:37:04 2023)
+a87c0c fixup! SystemUI: Add USB Tether tile [Michael Bestas] (Wed Jun 14 17:36:50 2023)
+fe797e2 fixup! SystemUI: Add AmbientDisplay tile [Michael Bestas] (Wed Jun 14 17:36:35 2023)
+d3617e fixup! SystemUI: Add Sync tile [Michael Bestas] (Wed Jun 14 17:36:21 2023)
+fd4ea7 fixup! SystemUI: Add heads up tile [Michael Bestas] (Wed Jun 14 17:36:05 2023)
+e0926d fixup! SystemUI: Add caffeine QS tile [Michael Bestas] (Wed Jun 14 17:35:42 2023)
+675b3ea fixup! SystemUI: Add quick settings pull down with one finger [Michael Bestas] (Wed Jun 14 17:35:21 2023)
+bb84e3c fixup! camera: Support exposing aux camera to apps [Michael Bestas] (Wed Jun 14 17:33:19 2023)
+8bcec8 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Wed Jun 14 17:17:26 2023)
+c182b3 Revert "SystemUI: Make edit button click ripple effect rounded" [Michael Bestas] (Wed Jun 14 10:13:12 2023)
+1add16 Revert "[Status Bar] Append "__external" to external icons." [Michael Bestas] (Tue Jun 13 22:39:57 2023)
+81aa92 Revert "Make the header INVISIBLE when alpha is 0" [Michael Bestas] (Tue Jun 13 22:39:28 2023)
+80426c8 Revert "Revert "Add dumpsys logs to debug lockscreen stack height"" [Michael Bestas] (Tue Jun 13 22:37:28 2023)
+3b76761 Revert "Strip part of the activity info of another uid if no privilege" [Michael Bestas] (Tue Jun 13 22:37:12 2023)
+f50833 Revert "Revert change that would detectFp when FP is locked out" [Michael Bestas] (Tue Jun 13 22:36:54 2023)
+6cc17f Revert "SystemUI: Align QS header with status bar" [Michael Bestas] (Tue Jun 13 22:36:32 2023)
+f54deb1 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas] (Tue Jun 13 22:35:58 2023)
+e0531d Revert "DO NOT MERGE ANYWHERE" [Michael Bestas] (Tue Jun 13 22:35:28 2023)
+f28b2d SystemUI: Network traffic with center cutout [1/3] [Wolfram Liebchen] (Sun Jun 11 13:45:02 2023)
+b1f18c services: Keep vendor.lineage.* classes [Michael Bestas] (Fri Jun 9 16:06:51 2023)
+f038fc GnssLocationProvider: Implement xtra-daemon toggle [Michael Bestas] (Thu Jun 8 16:29:15 2023)
+560253 GnssLocationProvider: Implement PSDS periodic download toggle [Michael Bestas] (Tue Jun 6 23:53:17 2023)
+e5a168 GnssLocationProvider: Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai] (Tue Jun 6 23:53:17 2023)
+99b449 Ignore AGPS toggle during user-initiated emergency calls [Chirayu Desai] (Tue Jun 6 23:53:17 2023)
+5df3442 SystemUI: React to PrivacyConfig changes properly [Tommy Webb] (Tue Jun 6 20:51:31 2023)
+f726f1 Request correct rendering type for EGL config [Andrii Chepurnyi] (Fri Jun 2 21:38:34 2023)
+1734d4 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:22 2023)
+
+frameworks/libs/systemui:
+cb18bf Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:33 2023)
+
+frameworks/native:
+2586c8 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:36 2023)
+
+frameworks/opt/telephony:
+901eab Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:42 2023)
+
+hardware/google/gchips:
+ccb045 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:47 2023)
+
+hardware/google/graphics/common:
+a81225 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:49 2023)
+
+hardware/google/pixel:
+a1b471 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:52 2023)
+
+hardware/interfaces:
+69c80a Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:53:56 2023)
+
+lineage-sdk:
+bf6f48 Update LineageDatabaseHelper for 13 QPR3 [Michael Bestas] (Wed Jun 14 17:30:17 2023)
+9a0fe3be sdk: Add static isChargingControlSupported(ctx) method [LuK1337] (Tue Jun 13 12:24:16 2023)
+95e2d7 Network traffic with center cutout [2/3] [Wolfram Liebchen] (Sun Jun 11 13:45:06 2023)
+3ee210 sdk: Implement Lineage health service [Luofan Chen] (Fri Jun 9 16:04:47 2023)
+89941a sdk: Extract base class for lineage base feature [Luofan Chen] (Fri Jun 9 16:04:47 2023)
+0e2904 sdk: Add requiresService attribute [Luofan Chen] (Fri Jun 9 16:04:47 2023)
+738f26 lineage-sdk: Add settings for charging control [Danny Trunk] (Fri Jun 9 16:04:47 2023)
+cd2c91 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:27 2023)
+
+packages/apps/Aperture:
+ce6be9 Aperture: Make use of ResolutionSelector API [LuK1337] (Sat Jun 10 22:02:19 2023)
+00ac9b Aperture: Align versions of all Kotlin components [LuK1337] (Sun Jun 4 18:00:28 2023)
+bc3d67 Aperture: Downgrade com.google.android.material:material to 1.9.0 [LuK1337] (Sun Jun 4 17:54:31 2023)
+e16427 Aperture: Regenerate blueprints [LuK1337] (Sun Jun 4 17:53:37 2023)
+b09c4d Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:28 2023)
+
+packages/apps/AudioFX:
+7ee2d3 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:28 2023)
+
+packages/apps/Backgrounds:
+1ae77f Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:29 2023)
+
+packages/apps/Camera2:
+ecb7ba Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:30 2023)
+
+packages/apps/Car/Settings:
+a1cefc Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:54:53 2023)
+
+packages/apps/CellBroadcastReceiver:
+3d7340 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:54:55 2023)
+
+packages/apps/Contacts:
+9b1f80 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:54:58 2023)
+919d3b Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:30 2023)
+
+packages/apps/DeskClock:
+576768 DeskClock: Integrate ScreensaverSettings better with Settings [Michael W] (Sat Jun 3 21:49:27 2023)
+2016f0 DeskClock: Fix wrong screensaver clock style being displayed [Michael W] (Sat Jun 3 21:49:27 2023)
+c3763b DeskClock: Another round of cleanups [Michael W] (Sat Jun 3 21:49:27 2023)
+6461b8 Fixed warning: 'invalidate(Int, Int, Int, Int): Unit' is deprecated. Deprecated in Java [Ryan O'Leary] (Sat Jun 3 21:49:27 2023)
+5ca861 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:31 2023)
+
+packages/apps/Dialer:
+c9a2ad Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:32 2023)
+
+packages/apps/DocumentsUI:
+94b118 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:55:04 2023)
+4573e0 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:33 2023)
+
+packages/apps/Eleven:
+12a099 Eleven: Rest of today's cleanup [Michael W] (Sun Jun 4 09:06:20 2023)
+57dd97 fixup! Eleven: Replace ViewPager with ViewPager2 [Michael W] (Sun Jun 4 09:03:17 2023)
+4676d8 Eleven: Replace deprecated setTargetFragment() [Michael W] (Sat Jun 3 21:49:36 2023)
+f6cc07 Eleven: Replace ViewPager with ViewPager2 [Michael W] (Sat Jun 3 21:49:36 2023)
+7bc1a1 Eleven: Replace some AsyncTasks [Michael W] (Sat Jun 3 21:49:36 2023)
+fbec42 Eleven: Show empty message after clearing all [Michael W] (Sat Jun 3 21:49:36 2023)
+9563ef Eleven: ImageCache: Also catch IllegalArgumentException [Michael W] (Sat Jun 3 21:49:36 2023)
+2c3362 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:33 2023)
+
+packages/apps/EmergencyInfo:
+ba3cf1 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:55:06 2023)
+
+packages/apps/Etar:
+525bcd Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:35 2023)
+
+packages/apps/FlipFlap:
+0ede0d Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:35 2023)
+
+packages/apps/Gallery2:
+28a7ed Gallery2: Switch to MediaStore.ACTION_REVIEW [LuK1337] (Sun May 28 22:00:47 2023)
+
+packages/apps/Jelly:
+d34afa Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:36 2023)
+
+packages/apps/LineageParts:
+c96f15 Update for 13 QPR3 [Michael Bestas] (Wed Jun 14 17:29:34 2023)
+b8a16c ChargingControl: Don't index settings if it is not supported [Luofan Chen] (Tue Jun 13 18:19:01 2023)
+0d2767 Network traffic with center cutout [3/3] [Wolfram Liebchen] (Sun Jun 11 13:45:08 2023)
+c27f22 Regenerate contributors cloud (2023-06-10) [Kevin F. Haggerty] (Sat Jun 10 17:45:30 2023)
+dcbebe LineageParts: Add charging control preferences [Danny Trunk] (Fri Jun 9 16:04:57 2023)
+72fa10 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:37 2023)
+
+packages/apps/Messaging:
+4d715a Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:38 2023)
+
+packages/apps/Nfc:
+45f138 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:55:11 2023)
+
+packages/apps/Profiles:
+863fb5 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:38 2023)
+
+packages/apps/Recorder:
+c9c065 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:39 2023)
+
+packages/apps/Seedvault:
+e03ad7 Merge branch 'android13' of https://github.com/seedvault-app/seedvault into lineage-20.0 [Michael Bestas] (Wed Jun 14 17:31:00 2023)
+
+packages/apps/Settings:
+75db89 fixup! Settings: Hide settings that don't work when taskbar is enabled [Michael Bestas] (Wed Jun 14 23:24:44 2023)
+7ef5cc fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas] (Wed Jun 14 23:24:08 2023)
+d11b56 fixup! Settings: Forward port pattern visibility settings (2/2) [Michael Bestas] (Tue Jun 13 22:52:08 2023)
+ab0635e Merge tag 'android-13.0.0_r52' of https://android.googlesource.com/platform/packages/apps/Settings into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 22:51:48 2023)
+78f8a4 Revert "DO NOT MERGE ANYWHERE" [Michael Bestas] (Tue Jun 13 22:42:05 2023)
+4f097b Settings: Add charging control part [Danny Trunk] (Fri Jun 9 16:04:34 2023)
+f009585 Hide private DNS settings UI unless admin [Tommy Webb] (Fri Jun 9 14:42:57 2023)
+41b4ed Add Cloudflare DNS as a private DNS provider [Chirayu Desai] (Fri Jun 9 14:42:57 2023)
+d07f89 AGPS: Mention that it's ignored during user-initiated emergency calls [Chirayu Desai] (Tue Jun 6 23:53:38 2023)
+edd4545 Settings: Add switch preference for AGPS [juwei] (Tue Jun 6 23:53:38 2023)
+ee6fad Properly set Wi-Fi Privacy spinner initial state [Tommy Webb] (Sat Jun 3 19:33:14 2023)
+57eeda Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:39 2023)
+
+packages/apps/SettingsIntelligence:
+4ef92f Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:55:18 2023)
+
+packages/apps/SetupWizard:
+b37d7e Enable AGPS by default when google SUW is present [Michael Bestas] (Tue Jun 6 21:09:09 2023)
+317691 Add checkbox for AGPS [Oliver Scott] (Tue Jun 6 20:10:37 2023)
+963195 Apply location settings on Next button press [Oliver Scott] (Tue Jun 6 20:10:00 2023)
+4c8cc2 Do not exit if setup complete for managed profiles [Oliver Scott] (Tue Jun 6 20:10:00 2023)
+fb6285 Add API to query managed profiles [Oliver Scott] (Tue Jun 6 20:10:00 2023)
+0002da Only modify network settings on system user [Oliver Scott] (Tue Jun 6 20:10:00 2023)
+8e8329 Show location settings for managed profiles [Chirayu Desai] (Tue Jun 6 20:10:00 2023)
+605932 Add some pages to the user wizard script [Chirayu Desai] (Tue Jun 6 20:10:00 2023)
+c9359b Create managed profile setup flow [Oliver Scott] (Tue Jun 6 20:10:00 2023)
+881378 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:40 2023)
+
+packages/apps/Tag:
+2e6b76 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:55:23 2023)
+
+packages/apps/ThemePicker:
+7d7e08 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 22:54:58 2023)
+13e728 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:41 2023)
+
+packages/apps/Trebuchet:
+812c2c fixup! Hide scrollbar when searching All Apps [Michael Bestas] (Thu Jun 15 13:44:48 2023)
+8a69f4 fixup! Fix All Apps header protection and spacing again [Tommy Webb] (Thu Jun 15 13:44:22 2023)
+a81c38 Revert "Don't discard custom grid on config changes" [Michael Bestas] (Thu Jun 15 13:44:12 2023)
+2c2cc4f Revert "fixup! Don't discard custom grid on config changes" [Michael Bestas] (Thu Jun 15 13:44:04 2023)
+ce0bcf Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Thu Jun 15 13:41:55 2023)
+9e980a Revert "Trebuchet: Add resource for home screen rotation default" [Michael Bestas] (Tue Jun 13 23:08:29 2023)
+5f8463 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:42 2023)
+
+packages/apps/TvSettings:
+8795f1 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:55:35 2023)
+
+packages/apps/Updater:
+1ec0b8 Updater: 20 and up are integers! [Michael W] (Mon Jun 5 17:19:52 2023)
+0b5e92 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:42 2023)
+
+packages/apps/WallpaperPicker2:
+977db2 fix crash when starting custom wallpaper selection [Dmitry Muhomor] (Thu Jun 15 16:25:05 2023)
+b2c5b5 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:55:38 2023)
+
+packages/inputmethods/LatinIME:
+cf8040 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:43 2023)
+
+packages/modules/Bluetooth:
+28ebbc Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 23:23:40 2023)
+
+packages/modules/Connectivity:
+137aa2 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:56:07 2023)
+
+packages/modules/Permission:
+22a59e Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:56:10 2023)
+
+packages/modules/Wifi:
+f66265 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:59:50 2023)
+
+packages/modules/common:
+b13938 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:56:05 2023)
+
+packages/providers/BlockedNumberProvider:
+5fd589 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 19:59:53 2023)
+
+packages/providers/DownloadProvider:
+5d56c3 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:06 2023)
+dedc57 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:44 2023)
+
+packages/providers/MediaProvider:
+9c6a2e Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:08 2023)
+
+packages/providers/TelephonyProvider:
+471043 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:11 2023)
+
+packages/resources/devicesettings:
+2d7ff4 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:44 2023)
+
+packages/services/Mms:
+c1db4f Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:16 2023)
+e0c738 Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:45 2023)
+
+packages/services/Telecomm:
+5f4108 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:19 2023)
+
+packages/services/Telephony:
+21321b Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:21 2023)
+
+packages/wallpapers/LivePicker:
+66c64b Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:25 2023)
+
+system/core:
+be4324 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:33 2023)
+
+system/extras:
+5cf17c Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:36 2023)
+
+system/media:
+41c2d1 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:49 2023)
+
+system/security:
+152f7b Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:55 2023)
+
+system/sepolicy:
+615ae6 Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:00:58 2023)
+
+system/vold:
+44775a Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Tue Jun 13 20:01:10 2023)
+
+vendor/lineage:
+385062 June 2023 Quarterly Platform Release and Security update [Chirayu Desai] (Wed Jun 14 18:14:01 2023)
+2decc6 soong: Add TARGET_HEALTH_CHARGING_CONTROL related configs [Luofan Chen] (Fri Jun 9 16:06:47 2023)
+97f0f8 config: device_framework_matrix: Add vendor.lineage.health [Michael Bestas] (Fri Jun 9 16:06:47 2023)
+5bd9ed config: Copy Lineage health permissions [Luofan Chen] (Fri Jun 9 16:06:47 2023)
+135cb6 Disable AGPS by default, it'll be enabled in SetupWizard [Chirayu Desai] (Tue Jun 6 23:53:41 2023)
+
+==========
 2023-05-28
 ==========
 android:

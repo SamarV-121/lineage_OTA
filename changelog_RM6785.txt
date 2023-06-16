@@ -1,5 +1,17 @@
 ==========
-2023-04-30
+2023-06-15
+==========
+device/realme/RM6785:
+94c066 RM6785: Build Lineage Health HAL [Michael Bestas] (Sat Jun 10 16:50:47 2023)
+
+kernel/realme/mt6785:
+70caf3 Merge '4.14.318' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Wed Jun 14 12:33:28 2023)
+ed567d Merge '4.14.317' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Wed Jun 14 12:33:26 2023)
+378b6b gpu: mali-r25p0: Apply patch for `CVE-2022-20186` [bengris32] (Tue Jun 6 14:49:27 2023)
+bbec88 Merge '4.14.316' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Tue Jun 6 14:49:13 2023)
+
+==========
+2023-05-30
 ==========
 device/realme/RM6785:
 846df1 RM6785: Allow {system_server, zygote} to read vendor_power_profile_prop [SamarV-121] (Tue May 30 12:09:39 2023)

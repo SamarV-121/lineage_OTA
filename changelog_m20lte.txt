@@ -1,4 +1,16 @@
 ==========
+2023-06-15
+==========
+device/samsung/universal7904-common:
+af3bb9 universal7904: Build Lineage Health HAL [Michael Bestas] (Wed Jun 14 03:58:10 2023)
+
+device/samsung_slsi/sepolicy:
+a0619d common: Add policy for lineage health HAL [Tim Zimmermann] (Thu Jun 15 17:26:10 2023)
+
+hardware/samsung:
+91ae7b Automatic translation import [LineageOS Infra] (Thu Jun 1 12:49:26 2023)
+
+==========
 2023-05-28
 ==========
 device/samsung/universal7904-common:
