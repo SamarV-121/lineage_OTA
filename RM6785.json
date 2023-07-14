@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1686853987,
-      "filename": "lineage-20.0-20230615_183425-UNOFFICIAL-RM6785.zip",
-      "id": "e16e2f0ab3b0500d0e51936a453a41e8c23f86183c8f2cc4bc135d5ec020069c",
+      "datetime": 1689137071,
+      "filename": "lineage-20.0-20230712_044904-UNOFFICIAL-RM6785.zip",
+      "id": "bb06cc6e3e6f8d707fc0bed9b7f73f6eb669e6dcc69407f0617737bfbdbbd806",
       "romtype": "UNOFFICIAL",
-      "size": 1201876329,
-      "url": "https://lineage.samarv121.dev/RM6785-20230616_082551/lineage-20.0-20230615_183425-UNOFFICIAL-RM6785.zip",
+      "size": 1202303222,
+      "url": "https://lineage.samarv121.dev/RM6785-20230714_093638/lineage-20.0-20230712_044904-UNOFFICIAL-RM6785.zip",
       "version": "20.0"
     }
   ]

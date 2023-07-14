@@ -1,4 +1,16 @@
 ==========
+2023-07-11
+==========
+device/realme/RM6785:
+6ecafb RM6785: overlay: Enable sidefps performant auth by default [Adithya R] (Tue Jul 11 17:02:26 2023)
+af9088 Revert "RM6785: Do not override build fingerprint" [SamarV-121] (Tue Jul 11 17:02:21 2023)
+30c11d RM6785: overlay: Enable auto-power-save modes [Zhao Wei Liew] (Tue Jul 11 17:02:14 2023)
+
+kernel/realme/mt6785:
+d891712 Merge '4.14.320' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Thu Jun 29 13:40:52 2023)
+b6982bb Merge '4.14.319' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Thu Jun 22 12:41:28 2023)
+
+==========
 2023-06-15
 ==========
 device/realme/RM6785:

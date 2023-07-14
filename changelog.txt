@@ -1,4 +1,128 @@
 ==========
+2023-07-11
+==========
+android:
+434bed manifest: July 2023 Security update [Michael Bestas] (Wed Jul 5 22:18:24 2023)
+1b1671 manifest: Track our contexthub [Nolen Johnson] (Tue Jun 20 14:35:02 2023)
+
+bootable/recovery:
+3a726d recovery: Add support for touch rotation [LuK1337] (Sun Jun 25 21:19:01 2023)
+
+build/make:
+cf5e4f Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas] (Fri Jul 7 14:33:16 2023)
+180f36 Add TARGET_RECOVERY_DEFAULT_TOUCH_ROTATION flag [LuK1337] (Sun Jun 25 21:38:05 2023)
+
+build/soong:
+32f43e soong: Properly sort dumpvar additions [Nolen Johnson] (Sat Jul 8 22:43:22 2023)
+
+device/google/contexthub:
+6ceb9c contexthub-nano: Include headers for 4.4 kernels [Nolen Johnson] (Sat Jun 17 17:34:40 2023)
+
+external/chromium-webview/patches:
+f79c09 Update Chromium Webview to 114.0.5735.196 [Kevin F. Haggerty] (Sat Jul 1 13:55:40 2023)
+acd8a9 Update Chromium Webview to 114.0.5735.131 [Kevin F. Haggerty] (Fri Jun 16 13:10:21 2023)
+
+external/chromium-webview/prebuilt/arm:
+5ca4dd Update Chromium Webview arm prebuilt to 114.0.5735.196 [Kevin F. Haggerty] (Sat Jul 1 13:57:00 2023)
+80e30c Update Chromium Webview arm prebuilt to 114.0.5735.131 [Kevin F. Haggerty] (Fri Jun 16 13:11:32 2023)
+
+external/chromium-webview/prebuilt/arm64:
+ac7207 Update Chromium Webview arm64 prebuilt to 114.0.5735.196 [Kevin F. Haggerty] (Sat Jul 1 13:57:01 2023)
+1a7d42 Update Chromium Webview arm64 prebuilt to 114.0.5735.131 [Kevin F. Haggerty] (Fri Jun 16 13:11:33 2023)
+
+external/chromium-webview/prebuilt/x86:
+f3d12b Update Chromium Webview x86 prebuilt to 114.0.5735.196 [Kevin F. Haggerty] (Sat Jul 1 13:57:02 2023)
+e4645f Update Chromium Webview x86 prebuilt to 114.0.5735.131 [Kevin F. Haggerty] (Fri Jun 16 13:11:34 2023)
+
+external/chromium-webview/prebuilt/x86_64:
+082444 Update Chromium Webview x86_64 prebuilt to 114.0.5735.196 [Kevin F. Haggerty] (Sat Jul 1 13:57:04 2023)
+4c0eb4 Update Chromium Webview x86_64 prebuilt to 114.0.5735.131 [Kevin F. Haggerty] (Fri Jun 16 13:11:35 2023)
+
+frameworks/av:
+2a75cd Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas] (Fri Jul 7 14:34:36 2023)
+f6fc00 Camera: Avoid unnecessary close of buffer acquire fence fds [Emilian Peev] (Wed Jun 21 11:47:55 2023)
+
+frameworks/base:
+ff380f Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas] (Fri Jul 7 14:34:43 2023)
+6cc2634 WiredAccessoryManager: Add support for DP audio [LuK1337] (Tue Jul 4 10:48:15 2023)
+867585 SystemUI: SideFpsEventHandler: Don't crash without FingerprintManager [Michael W] (Sun Jun 25 15:26:01 2023)
+395bdd SystemUI: Prevent NPE when checking for powerbutton FPS [Michael W] (Sun Jun 25 15:01:03 2023)
+682632 SystemUI: Don't require AOD for screen off UDFPS [LuK1337] (Thu Jun 22 11:53:57 2023)
+466298 SystemUI: Enable keyguard quick affordances [SamarV-121] (Wed Jun 21 19:35:25 2023)
+96b12f fixup! SystemUI: Make the volume dialog expandable [Sebastiano Barezzi] (Tue Jun 20 13:46:45 2023)
+8cb0fe fixup! Partially revert "Assume sensors perform prox check" [Michael Bestas] (Fri Jun 16 15:17:53 2023)
+2480b5 fixup! SystemUI: Re-evaluate system theme on UI mode change [Michael Bestas] (Fri Jun 16 15:17:18 2023)
+5c28e4 fixup! SystemUI: screenshot: open long screenshot activity for partial screenshots [Michael Bestas] (Fri Jun 16 15:17:18 2023)
+7ed5d51 fixup! SystemUI: add FloatingRotationButton for hw-key devices [Michael Bestas] (Thu Jun 15 13:33:33 2023)
+4a4f20e fixup! Add support for runtime toggle of navbar [Michael Bestas] (Thu Jun 15 13:33:33 2023)
+dca0e3 fixup! Keyguard: don't use large clock on landscape [Michael Bestas] (Thu Jun 15 11:51:48 2023)
+
+hardware/google/pixel:
+6542e1 Temporarily disable lineage health HAL [Michael Bestas] (Thu Jun 22 14:55:28 2023)
+
+lineage-sdk:
+c40766 ChargingControl: Use ServiceManager.waitForDeclaredService() [LuK1337] (Mon Jul 10 10:58:47 2023)
+9ed937 ChargingControl: No need to log a crash when not supported [Michael W] (Sat Jul 8 19:38:24 2023)
+e6258a ChargingControl: Handle cancel toggle correctly if bypass is not supported [Luofan Chen] (Wed Jun 28 09:38:05 2023)
+7f1c3b ChargingControl: Add cancel toggle for limit done notification [Luofan Chen] (Wed Jun 28 09:38:05 2023)
+9ada9b ChargingControl: Reset internal states on settings change [Luofan Chen] (Wed Jun 28 09:38:05 2023)
+c2dbc7 ChargingControl: Set a small margin for devices with bypass support [Luofan Chen] (Wed Jun 28 09:38:05 2023)
+
+packages/apps/Aperture:
+6aa5ea Aperture: Make the supported quality list an unordered map [Sebastiano Barezzi] (Sun Jul 2 15:40:57 2023)
+2d52df Aperture: Frame rates lists should be unordered sets [Sebastiano Barezzi] (Sun Jul 2 15:40:57 2023)
+957d8a Aperture: Framerate -> frame rate [Sebastiano Barezzi] (Sun Jul 2 15:40:57 2023)
+afc275 Aperture: Dedup secondary top bar attributes into theme [Sebastiano Barezzi] (Sun Jul 2 15:40:57 2023)
+5f4883 Aperture: Update CameraX to 1.3.0-beta01 [LuK1337] (Sun Jul 2 15:39:15 2023)
+aca4ae Aperture: Inherit aapt_version_code_defaults [LuK1337] (Thu Jun 22 18:06:03 2023)
+
+packages/apps/LineageParts:
+5e85eb LineageParts: Make sure wakelock is held before releasing it [LuK1337] (Mon Jul 10 06:20:37 2023)
+f06caa LineageParts: Remove unnecessary WakeLock::acquire() call [LuK1337] (Sun Jul 9 22:23:44 2023)
+
+packages/apps/Settings:
+ed0161 Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas] (Fri Jul 7 14:37:27 2023)
+
+packages/apps/ThemePicker:
+b16dfc ThemePicker: Fix crash choosing Live Wallpapers [Tommy Webb] (Fri Jun 23 17:10:15 2023)
+6a6cbd ThemePicker: Apply window insets to quick affordance fragment [LuK1337] (Wed Jun 21 19:35:32 2023)
+fca4a7 ThemePicker: Fix quick affordance setting padding [Michael Bestas] (Wed Jun 21 19:35:32 2023)
+a51d95 ThemePicker: Expose quick affordances section on default UI [SamarV-121] (Wed Jun 21 19:35:32 2023)
+
+packages/apps/Trebuchet:
+812c2c fixup! Hide scrollbar when searching All Apps [Michael Bestas] (Thu Jun 15 13:44:48 2023)
+8a69f4 fixup! Fix All Apps header protection and spacing again [Tommy Webb] (Thu Jun 15 13:44:22 2023)
+a81c38 Revert "Don't discard custom grid on config changes" [Michael Bestas] (Thu Jun 15 13:44:12 2023)
+2c2cc4f Revert "fixup! Don't discard custom grid on config changes" [Michael Bestas] (Thu Jun 15 13:44:04 2023)
+ce0bcf Merge tag 'android-13.0.0_r52' into staging/lineage-20.0_merge-android-13.0.0_r52 [Michael Bestas] (Thu Jun 15 13:41:55 2023)
+
+packages/apps/Updater:
+185b5d Updater: Don't show delete twice [Michael W] (Sat Jul 8 19:23:17 2023)
+613fba Updater: Fix header margin [Michael W] (Sat Jul 8 19:23:11 2023)
+c3093c Updater: Align with Settings / Materialize [Michael W] (Sat Jul 8 19:23:03 2023)
+bf1646 Updater: Handle NumberFormatException [Michael W] (Sat Jul 8 19:22:56 2023)
+755560 Updater: Redo project structure [Sebastiano Barezzi] (Sat Jul 8 19:22:49 2023)
+
+packages/apps/WallpaperPicker2:
+87e144 Add null check for effectsController [Michael Bestas] (Thu Jun 15 17:47:26 2023)
+
+packages/modules/Wifi:
+830286 Merge tag 'android-13.0.0_r61' into staging/lineage-20.0_merge-android-13.0.0_r61 [Michael Bestas] (Fri Jul 7 14:50:38 2023)
+
+system/vold:
+2711bf vold: fix failing to format zero-ed out SD card [nift4] (Sat Jul 1 10:21:24 2023)
+
+vendor/lineage:
+c3b27f vars: July 2023 Security update [Chirayu Desai] (Fri Jul 7 14:30:58 2023)
+6e3be5 vars: Pixel Tablet [Michael Bestas] (Wed Jul 5 21:22:17 2023)
+322d62 fixup! config: Move IAntiFlicker to fqname [Nolen Johnson] (Fri Jun 23 17:10:02 2023)
+d9b0c4 overlay: Set screenshot work profile files app to DocumentsUI [LuK1337] (Thu Jun 22 20:01:00 2023)
+0b81f4 soong: Add `aapt_version_code` default [LuK1337] (Thu Jun 22 18:06:00 2023)
+fd6859 config: Move IAntiFlicker to fqname [Michael Bestas] (Wed Jun 21 12:35:00 2023)
+8781c9 apn: Add Uno Mobile Italy [Dhina17] (Tue Jun 20 20:20:29 2023)
+d7f56a vars: Use fbpacktool for unpacking bootloader.img on Tensor pixels [Michael Bestas] (Fri Jun 16 18:28:11 2023)
+
+==========
 2023-06-15
 ==========
 android:
