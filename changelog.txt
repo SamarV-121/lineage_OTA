@@ -1,4 +1,323 @@
 ==========
+2023-08-09
+==========
+android:
+100b83 manifest: August 2023 Security update [Michael Bestas] (Wed Aug 9 00:47:08 2023)
+f50c4c lineage: Switch to our own fork of hardware/libhardware_legacy [Bruno Martins] (Tue Aug 1 21:27:12 2023)
+0049b1 qcom: Add kalama HALs [Bruno Martins] (Sat Jul 29 12:55:29 2023)
+8332b3 qcom: Add taro HALs [Bruno Martins] (Sat Jul 29 12:55:04 2023)
+aca7ab qcom: Remove deprecated custom APM [Bruno Martins] (Fri Jul 28 22:00:43 2023)
+2fa2e8 qcom: Sync core-utils-sys and core-utils-vendor [Bruno Martins] (Fri Jul 28 13:01:57 2023)
+226676 lineage: Remove no longer used symlinks [Michael Bestas] (Sat Jul 22 14:46:12 2023)
+8141fe manifest: Switch to our fork of system/netd [Michael Bestas] (Mon Jul 17 13:21:11 2023)
+568c1f manifest: Track our hardware/broadcom/libbt [Nolen Johnson] (Sun Jul 16 19:53:16 2023)
+8a9be8 pixel: Use gs201 kernel for gs101 pixels [Michael Bestas] (Fri Jul 14 19:20:57 2023)
+f33b73 manifest: Track our development [LuK1337] (Fri Jul 14 07:56:51 2023)
+
+bionic:
+e0aac7 Make tmpfile() respect $TMPDIR. [Elliott Hughes] (Thu Jul 13 14:47:16 2023)
+4356de Fix mte build breakage. [Christopher Ferris] (Thu Jul 13 14:46:58 2023)
+857195 Fix stack use-after-scope in async_safe_log. [Peter Collingbourne] (Thu Jul 13 14:46:38 2023)
+
+bootable/recovery:
+a18688 recovery: Simplify reboot recovery reason [LuK1337] (Fri Aug 4 20:52:35 2023)
+2a7065 recovery: Clear BCB before rebooting to recovery [LuK1337] (Fri Aug 4 20:14:56 2023)
+107dfa recovery: Ask to reboot before installing anything after A/B update [LuK1337] (Sat Jul 29 10:19:56 2023)
+
+build/make:
+42dec8 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 01:10:17 2023)
+
+development:
+4b3ea0 make-key: Enforce PBEv1 password-protected signing keys [Vasyl Gello] (Fri Jul 14 07:54:13 2023)
+
+external/chromium-webview/patches:
+8eef9e Update Chromium Webview to 115.0.5790.166 [Kevin F. Haggerty] (Thu Aug 3 21:23:03 2023)
+1cee4f Update Chromium Webview to 115.0.5790.136 [Kevin F. Haggerty] (Fri Jul 21 14:09:26 2023)
+
+external/chromium-webview/prebuilt/arm:
+75fb96 Update Chromium Webview arm prebuilt to 115.0.5790.166 [Kevin F. Haggerty] (Sat Aug 5 14:16:41 2023)
+8a258c Update Chromium Webview arm prebuilt to 115.0.5790.136 [Kevin F. Haggerty] (Sat Jul 22 20:45:47 2023)
+
+external/chromium-webview/prebuilt/arm64:
+d80e3c Update Chromium Webview arm64 prebuilt to 115.0.5790.166 [Kevin F. Haggerty] (Sat Aug 5 14:17:05 2023)
+f6f228 Update Chromium Webview arm64 prebuilt to 115.0.5790.136 [Kevin F. Haggerty] (Sat Jul 22 20:45:48 2023)
+
+external/chromium-webview/prebuilt/x86:
+9060a1 Update Chromium Webview x86 prebuilt to 115.0.5790.166 [Kevin F. Haggerty] (Sat Aug 5 14:17:06 2023)
+59ca79 Update Chromium Webview x86 prebuilt to 115.0.5790.136 [Kevin F. Haggerty] (Sat Jul 22 20:45:48 2023)
+
+external/chromium-webview/prebuilt/x86_64:
+015e40 Update Chromium Webview x86_64 prebuilt to 115.0.5790.166 [Kevin F. Haggerty] (Sat Aug 5 14:17:07 2023)
+777d0d Update Chromium Webview x86_64 prebuilt to 115.0.5790.136 [Kevin F. Haggerty] (Sat Jul 22 20:45:49 2023)
+
+external/exfatprogs:
+e706c1 Merge tag '1.2.1' of https://github.com/exfatprogs/exfatprogs into lineage-20.0 [Michael Bestas] (Sat Jul 22 14:07:29 2023)
+
+frameworks/base:
+4915af Merge tag 'android-13.0.0_r72' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 01:59:17 2023)
+260ac0f Merge tag 'android-13.0.0_r71' of https://android.googlesource.com/platform/frameworks/base into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 01:56:33 2023)
+928354 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 01:11:21 2023)
+2cf6a5 VolumeDialogImpl: Add STREAM_NOTIFICATION row [LuK1337] (Sun Aug 6 18:29:32 2023)
+77a640 SystemUI: Enable cast tile without Wi-Fi connection [nift4] (Tue Jul 25 16:03:34 2023)
+e8fc94 SystemUI: screenshot: Add delete action chip intent [ganeshi4u] (Tue Jul 25 16:02:42 2023)
+ce1f9f SystemUI: Check whether the selected WFD route is available [Weijie Wang] (Thu Jul 20 16:58:42 2023)
+1c72405 SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Adithya R] (Thu Jul 20 15:08:08 2023)
+68bb4d4 Revert "Keyguard: Allow user configurable fingerprint wake-and-unlock" [Michael Bestas] (Thu Jul 20 15:08:08 2023)
+a9ecc9 Fix multi-user silent notifications on lockscreen [Tommy Webb] (Tue Jul 18 16:58:09 2023)
+cfd9c1 Support per-UID VPN lockdown policy [Tommy Webb] (Mon Jul 17 13:21:45 2023)
+64cef5 Skip firewall rules for stopped users [Tommy Webb] (Mon Jul 17 13:21:34 2023)
+b83a56 Use POLICY_REJECT_ALL instead of allowlist [Tommy Webb] (Mon Jul 17 13:21:34 2023)
+c05f2d fixup! Implement firewall status bar indicator [Oliver Scott] (Mon Jul 17 13:21:34 2023)
+714095c NPMS: Check if UID is disallowed by transports [Tommy Webb] (Mon Jul 17 13:21:34 2023)
+5a0dc91 Track and send allowed transports to Connectivity [Tommy Webb] (Mon Jul 17 13:21:34 2023)
+e91d98 Do not consider transports for restricted mode [Tommy Webb] (Mon Jul 17 13:21:34 2023)
+c35569b SystemUI: Fix keyguard affordance colour in light theme [Adithya R] (Mon Jul 17 12:48:43 2023)
+01a12e SystemUI: Check primitive vibration support in new quick affordances [Fabian Leutenegger] (Mon Jul 17 12:48:43 2023)
+601c49c Merge tag 'android-13.0.0_r63' into staging/lineage-20.0_merge-android-13.0.0_r63 [Michael Bestas] (Thu Jul 13 15:41:47 2023)
+016489 Keyguard: Allow user configurable fingerprint wake-and-unlock [Michael Bestas] (Thu Jul 13 14:20:34 2023)
+
+hardware/broadcom/libbt:
+433935 correct WBS config VSC params [Nagarjuna Kristam] (Sun Jul 16 19:46:31 2023)
+9c7cdf libbt: configure audio codec right after firmware [z3DD3r] (Sun Jul 16 19:46:24 2023)
+b29cdb libbt: Add support for using two stop bits [Steve Kondik] (Sun Jul 16 19:46:17 2023)
+b537ad libbt: Add btlock support [Steve Kondik] (Sun Jul 16 19:46:11 2023)
+22affc libbt: Add prepatch support [Steve Kondik] (Sun Jul 16 19:46:00 2023)
+
+hardware/interfaces:
+8aad8f compatibility_matrices: Allow radio.config@1.0 till target-level 5 [me-cafebabe] (Thu Aug 3 18:51:50 2023)
+
+lineage-sdk:
+aa4306 Remove deprecated settings migration code [Michael Bestas] (Sat Jul 22 16:16:33 2023)
+1f9120 Remove deprecated host migration example [Michael Bestas] (Sat Jul 22 16:16:33 2023)
+17d6d4 Remove leftover trusted_accent_packages array [Michael Bestas] (Sat Jul 22 16:16:33 2023)
+d07207 Partially revert "LineageSettingsProvider: Support migration from cmsettings" [Michael Bestas] (Sat Jul 22 15:46:54 2023)
+f4c790 Remove leftover LineageAudioService support [Michael Bestas] (Sat Jul 22 15:46:54 2023)
+6326bd Remove leftover Performance Profiles support [Michael Bestas] (Sat Jul 22 15:42:47 2023)
+1a5331 LineageSettingsProvider: Allow enabling lockscreen rotation by default [Michael Bestas] (Thu Jul 20 15:28:53 2023)
+0c5c4f ChargingControl: Additional log lines for deadline [Tommy Webb] (Thu Jul 13 15:20:21 2023)
+2b5946 ChargingControl: Retry setting deadline if it fails [Tommy Webb] (Thu Jul 13 15:20:21 2023)
+3c3140 ChargingControl: Don't set deadline if charging control is not enabled [Luofan Chen] (Thu Jul 13 15:20:21 2023)
+1f3648 ChargingControl: Drop default values for initially zero variables [Luofan Chen] (Thu Jul 13 15:20:21 2023)
+1ed0e0 ChargingControl: Return early if lineage health HAL is not found [Luofan Chen] (Thu Jul 13 15:20:21 2023)
+637699 Drop < lineage-16.0 database migration support [Michael Bestas] (Thu Jul 13 14:19:43 2023)
+7e5dad Change existing migrations to use new helper methods [Chirayu Desai] (Thu Jul 13 14:19:43 2023)
+1c5a5d Add helper methods for reading and writing settings [Tommy Webb] (Thu Jul 13 14:19:15 2023)
+663a94 Do not use transactions when reading settings [Tommy Webb] (Wed Jul 12 11:27:42 2023)
+173b6d Migrate side FPS settings [Chirayu Desai] (Wed Jul 12 11:27:38 2023)
+
+packages/apps/Aperture:
+c9be18 Aperture: Update CameraX to 1.3.0-beta02 [LuK1337] (Thu Jul 27 16:50:09 2023)
+c32bb3 Aperture: Restore old flash mode after Torch [Luca Stefani] (Thu Jul 27 16:37:14 2023)
+1c6410 Aperture: Preserve classes extending SettingsFragment [Luca Stefani] (Wed Jul 26 14:52:25 2023)
+8863c6 Aperture: Set default_applicable_licenses [Michael Bestas] (Tue Jul 25 18:47:06 2023)
+ea79c3 Aperture: Switch Android.bp to SPDX [Michael Bestas] (Tue Jul 25 18:47:06 2023)
+dd2506 Aperture: Start making it REUSE compliant [Michael Bestas] (Tue Jul 25 18:47:06 2023)
+69766f Aperture: Add missing copyright headers to icons [Michael Bestas] (Tue Jul 25 18:47:05 2023)
+cbe47b Aperture: Move torch mode on photo mode to long press [Sebastiano Barezzi] (Tue Jul 25 18:11:43 2023)
+473ec7 Aperture: Add some processing settings [Sebastiano Barezzi] (Tue Jul 25 18:11:43 2023)
+790141 Aperture: Use a delegate for view model properties [Sebastiano Barezzi] (Tue Jul 25 18:11:42 2023)
+4b472e Aperture: Add previous() and next() for all enum classes [Sebastiano Barezzi] (Tue Jul 25 18:11:42 2023)
+b2d998 Aperture: SettingsFragment: Handle back button properly [Sebastiano Barezzi] (Tue Jul 25 18:11:42 2023)
+3aeaa5 Aperture: Better handle left/right swipe gesture [Sebastiano Barezzi] (Tue Jul 25 18:11:42 2023)
+dbd2ad Aperture: Sort camera modes in CameraMode [Sebastiano Barezzi] (Tue Jul 25 18:11:42 2023)
+37c5c8 Aperture: Use the view model for LensSelectorLayout [Sebastiano Barezzi] (Tue Jul 25 18:11:41 2023)
+4e9578 Aperture: Set UI components visibility on LiveData observer [Sebastiano Barezzi] (Tue Jul 25 18:11:41 2023)
+59478d Aperture: Remove useless timer mode button visibility setter [Sebastiano Barezzi] (Tue Jul 25 18:11:41 2023)
+aaa539 Aperture: Reformat code [Sebastiano Barezzi] (Tue Jul 25 18:11:41 2023)
+7092b3 Aperture: Disable video quality button when there's only one quality available [Sebastiano Barezzi] (Tue Jul 25 18:11:41 2023)
+679623 Aperture: Add an info chip [Sebastiano Barezzi] (Tue Jul 25 18:11:41 2023)
+1b1e80 Aperture: Use LiveData to update secondary bar buttons UI [Sebastiano Barezzi] (Tue Jul 25 18:11:40 2023)
+7efb1d Aperture: Constrain count down view to the view finder [Sebastiano Barezzi] (Tue Jul 25 18:11:40 2023)
+636297 Aperture: Inflate count down view content by its own [Sebastiano Barezzi] (Tue Jul 25 18:11:40 2023)
+e78d88 Aperture: Handle thermal status [Sebastiano Barezzi] (Tue Jul 25 18:11:40 2023)
+807844 Aperture: Add volume buttons gestures [Sebastiano Barezzi] (Tue Jul 25 18:11:40 2023)
+300e62 Aperture: Handle camera errors [Sebastiano Barezzi] (Tue Jul 25 17:24:00 2023)
+d6334c Aperture: Add missing copyright headers to icons [Michael Bestas] (Sat Jul 22 12:40:40 2023)
+c1472a Aperture: Simplify flash mode handling [Sebastiano Barezzi] (Thu Jul 13 17:27:13 2023)
+9e0a3f Aperture: CameraActivity: Get rid of update{PrimaryBar,CameraMode}Buttons() [Sebastiano Barezzi] (Thu Jul 13 17:27:13 2023)
+a1cad0 Aperture: Use the view model for views' rotation [Sebastiano Barezzi] (Thu Jul 13 17:27:13 2023)
+1a512e Aperture: Introduce CameraViewModel [Sebastiano Barezzi] (Thu Jul 13 17:27:12 2023)
+
+packages/apps/Contacts:
+68e10a Contacts: add support for importing VCF v4 [althafvly] (Tue Jul 25 16:37:08 2023)
+37670b Contacts: Use Material You colors [minarypenguin] (Thu Jul 13 13:07:32 2023)
+
+packages/apps/Eleven:
+24ecd2 Eleven: Request MANAGE_EXTERNAL_STORAGE permission [DarkJoker360] (Tue Jul 25 17:28:04 2023)
+
+packages/apps/Etar:
+a8791d Update README.md [Gitsaibot] (Thu Jul 20 15:31:35 2023)
+c40eca AlertReceiver: Return early if either context or intent is null [Aayush Gupta] (Thu Jul 20 15:31:35 2023)
+1507df Prompt user to add calendar instead of account [Aayush Gupta] (Thu Jul 20 15:31:35 2023)
+6f1051 gradle clean should remove the generated libs [Jochen Sprickerhof] (Thu Jul 20 15:31:35 2023)
+689c62 Update Gradle and dependencies (#1373) [Gitsaibot] (Thu Jul 20 15:31:35 2023)
+efef98 UI Improvements (#1370) [marreitin] (Thu Jul 20 15:31:35 2023)
+97056d Update submodules [Jochen Sprickerhof] (Thu Jul 20 15:31:35 2023)
+8501b6 Catching all sync adapters at once instead of one by one (#1334) [Gitsaibot] (Thu Jul 20 15:31:35 2023)
+a06122 Add URL field [Arnau Mora] (Thu Jul 20 15:31:35 2023)
+767b60 fix calendar and organizer text colors being barely visible sometimes [Jonas Häusler] (Thu Jul 20 15:31:35 2023)
+86ed71 New version 1.0.34 [Gitsaibot] (Thu Jul 20 15:31:35 2023)
+c2167e check event color is initialized before using it [Jonas Häusler] (Thu Jul 20 15:31:35 2023)
+2589e4 Use USE_EXACT_ALARM permission [Jochen Sprickerhof] (Thu Jul 20 15:31:35 2023)
+
+packages/apps/FMRadio:
+1d304d fixup! FMRadio: Use FLAG_IMMUTABLE for notifications [nift4] (Sat Jul 29 20:40:23 2023)
+8a3e6e fixup! FMRadio: Ask record audio permission before starting [nift4] (Sat Jul 29 20:40:22 2023)
+ec0f0a FMRadio: Use FLAG_IMMUTABLE for notifications [Erfan Abdi] (Sun Jul 23 16:02:36 2023)
+cc2942 FMRadio: check for other runtime perms too [nift4] (Sun Jul 23 16:02:36 2023)
+b50935 FMRadio: Ask record audio permission before starting [Erfan Abdi] (Sun Jul 23 16:02:36 2023)
+71aa62 FMRadio: (almost) drop system UID [nift4] (Sun Jul 23 16:02:35 2023)
+25b8ce FMRadio: fix listen to recordings [nift4] (Sun Jul 23 16:01:42 2023)
+92d2cc FMRadio: fix record activity timer being off after a while [nift4] (Sun Jul 23 16:01:42 2023)
+d6259b FMRadio: match playlist by name instead [nift4] (Sun Jul 23 16:01:42 2023)
+5b6038 FMRadio: fix monkey using MENU key can start record [nift4] (Sun Jul 23 16:01:42 2023)
+ba2a14 FMRadio: Play Music is dead - fix saved recordings [nift4] (Sun Jul 23 16:01:42 2023)
+a71ab2 FMRadio: androidx conversion, cleanup makefiles [nift4] (Sun Jul 23 15:25:39 2023)
+31f261 FMRadio: use notification channels [nift4] (Sun Jul 23 15:25:39 2023)
+
+packages/apps/Gallery2:
+bca683 Check for Potential Null Pointer [Jing Mike] (Tue Jul 25 16:33:24 2023)
+
+packages/apps/Jelly:
+e5acd1 Jelly: Add Brave search engine and suggestion provider [Sebastiano Barezzi] (Tue Aug 1 14:41:36 2023)
+65d27c Jelly: Show no suggestion when there are zero results [Sebastiano Barezzi] (Tue Aug 1 14:24:30 2023)
+2ebfac Jelly: Fix string comment [Sebastiano Barezzi] (Tue Aug 1 14:24:26 2023)
+68fcab Jelly: Handle accessibility warnings [Sebastiano Barezzi] (Tue Aug 1 14:24:26 2023)
+8bb8be Jelly: UrlBarLayout: Use a unit for autocomplete item click listener [Sebastiano Barezzi] (Tue Aug 1 14:24:26 2023)
+7fd052 Jelly: Remove unused namespace [Sebastiano Barezzi] (Tue Aug 1 13:56:59 2023)
+0d0b5a Jelly: Handle autofill and input type warnings [Sebastiano Barezzi] (Tue Aug 1 13:56:59 2023)
+ae7fd7 Jelly: Remove unused resources [Sebastiano Barezzi] (Tue Aug 1 13:56:59 2023)
+059bc7 Jelly: Redo suggestion provider [Sebastiano Barezzi] (Tue Aug 1 13:56:59 2023)
+c9f015 Jelly: Use a single view for suggestion items [Sebastiano Barezzi] (Tue Aug 1 13:56:59 2023)
+da1d51 Jelly: Drop hardware accelerated flag in manifest [Sebastiano Barezzi] (Tue Aug 1 13:56:52 2023)
+e6c340 Jelly: FavoriteProvider: Remove unneeded constructor property [Sebastiano Barezzi] (Tue Aug 1 13:56:52 2023)
+8f5364 Jelly: Remove unused imports [Sebastiano Barezzi] (Tue Aug 1 13:56:52 2023)
+0feaa1 Jelly: Allow to choose all files if no parameter is set [Luca Stefani] (Mon Jul 31 15:11:15 2023)
+0e79bb Jelly: Fixup file upload [Luca Stefani] (Mon Jul 31 15:06:45 2023)
+6f2f14 Jelly: Ignore mime type if it's binary [Luca Stefani] (Mon Jul 31 14:49:39 2023)
+ca1430 Jelly: Suppress some warnings [Luca Stefani] (Mon Jul 31 14:40:26 2023)
+32d466 Jelly: Set UserAgent and Cookie to download files [Luca Stefani] (Mon Jul 31 14:25:59 2023)
+9f91d5 Revert "Jelly: Drop unused dependencies" [Luca Stefani] (Thu Jul 27 21:17:36 2023)
+5e7cdb Jelly: Drop unused dependencies [Sebastiano Barezzi] (Wed Jul 26 10:32:38 2023)
+9f96ba Jelly: The epic of better suggestions [Luca Stefani] (Tue Jul 25 01:19:48 2023)
+aee69c Jelly: Remove custom focus change listener handling [Luca Stefani] (Tue Jul 25 01:19:48 2023)
+38bebf Jelly: Switch to new JSON format for Google suggestions [Luca Stefani] (Tue Jul 25 01:19:48 2023)
+7f96a6 Jelly: Cleanup downloadSuggestionsForQuery [Luca Stefani] (Tue Jul 25 01:19:48 2023)
+b2b4f0 Jelly: PrefsUtils -> SharedPreferencesExt [Sebastiano Barezzi] (Tue Jul 25 01:11:59 2023)
+4ddc7b Jelly: Bring in our version of guessFileName [Sebastiano Barezzi] (Tue Jul 25 00:01:34 2023)
+f15ceb Jelly: Cleanup MenuDialog UI [Sebastiano Barezzi] (Sun Jul 23 21:39:25 2023)
+993388 Jelly: Switch Android.bp to SPDX [Michael Bestas] (Sun Jul 23 18:00:54 2023)
+908c00 Jelly: Start making it REUSE compliant [Michael Bestas] (Sun Jul 23 18:00:54 2023)
+57fe08 Jelly: Use WindowInsetsControllerCompat for hiding/showing the keyboard [Sebastiano Barezzi] (Sun Jul 23 18:00:54 2023)
+24411b Jelly: Show keyboard on "Find in page" [Luca Stefani] (Sun Jul 23 17:46:10 2023)
+12e64e Jelly: Pass a LinearLayout to MenuDialog's LayoutInflater [Luca Stefani] (Sun Jul 23 15:31:48 2023)
+3284fa Jelly: Close keyboard when "more button" is clicked [Luca Stefani] (Sun Jul 23 15:31:48 2023)
+4675ae Jelly: Remove focus from search bar when we close keyboard [Luca Stefani] (Sun Jul 23 15:31:48 2023)
+514ca4 Jelly: New SSL certificate info dialog [Sebastiano Barezzi] (Sun Jul 23 13:55:41 2023)
+c6a4d6 Jelly: Change desktop mode string [Luca Stefani] (Sun Jul 23 10:29:14 2023)
+52ebd5 Jelly: New iconography [Sebastiano Barezzi] (Sat Jul 22 12:48:17 2023)
+080fda Jelly: utils: UiUtils: Fix nullable parameter [Sebastiano Barezzi] (Sat Jul 22 12:30:49 2023)
+03a0fd Jelly: Use relative activity names in manifest [Sebastiano Barezzi] (Sat Jul 22 12:30:09 2023)
+00b201 Jelly: Set default_applicable_licenses [Michael Bestas] (Sat Jul 22 12:28:42 2023)
+254440 Jelly: New menu popup UI [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+0358af Jelly: M3 [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+bed0c5 Jelly: New URL bar [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+0b7785 Jelly: Remove timestamp based history background color [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+cb4c84 Jelly: Remove background from empty lists icon [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+16c7e2 Jelly: Use AndroidX preference attributes [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+50250a Jelly: Don't apply tints directly on icons drawables [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+6279b6 Jelly: Nuke favicon based accent color change [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+9e36ad Jelly: Use camel case for layout IDs [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+cf858a Jelly: Use MaterialToolbar back button [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+a8eb62 Jelly: Use lazy getters for views [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+89b439 Jelly: SettingsActivity: Use the new method for inflating fragments [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+9c575e Jelly: SettingsActivity: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+890567 Jelly: SettingsActivity: Rename settings fragment class [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+8b2250 Jelly: MainActivity: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+e6e43a Jelly: MainActivity: Rename class attributes' names [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+60938c Jelly: webview: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+941c9f Jelly: webview: Rename class attributes' names [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+f45b73 Jelly: utils: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+e8fe9e Jelly: ui: Fix secure icon showing [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+fccfaa Jelly: ui: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+a5b0ab Jelly: ui: Rename class attributes' names [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+8fee87 Jelly: suggestions: Fix typo [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+8013db Jelly: suggestions: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+c95c02 Jelly: suggestions: Rename class attributes' names [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+e230ef Jelly: history: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+804d9a Jelly: history: Rename class attributes' names [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+3a2c4b Jelly: favorite: Use better Kotlin syntax [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+58228e Jelly: favorite: Rename class attributes' names [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+00cd0f Jelly: ./gradlew generateBp [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+842dd1 Jelly: Add generateBp from Aperture [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+f3c66b Jelly: Move Android.bp to app/ [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+2143d0 Jelly: Migrate build scripts to Kotlin [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+a16e1e Jelly: Disable Jetifier [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+d5346e Jelly: Reformat code [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+4e6711 Jelly: Use ?attr/isLightTheme [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+5021fe Jelly: Rename app theme to Theme.Jelly [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+e91180 Jelly: Move to SPDX license headers [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+dd2db5 Jelly: Remove unused import [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+2ee67c Jelly: Add newline at the end of files where needed [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+7b617d Jelly: Get rid of wildcard imports [Sebastiano Barezzi] (Sat Jul 22 12:28:42 2023)
+2540f9 Jelly: Introduce NoSuggestionProvider [Luca Stefani] (Sat Jul 22 12:28:42 2023)
+e47c33 Jelly: Use ranges in suggestion provider [Luca Stefani] (Sat Jul 22 12:28:42 2023)
+
+packages/apps/Settings:
+406607 POLICY_REJECT_ALL restricts all network access [Tommy Webb] (Mon Jul 17 13:21:55 2023)
+
+packages/apps/SetupWizard:
+0456a8 Remove landscape layout for missing SIM page [Michael Bestas] (Tue Jul 25 16:23:20 2023)
+a5ba5d Hide navigation hint checkbox when taskbar is enabled [Michael Bestas] (Mon Jul 17 12:49:57 2023)
+eecf4a Fix PhoneMonitor crash on WiFi only devices [Michael Bestas] (Mon Jul 17 12:49:57 2023)
+344e6b Add navigation settings step for secondary users [Tommy Webb] (Thu Jul 13 13:07:08 2023)
+7ad158 Enable biometric and lockscreen steps for secondary users [Oliver Scott] (Thu Jul 13 13:07:08 2023)
+d4425a Match Google wizard script flow [Oliver Scott] (Thu Jul 13 13:07:08 2023)
+
+packages/apps/ThemePicker:
+3c2259 ThemePicker: Remove unnecessary privileges [Tommy Webb] (Thu Jul 20 15:32:34 2023)
+
+packages/apps/Trebuchet:
+f71ed2 Merge tag 'android-13.0.0_r71' of https://android.googlesource.com/platform/packages/apps/Launcher3 into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 02:01:41 2023)
+5a042d Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 01:15:28 2023)
+7d7e8f Trebuchet: Let's keep 2-button nav alive for a little longer [nift4] (Tue Jul 25 09:57:56 2023)
+9aade4 LineageOS default workspace tablet changes [Michael Bestas] (Fri Jul 14 17:29:13 2023)
+
+packages/inputmethods/LatinIME:
+dbdcbe Latin IME bug with deleted text will reappear after screen orientation changes [suyan yang] (Thu Jul 20 18:24:42 2023)
+95109d LatinIME: Fix to English dictionary can be added after deleting [wangjing] (Thu Jul 20 18:24:42 2023)
+
+packages/modules/Bluetooth:
+2b932b gd: hci: Allow disabling selected local commands [LuK1337] (Wed Jul 26 20:10:52 2023)
+
+packages/providers/TelephonyProvider:
+72419e Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 01:16:00 2023)
+
+packages/services/Telecomm:
+6f2898 Merge tag 'android-13.0.0_r67' into staging/lineage-20.0_merge-android-13.0.0_r67 [Michael Bestas] (Wed Aug 9 01:16:08 2023)
+
+system/core:
+0b4107 fastbootd: hacks for legacy [Alessandro Astone] (Tue Aug 1 21:01:05 2023)
+dd75dc fastbootd: usb: fallback to v1 descriptors [Alessandro Astone] (Tue Aug 1 19:37:07 2023)
+
+vendor/lineage:
+9d239d August 2023 Security update [Chirayu Desai] (Wed Aug 9 01:09:37 2023)
+da9c50 device_config: Enable separate notification volume control [LuK1337] (Sat Aug 5 11:46:56 2023)
+f7c254 vars: Add kailua tags [Bruno Martins] (Wed Aug 2 21:03:58 2023)
+eb934e kernel: Don't try to do math on empty kernel version [LuK1337] (Tue Aug 1 18:04:09 2023)
+9d0a2f lineage: config: Allow devices without Cameras to opt-out of Aperture [Nolen Johnson] (Sun Jul 30 06:52:38 2023)
+5c7794 qcom: Prepare for non-legacy dataservices [Bruno Martins] (Thu Jul 27 20:54:25 2023)
+fa1664 qcom: Use full QTI gralloc struct for GKI 2.0 targets [Bruno Martins] (Thu Jul 27 15:00:50 2023)
+c3dda4 Hookup GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE [Bruno Martins] (Tue Jul 25 16:14:17 2023)
+8bbb7d qcom: Add support for kalama platform [Bruno Martins] (Tue Jul 25 16:14:17 2023)
+99041d apns: Format xml spacing [Michael Bestas] (Tue Jul 25 16:09:14 2023)
+da5e53 Revert "Revert "config: Build NavigationBarMode2ButtonOverlay"" [nift4] (Tue Jul 25 09:58:08 2023)
+7a6a0c overlay: Exempt MediaTek ImsService from location indicators [techyminati] (Fri Jul 21 05:14:59 2023)
+17ef54 vars: Use gs201 kernel for gs101 pixels [Michael Bestas] (Fri Jul 14 19:20:51 2023)
+35ef87 vars: Update qcom tags [Michael Bestas] (Fri Jul 14 19:16:00 2023)
+3a48ab vars: Pixel Fold [Michael Bestas] (Thu Jul 13 19:39:45 2023)
+
+==========
 2023-07-11
 ==========
 android:
