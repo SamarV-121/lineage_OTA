@@ -1,4 +1,28 @@
 ==========
+2023-07-20
+==========
+device/realme/RM6785:
+f03c34 RM6785: overlay: Configure PowerOffAlarm overlays [LinkBoi00] (Thu Sep 21 08:59:31 2023)
+9c7051 RM6785: Build PowerOffAlarm [Matsvei Niaverau] (Thu Sep 21 08:59:31 2023)
+17e1ad RM6785: Load SoC specific Wi-Fi HAL [electimon] (Sat Aug 26 10:01:57 2023)
+ca3280 RM6785: Kang bluetooth firmware from A145PXXU1AWA3 [LinkBoi00] (Sat Aug 26 10:01:47 2023)
+7216c4 RM6785: Drop unneeded soc3 firmwares [SamarV-121] (Sun Aug 13 23:27:05 2023)
+5dbd5a RM6785: Shim missing libutils symbol for Camera HAL [bengris32] (Sun Aug 13 15:20:46 2023)
+b98d82 RM6785: Shim misssing audio symbol [bengris32] (Sun Aug 13 15:20:46 2023)
+8725ec RM6785: Replace libutils-v32 with a shim [Tim Zimmermann] (Sun Aug 13 15:20:46 2023)
+49844e RM6785: Shim libmtkcam_stdutils.so [nift4] (Sun Aug 13 15:20:46 2023)
+9b1e3a RM6785: Reorganize libshims [SamarV-121] (Sun Aug 13 15:20:46 2023)
+2510c3 RM6785: Set correct default device name [SamarV-121] (Sun Aug 13 15:20:41 2023)
+3f3805 fixup! RM6785: Refactor libinit [SamarV-121] (Sun Aug 13 15:19:54 2023)
+
+kernel/realme/mt6785:
+e90e7e Merge '4.14.325' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Mon Sep 18 09:05:37 2023)
+47f696 Merge '4.14.324' of https://android.googlesource.com/kernel/common into lineage-20 [SamarV-121] (Mon Sep 18 09:05:35 2023)
+fc8eb8 Merge '4.14.323' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git into lineage-20 [SamarV-121] (Sun Aug 20 12:32:56 2023)
+07eb1d Merge '4.14.322' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git into lineage-20 [SamarV-121] (Sun Aug 20 12:32:54 2023)
+23c6ace Merge '4.14.321' of https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git into lineage-20 [SamarV-121] (Sun Aug 20 12:27:39 2023)
+
+==========
 2023-07-11
 ==========
 device/realme/RM6785:
