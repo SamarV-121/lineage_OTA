@@ -41,8 +41,10 @@ if [ ! -e "$CHANGELOG" ]; then
 fi
 
 declare -A device_repos=(
-	["m20lte"]="device/samsung/m20lte device/samsung/universal7904-common device/samsung_slsi/sepolicy kernel/samsung/universal7904 hardware/samsung hardware/samsung_slsi/scsc_wifibt/wifi_hal hardware/samsung_slsi/libbt hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
-	["RM6785"]="device/realme/RM6785 device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
+	["m20lte"]="device/samsung/m20lte device/samsung/universal7904-common device/samsung_slsi/sepolicy kernel/samsung/universal7904 hardware/samsung hardware/samsung_slsi/scsc_wifibt/wifi_hal hardware/samsung_slsi/libbt hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib hardware/samsung_slsi-linaro/config hardware/samsung_slsi-linaro/exynos hardware/samsung_slsi-linaro/exynos5 hardware/samsung_slsi-linaro/graphics hardware/samsung_slsi-linaro/openmax"
+	["RM6785"]="device/realme/RM6785-common device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
+	# ["RMX2001L1"]="device/realme/RMX2001L1 device/realme/RM6785-common device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
+	# ["RMX2151L1"]="device/realme/RMX2151L1 device/realme/RM6785-common device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
 )
 
 TEMP_FILE=$(mktemp)
@@ -52,12 +54,19 @@ function git_log() {
 	if [ -n "$LOG" ]; then
 		echo "$PROJECT"
 		echo "$PROJECT:" >>"$TEMP_FILE"
-		echo -e "$LOG\n" >>"$TEMP_FILE"
+
+		if ! [[ $LOG =~ "Automatic translation import" ]]; then
+			echo -e "$LOG\n" >>"$TEMP_FILE"
+		fi
 	fi
 }
 
 LAST_DATE=$(head -n2 "$CHANGELOG" | tail -n1)
 echo -e "==========\n$(date +%F)\n==========" >"$TEMP_FILE"
+
+if [[ "$DEVICE" == "RMX2001L1" || "$DEVICE" == "RMX2151L1" ]]; then
+    DEVICE="RM6785"
+fi
 
 if [ "$DEVICE" ]; then
 	for PROJECT in ${device_repos[$DEVICE]}; do
