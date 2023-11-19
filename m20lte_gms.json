@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+      "datetime": 1700058412,
+      "filename": "lineage-21.0-20231115_142951-UNOFFICIAL-gms-m20lte.zip",
+      "id": "612b458f14fc3de9ac8029afd2b40606d41c7b86116f27b8f70f0387a2239403",
+      "romtype": "UNOFFICIAL",
+      "size": 947363808,
+      "url": "https://lineage.samarv121.dev/m20lte-20231119_023424/lineage-21.0-20231115_142951-UNOFFICIAL-gms-m20lte.zip",
+      "version": "21.0"
+    }
+  ]
+}
