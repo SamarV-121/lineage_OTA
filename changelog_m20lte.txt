@@ -1,3 +1,40 @@
 ==========
-2023-11-18
+2024-02-28
 ==========
+device/samsung/m20lte:
+b6401e m20lte: init: Enable low ram config on 3GB variants [SamarV-121] (Wed Feb 14 09:20:34 2024)
+
+device/samsung/universal7904-common:
+aaaa44 universal7904: Include samsung_slsi-linaro soong namespaces [Nolen Johnson] (Wed Feb 28 04:32:54 2024)
+9a4ada universal7904: rootdir: Remove max ZRAM compression streams setting [Georg Veichtlbauer] (Wed Feb 14 09:27:54 2024)
+bc3cba fixup! universal7904: Disable the usage of ConfigStore [SamarV-121] (Wed Feb 14 09:27:52 2024)
+ea3d30 universal7904: Fix selinux denials [SamarV-121] (Wed Feb 14 09:27:29 2024)
+0fe4a9 universal7904: Set the compiler filter for shared apks to quicken [ROMSG] (Wed Feb 14 09:13:34 2024)
+13c6af universal7904: Enable Dalvik Dex2oat64 [David Sehr] (Wed Feb 14 09:13:34 2024)
+3ad44a universal7904: Drop unused soong namespace import [SamarV-121] (Wed Feb 14 09:13:34 2024)
+0b6398 universal7904: Track linaro BSP dependencies [SamarV-121] (Wed Jan 31 12:40:36 2024)
+db3756 universal7904: Enable CAMERA_64BIT_USAGE [SamarV-121] (Wed Jan 31 02:24:23 2024)
+8024d7 universal7904: Switch to AIDL fingerprint HAL [Tim Zimmermann] (Wed Jan 31 02:24:23 2024)
+
+device/samsung_slsi/sepolicy:
+307780 common: Label usb gadget HAL [Tim Zimmermann] (Thu Feb 22 05:14:31 2024)
+ac2b9e common: Allow apps to read cpu temperature [Tim Zimmermann] (Thu Feb 8 04:57:49 2024)
+
+kernel/samsung/universal7904:
+40ae45 Merge 'linux-4.4.y-cip' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip.git into lineage-21 [SamarV-121] (Wed Feb 14 09:09:46 2024)
+2f5cca fbdev: hx83112a: Update level 1 brightness value [SamarV-121] (Wed Feb 14 09:09:24 2024)
+fd9fe0 Merge branch 'lineage-20' of github.com:K9100ii/android_kernel_samsung_universal7904 into lineage-21 [SamarV-121] (Tue Jan 30 01:48:37 2024)
+85cd86 arm64: configs: Change HZ from 100 to 300 [Martin Liu] (Tue Jan 30 01:48:10 2024)
+595c4d arm64: configs: Switch to LZ4 for ZRAM comp [SamarV-121] (Tue Jan 30 01:48:10 2024)
+32d15e arm64: configs: Disable WQ_POWER_EFFICIENT_DEFAULT [Pranav Vashi] (Tue Jan 30 01:48:04 2024)
+
+hardware/samsung:
+f7262e aidl: usb: gadget: Make gadget name configurable through soong [Tim Zimmermann] (Thu Feb 22 05:45:34 2024)
+3049e8 aidl: usb-gadget: Rebrand to samsung [bengris32] (Thu Feb 22 05:43:56 2024)
+f97dec aidl: Import gs201 usb gadget HAL [Tim Zimmermann] (Thu Feb 22 05:43:56 2024)
+390d0c aidl: fingerprint: Add support for libsfp_sensor [J0SH1X] (Thu Feb 22 05:43:56 2024)
+fc1fd9 aidl: fingerprint: When force calibrating wait for sensor to become ready [Tim Zimmermann] (Thu Feb 22 05:43:56 2024)
+6d63dc aidl: fingerprint: Only call onEnrollmentsEnumerated when finished [Tim Zimmermann] (Thu Feb 22 05:43:55 2024)
+cde582 hidl: camera: Allow to insert get_cam_pos function [Christian Hoffmann] (Sun Feb 11 10:11:06 2024)
+2c901e hidl: camera: Add camera common helper [Christian Hoffmann] (Sun Feb 11 10:11:06 2024)
+e62620 hidl: camera: add guards for camera3_stream_t alignments [Simon1511] (Tue Jan 30 11:48:47 2024)

@@ -1,3 +1,398 @@
 ==========
-2023-11-18
+2024-02-28
 ==========
+android:
+ad1d51 pixel: Remove gs201 kernel modules [Michael Bestas] (Tue Feb 13 19:09:27 2024)
+0f516f pixel: Add remotes for gs101/gs201 Pixels [Michael Bestas] (Tue Feb 13 19:09:27 2024)
+8b1b40 manifest: Track Glimpse [Sebastiano Barezzi] (Tue Feb 13 16:33:21 2024)
+7f91d3 manifest: Revert "Track our fork of Gallery2" [Sebastiano Barezzi] (Tue Feb 13 16:33:21 2024)
+880474 pixel: Add aosp-shusky remote [Michael Bestas] (Tue Feb 13 13:15:05 2024)
+86cd23 lineage: Enable vendor/crowdin [Michael Bestas] (Sat Feb 10 18:12:08 2024)
+9445bf manifest: February 2024 Security update [Michael Bestas] (Tue Feb 6 15:05:37 2024)
+
+bootable/recovery:
+50ee1a fixup! recovery_ui: Add support for battery capacity status [Aaron Kling] (Mon Feb 5 03:30:36 2024)
+4e09cc recovery: Add device codename to recovery screen [Greg Ross] (Fri Feb 2 05:31:45 2024)
+
+build/make:
+b66a9f Move AudioPackage14.mk inclusion to vendor/lineage [Michael Bestas] (Wed Feb 21 14:40:02 2024)
+593cfb Revert "envsetup: Set INLINE_KERNEL_BUILDING if EMULATOR_KERNEL_FILE is set" [Michael Bestas] (Thu Feb 15 02:19:29 2024)
+c93afb envsetup: Set INLINE_KERNEL_BUILDING if EMULATOR_KERNEL_FILE is set [DroidFreak32] (Tue Feb 13 05:03:52 2024)
+7c1bb8 Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:38:16 2024)
+7a279f releasetools: Fix fstab path detection when input_file is a path to zip [LuK1337] (Sun Jan 28 11:36:02 2024)
+
+build/soong:
+4242de soong: ui: dumpvar: Apparently `PRODUCT_SOONG_NAMESPACES` is necessary [HeroBuxx] (Thu Feb 15 17:10:07 2024)
+
+device/lineage/atv:
+e7f731 Disable ABI check popup [Aaron Kling] (Sun Feb 25 05:16:31 2024)
+be2aa2 Support double tap to mute on Nvidia remotes [Aaron Kling] (Fri Feb 9 05:30:46 2024)
+1e1cb9 Standardize more wake keys in keylayouts [Aaron Kling] (Sat Feb 3 20:15:17 2024)
+bed323 Revert "Enable bluetooth remote pairing in Setupwraith" [Nolen Johnson] (Fri Feb 2 05:54:34 2024)
+
+external/chromium-webview/patches:
+70ea05 Update Chromium Webview to 121.0.6167.164 [Kevin F. Haggerty] (Sun Feb 11 17:45:42 2024)
+12b000 Update Chromium Webview to 121.0.6167.101 [Kevin F. Haggerty] (Sun Jan 28 16:16:52 2024)
+
+external/chromium-webview/prebuilt/arm:
+32694a Update Chromium Webview arm prebuilt to 121.0.6167.164 [Kevin F. Haggerty] (Sun Feb 11 16:10:57 2024)
+73a91d Update Chromium Webview arm prebuilt to 121.0.6167.101 [Kevin F. Haggerty] (Sun Jan 28 14:15:01 2024)
+
+external/chromium-webview/prebuilt/arm64:
+6ce5dc Update Chromium Webview arm64 prebuilt to 121.0.6167.164 [Kevin F. Haggerty] (Sun Feb 11 16:11:04 2024)
+e3b79e Update Chromium Webview arm64 prebuilt to 121.0.6167.101 [Kevin F. Haggerty] (Sun Jan 28 14:15:21 2024)
+
+external/chromium-webview/prebuilt/x86:
+a95f02 Update Chromium Webview x86 prebuilt to 121.0.6167.164 [Kevin F. Haggerty] (Sun Feb 11 16:11:11 2024)
+8750ff Update Chromium Webview x86 prebuilt to 121.0.6167.101 [Kevin F. Haggerty] (Sun Jan 28 14:15:22 2024)
+
+external/chromium-webview/prebuilt/x86_64:
+be8827 Update Chromium Webview x86_64 prebuilt to 121.0.6167.164 [Kevin F. Haggerty] (Sun Feb 11 16:11:18 2024)
+22f055 Update Chromium Webview x86_64 prebuilt to 121.0.6167.101 [Kevin F. Haggerty] (Sun Jan 28 14:15:23 2024)
+
+external/setupcompat:
+e98600 fixup! Import pixel setupwizard overlay resources [Michael Bestas] (Tue Feb 20 02:07:37 2024)
+43a26b Silence log spam [Chirayu Desai] (Fri Feb 16 19:23:54 2024)
+bbab37 Change some more defaults [Michael Bestas] (Fri Feb 16 19:22:06 2024)
+
+external/wpa_supplicant_8:
+8dc1f8 Explicitly set a user for the wpa_supplicant service [Samuel Holland] (Tue Feb 13 18:34:00 2024)
+a465e2 Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:39:12 2024)
+
+frameworks/av:
+0900dd Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:39:19 2024)
+
+frameworks/base:
+13ee5c4 fixup! Implement edge long swipe gesture [OnlyTomInSecond] (Sun Feb 25 14:16:34 2024)
+6b793fa Allow signature spoofing for microG Companion/Services [LuK1337] (Sun Feb 25 12:16:03 2024)
+cdd434d Add nvidia profile manager [Aaron Kling] (Fri Feb 23 17:36:55 2024)
+20e0c5d Add nvcpl hook interfaces [Aaron Kling] (Fri Feb 23 17:36:55 2024)
+4c7719 CEC: correct frameworks physicalAddress parsing [Thomas Makin] (Wed Feb 21 21:29:34 2024)
+582ed2b fixup! ScreenOffAnimation: Fix system animation disable check [LuK1337] (Wed Feb 21 19:45:35 2024)
+278b7c SystemUI: Allow enabling lockscreen rotation by default [Michael Bestas] (Wed Feb 21 15:51:31 2024)
+d3566f ScreenOffAnimation: Fix system animation disable check [Dhina17] (Mon Feb 19 04:35:33 2024)
+9855175 fixup! SystemUI: Allow ignoring IWlan status in the mobile icon pipeline [Tommaso Fonda] (Sat Feb 17 13:34:53 2024)
+2a75ed3 fixup! SystemUI: Register content observer for clock position [Tommaso Fonda] (Sat Feb 17 13:34:53 2024)
+34db11 SystemUI: Fix the right clock's gravity [Luca Stefani] (Sat Feb 17 13:33:57 2024)
+4216f1 SystemUI: Fix height for center and right clock [Pranav Vashi] (Sat Feb 17 13:31:34 2024)
+6f9e6f fixup! Rewrite trust USB restriction handling [jabashque] (Sat Feb 17 12:55:47 2024)
+6e3d89 SystemUI: advanced reboot: set maxElementsWrap [Timi Rautamäki] (Fri Feb 16 17:41:10 2024)
+349079 SystemUI: don't show screenshot button on TV [Timi Rautamäki] (Fri Feb 16 17:41:10 2024)
+8d05a4 SystemUI: make powermenu usable on TV [Timi Rautamäki] (Fri Feb 16 17:41:10 2024)
+87dd4f SystemUI: fix global_actions_power_dialog_flow formatting [Timi Rautamäki] (Fri Feb 16 17:41:10 2024)
+b57bb8b SettingsLib: Use framework resource for headline font [Adithya R] (Fri Feb 16 05:59:15 2024)
+93612a SystemUI: Allow ignoring IWlan status in the mobile icon pipeline [Tommaso Fonda] (Fri Feb 16 05:22:49 2024)
+bc0c34 LockPatternView: Fix showing pattern error [Dhina17] (Thu Feb 15 19:28:55 2024)
+b46d0a6 PhoneWindowManager: Pass correct assistInvocationType for KEYCODE_ASSIST [Dhina17] (Wed Feb 14 17:11:17 2024)
+23b57b Back button/gesture is not working with Android 14 easter egg activity. [Aditya Jadhav] (Tue Feb 13 19:01:11 2024)
+bd2fc2f RotationLockTile: Open LineageParts rotation settings [DroidFreak32] (Wed Feb 7 16:22:30 2024)
+fdedc20 Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:39:23 2024)
+5ecdcf fixup! Forward port CM Screen Security settings (1/2) [Dhina17] (Mon Jan 29 17:14:54 2024)
+64c3a43 SystemUI: Only set dim behind UDFPS if it is actually enabled [danielml] (Mon Jan 29 16:46:01 2024)
+8a0333 VolumeDialogImpl: Ignore external layout direction changes [danielml] (Sun Jan 28 13:44:55 2024)
+2b98c7 camera: Skip HFR checks for privileged apps. [Sai Kumar Sanagavarapu] (Thu Jan 25 18:44:39 2024)
+ca5e721 Camera: Skip stream size check for whitelisted apps. [Gaoxiang Chen] (Thu Jan 25 18:44:39 2024)
+8ca988 camera: Allow extending aux list/excludelist via sdk resources [LuK1337] (Thu Jan 25 18:44:38 2024)
+f99977 camera: Support exposing aux camera to apps [Sauhard Pande] (Thu Jan 25 18:44:38 2024)
+7d4d109 BootAnimation: Check for resolution override [Aaron Kling] (Thu Jan 25 18:44:38 2024)
+d28a35e Don't fail setDeviceConnectionState if not implemented in hal [Aaron Kling] (Thu Jan 25 18:44:38 2024)
+
+frameworks/native:
+e412ad Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:39:29 2024)
+
+hardware/google/pixel:
+5723b0 kernel_headers: Guard with soong namespace [Michael Bestas] (Tue Feb 13 19:35:07 2024)
+
+hardware/interfaces:
+64f26d bluetooth: do not fatally error on unknown packet types [Billy Laws] (Fri Feb 16 17:25:13 2024)
+
+lineage-sdk:
+36e142 sdk: Allow enabling lockscreen rotation by default [Michael Bestas] (Wed Feb 21 17:07:38 2024)
+691670 Revert "LineageSettingsProvider: Allow enabling lockscreen rotation by default" [Michael Bestas] (Wed Feb 21 17:07:38 2024)
+7241fa sdk: Introduce config_proximityCheckOnFpsUnlock [Bruno Martins] (Wed Feb 21 10:27:01 2024)
+
+packages/apps/Aperture:
+a1415c Aperture: Tie text classification thread to lifecycle [Luca Stefani] (Sat Feb 24 21:53:16 2024)
+597ace Aperture: Set QR code component via RRO overlay [Luca Stefani] (Sun Feb 18 12:01:22 2024)
+d59621 Aperture: Add support for passkey QR codes [Sebastiano Barezzi] (Wed Feb 14 21:15:17 2024)
+db697c Aperture: Refactor QrTextClassifier [Sebastiano Barezzi] (Wed Feb 14 20:37:05 2024)
+80a146 Aperture: Bump gradle-generatebp to v1.6 [LuK1337] (Tue Feb 13 23:27:54 2024)
+69f461 Aperture: Update CameraX to 1.4.0-alpha04 [LuK1337] (Fri Feb 9 14:52:14 2024)
+da168d Aperture: Log Coil exception messages [LuK1337] (Thu Feb 8 00:43:46 2024)
+256f21 Aperture: Depend on okio-jvm [LuK1337] (Thu Feb 8 00:43:46 2024)
+
+packages/apps/DeskClock:
+566177 DeskClock: Schedule alarms after restore [Tommy Webb] (Tue Feb 13 16:42:03 2024)
+
+packages/apps/Dialer:
+ba6510 Dialer: Fix In-Call vibrations [Michael W] (Fri Feb 23 20:29:44 2024)
+328c85 Dialer: Fix sound settings not sticking [Michael W] (Fri Feb 23 20:29:44 2024)
+7e2a34 Dialer: Request BLUETOOTH_CONNECT [Michael W] (Sun Feb 18 11:45:44 2024)
+d91ad2 Dialer: At least show "Bluetooth" [Michael W] (Sun Feb 18 11:45:44 2024)
+09582e Dialer: Voicemail: Don't tear down the app [Michael W] (Sun Feb 18 11:45:44 2024)
+4bc255 Dialer: Fix Voicemail playback [Michael W] (Sun Feb 18 11:45:44 2024)
+d0e5d2 Dialer: Update call end button colors [Georg Veichtlbauer] (Tue Feb 13 16:53:16 2024)
+b8d907 Dialer: Fix Voicemail dialog's action button color [Michael W] (Sun Feb 11 14:35:04 2024)
+4b0200 Dialer: InCallDialpad: Make light numbers visible [Michael W] (Sun Feb 11 14:34:59 2024)
+925c6e Dialer: Fix NPE with private calls [Michael W] (Sat Feb 10 21:04:55 2024)
+7585a8 Dialer: Replace com.google.common.base.Optional with java type [Michael W] (Tue Jan 30 18:23:50 2024)
+baecd5 Dialer: Remove different private number display for VZW [Michael W] (Tue Jan 30 18:23:43 2024)
+0c7380 Dialer: Fix crash when missing BLUETOOTH_CONNECT permission [Michael W] (Tue Jan 30 18:23:36 2024)
+899444 Dialer: Fix crash when trying to close system dialogs [Michael W] (Tue Jan 30 18:23:29 2024)
+784f95 Dialer: Apply proper dialog styling to dialog_call_subject [Michael W] (Tue Jan 30 18:23:22 2024)
+23a996 Dialer: Remove BlockedBumberPopulator (sic) [Michael W] (Tue Jan 30 18:23:14 2024)
+542188 Dialer: Remove persistent logger [Michael W] (Tue Jan 30 18:23:08 2024)
+99911f Dialer: Remove WRITE_EXTERNAL_STORAGE permission [Michael W] (Tue Jan 30 18:23:01 2024)
+6800bf Dialer: Cleanup BaseAccountType [Michael W] (Tue Jan 30 18:17:29 2024)
+135f77 Dialer: Fix warning for CallSubjectDialog [Michael W] (Tue Jan 30 18:17:21 2024)
+1abebb Dialer: Style Settings [Michael W] (Tue Jan 30 18:17:11 2024)
+3ab06a Dialer: Target current SDK [Michael W] (Tue Jan 30 18:17:04 2024)
+624219 Dialer: Fix callstats [Michael W] (Tue Jan 30 18:16:53 2024)
+864928 Dialer: Fix crash in CallLog [Michael W] (Tue Jan 30 18:16:46 2024)
+73fe72 Dialer: Various other fixes [Michael W] (Tue Jan 30 18:16:37 2024)
+5df958 Dialer: PendingIntents need mutability flags [Michael W] (Tue Jan 30 18:12:26 2024)
+c7119a Dialer: Fix issues and warnings in xml files [Michael W] (Tue Jan 30 18:12:20 2024)
+090696 Dialer: Fix settings [Michael W] (Tue Jan 30 18:12:14 2024)
+cadba8 Dialer: Request permissions and launch activities the modern way [Michael W] (Tue Jan 30 18:12:08 2024)
+5fea0a Dialer: Replace widgets with their AppCompat variants [Michael W] (Tue Jan 30 18:12:02 2024)
+c0121d Dialer: Replace deprecated stuff [Michael W] (Tue Jan 30 18:11:55 2024)
+532880 Dialer: Lambs...erm...Lambdas! [Michael W] (Tue Jan 30 18:11:41 2024)
+90e897 Dialer: Deal with missing or superflous finals and statics [Michael W] (Tue Jan 30 18:11:26 2024)
+0e15c5 Dialer: Replace AsyncTask(Loader)s [Michael W] (Tue Jan 30 18:11:20 2024)
+5462e7 Dialer: Fix calls [Michael W] (Tue Jan 30 18:11:14 2024)
+a602bb Dialer: Switch from makefile to blueprint [Alexander Koskovich] (Tue Jan 30 18:10:56 2024)
+7c447a Dialer: Migrate to AndroidX [Michael W] (Tue Jan 30 18:10:14 2024)
+
+packages/apps/Eleven:
+0c7485 Eleven: Avoid posting notification when service start id is invalid [LuK1337] (Wed Jan 31 15:46:52 2024)
+b76663 Eleven: Run `./gradlew app:generateBp` [LuK1337] (Wed Jan 31 14:54:59 2024)
+151377 Eleven: Bump minSdk [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+d90d94 Eleven: Update MediaStore for API > 28 [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+fe366f Eleven: Set type for FGS [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+9fcc8d Eleven: Set receiver export flags [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+d1446a Eleven: Materialize [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+1b6292 Eleven: Include libs using generateBp [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+8499c6 Eleven: Enable setup-java@v3 cache [LuK1337] (Tue Jan 30 18:35:21 2024)
+391e9f Eleven: Add GitHub Actions [LuK1337] (Tue Jan 30 18:35:21 2024)
+7dd0dd Eleven: Add generateBp plugin [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+8350ec Eleven: Migrate to from Groovy to Kotlin DSL [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+e97c59 Eleven: Update letter tile color palette [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+d26c5f Eleven: Avoid setting toolbar backgrounds in code [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+d18ff1 Eleven: Apply dynamic colors on start [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+e15bbe Eleven: Update Material icons [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+2fb43c Eleven: Get rid of dark/light variant drawables [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+caf5ce Eleven: Add padding for header bar text [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+1ad5ff Eleven: Opt-in to the predictive back gesture [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+528219 Eleven: Improve layout of player fragment [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+b71678 Eleven: Drop allowBackup attribute from Manifest [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+88eecb Eleven: Use song icon for notification [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+c653ff Eleven: Unify stopwatch icon [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+069ec0 Eleven: Drop widget specific drawables [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+4029d2 Eleven: Use Material switches in preferences [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+9f50f3 Eleven: Replace tabbed view with navigation [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+98b173 Eleven: Inherit from Material3 themes [Georg Veichtlbauer] (Tue Jan 30 18:35:21 2024)
+d7b422 Eleven: Round off corners of list images [Georg Veichtlbauer] (Tue Jan 30 18:34:57 2024)
+718fc8 Eleven: Update AGP to 8.1.2 and Gradle to 8.4 [Georg Veichtlbauer] (Tue Jan 30 18:34:24 2024)
+19a28a Eleven: Uprev to version 4.2.0 [Albert Tang] (Tue Jan 30 18:34:03 2024)
+e74962 Eleven: Add repeat button for Android Auto [Albert Tang] (Tue Jan 30 18:32:49 2024)
+
+packages/apps/Etar:
+84940e New version 1.0.42 [Gitsaibot] (Tue Feb 13 12:52:53 2024)
+cdc97f Add link to manage notifications to settings [Matthieu] (Tue Feb 13 12:49:26 2024)
+a07b4b Split calendar notifications into channels [Matthieu] (Tue Feb 13 12:49:25 2024)
+43fc0f hide info button if doNotCheckBatteryOptimization pref is enabled [maw] (Tue Feb 13 12:49:25 2024)
+268cc9 rename neverEnableDoze pref to doNotCheckBatteryOptimization, move pref to experimental section [maw] (Tue Feb 13 12:49:25 2024)
+58b1dd add pref that user does not want a background service [maw] (Tue Feb 13 12:49:25 2024)
+ba59ce Don't close edit event page when phone is rotated [Gitsaibot] (Tue Feb 13 12:49:25 2024)
+9c1d07 New version 1.0.41 [Jochen Sprickerhof] (Tue Feb 13 12:49:25 2024)
+9c4545 Revert to buildDir to fix F-Droid biuld [Jochen Sprickerhof] (Tue Feb 13 12:49:25 2024)
+46062c New version 1.0.40 [Gitsaibot] (Tue Feb 13 12:49:25 2024)
+3da4f9 Fix lint warnings [Gitsaibot] (Tue Feb 13 12:49:25 2024)
+c04630 Update gradle and fix warnings [Gitsaibot] (Tue Feb 13 12:49:24 2024)
+c33ca5 Add error handling around for loop. [Greg Ross] (Tue Feb 13 12:49:24 2024)
+4d26fb New version 1.0.39 [Gitsaibot] (Tue Feb 13 12:49:24 2024)
+bf98ea New version 1.0.39 [Gitsaibot] (Tue Feb 13 12:49:24 2024)
+ae3203 Catch errors when we have invalid rrules that lib-recur can't parse. [Greg Ross] (Tue Feb 13 12:49:24 2024)
+
+packages/apps/Glimpse:
+3eb0cc Glimpse: Add required overlay to set default system gallery app [Luca Stefani] (Sun Feb 18 11:51:42 2024)
+a6050c Glimpse: Set default_applicable_licenses [Michael Bestas] (Fri Feb 16 14:14:53 2024)
+70fa9a Glimpse: Make it REUSE compliant [Michael Bestas] (Fri Feb 16 14:12:12 2024)
+3df9ef Glimpse: ViewActivity: Fix bottom sheet shadow and insets configuration [Sebastiano Barezzi] (Wed Feb 14 15:39:10 2024)
+a3c8a9 Glimpse: Bump gradle-generatebp to v1.6 [Sebastiano Barezzi] (Tue Feb 13 22:58:39 2024)
+119c49 Glimpse: Switch to (Coil)ZoomImage [Sebastiano Barezzi] (Tue Feb 13 18:31:08 2024)
+49dfce Glimpse: ViewActivity: Unregister the ViewPager observer on destroy [Sebastiano Barezzi] (Tue Feb 13 16:05:40 2024)
+21ad7d Glimpse: Rework view activity current media tracking [Sebastiano Barezzi] (Tue Feb 13 16:05:40 2024)
+03325e Glimpse: Use <plurals> for thumbnail_selection_count [Landry GAIFFE] (Mon Feb 12 13:11:59 2024)
+5283b2 Glimpse: ViewActivity: Add strings to action buttons [Sebastiano Barezzi] (Thu Feb 8 16:20:08 2024)
+bfb9af Glimpse: Don't use QUERY_ARG_SQL_LIMIT [Luca Stefani] (Thu Feb 8 14:35:46 2024)
+cc987a Glimpse: Only update album title if we have != 0 items [Luca Stefani] (Thu Feb 8 13:43:19 2024)
+e6ee17 Glimpse: Add "Use as" shortcut [Luca Stefani] (Thu Feb 8 13:26:21 2024)
+5249d7 Glimpse: SetWallpaperActivity: Prefer system cropper [Sebastiano Barezzi] (Thu Feb 8 12:53:38 2024)
+e9d143 Glimpse: Hide empty trash menu item if trash is empty [LuK1337] (Thu Feb 8 11:59:36 2024)
+87521c Glimpse: Use edit drawable for edit media button [Sebastiano Barezzi] (Wed Feb 7 22:53:46 2024)
+08c445 Glimpse: MediaSelectorFragment: Reformat code [Sebastiano Barezzi] (Wed Feb 7 21:39:53 2024)
+384ec9 Glimpse: Support waterfall display cutout [Sebastiano Barezzi] (Wed Feb 7 21:39:53 2024)
+8f8861 Glimpse: Rename search fragment scroll view ID [Sebastiano Barezzi] (Wed Feb 7 21:38:11 2024)
+6dfafa Glimpse: Tweak paddings [Sebastiano Barezzi] (Wed Feb 7 21:37:44 2024)
+9a024d Glimpse: Extract the no media layout in its own fragment [Sebastiano Barezzi] (Wed Feb 7 21:37:03 2024)
+c0e443 Glimpse: AlbumsFragment: Use the layout ID constructor [Sebastiano Barezzi] (Wed Feb 7 21:36:24 2024)
+c6c9bd Glimpse: Round off corners of image previews [Georg Veichtlbauer] (Wed Feb 7 01:42:06 2024)
+a18c53 Glimpse: Allow specifying where to apply the wallpaper [Luca Stefani] (Sat Feb 3 14:31:11 2024)
+185ea8 Glimpse: Allow setting a wallpaper from intent [Luca Stefani] (Sat Feb 3 14:31:11 2024)
+9a4658 Glimpse: Use correct strings for file deleted forever snackbar [LuK1337] (Fri Feb 2 13:49:27 2024)
+6f3c30 Glimpse: Add zoom support for images [Sebastiano Barezzi] (Thu Feb 1 10:27:54 2024)
+8b9d27 Glimpse: Update dependencies [LuK1337] (Thu Feb 1 10:22:21 2024)
+2d803d Glimpse: Also show "No media" in album fragments [Luca Stefani] (Thu Feb 1 08:51:59 2024)
+739628 Glimpse: Make PermissionsUtils an object [Luca Stefani] (Thu Feb 1 08:51:16 2024)
+bf1fdc Glimpse: Restore manage media permission dialog [Sebastiano Barezzi] (Thu Feb 1 08:14:04 2024)
+5e788a Glimpse: Avoid smart casting [Sebastiano Barezzi] (Thu Feb 1 08:13:51 2024)
+49ae61 Glimpse: Implement ACTION_SET_WALLPAPER [Sebastiano Barezzi] (Wed Jan 31 21:39:27 2024)
+781d1f Glimpse: Inherit aapt_version_code_defaults [LuK1337] (Wed Jan 31 21:26:37 2024)
+db701b Glimpse: Reduce the Query [Luca Stefani] (Wed Jan 31 21:20:19 2024)
+8c32c6 Glimpse: Override every AOSP gallery known to mankind [Sebastiano Barezzi] (Wed Jan 31 21:10:52 2024)
+585c9b Glimpse: Don't hardcode external volume name [Luca Stefani] (Wed Jan 31 20:29:49 2024)
+bd6972 Glimpse: Reformat code [Sebastiano Barezzi] (Wed Jan 31 02:48:06 2024)
+48e26f Glimpse: AlbumFlow: Match MediaFlow order [Sebastiano Barezzi] (Wed Jan 31 02:48:06 2024)
+d71b73 Glimpse: Add support for ACTION_GET_CONTENT and ACTION_PICK [Sebastiano Barezzi] (Wed Jan 31 02:48:06 2024)
+55721a Glimpse: Make AlbumThumbnailAdapter more generic [Sebastiano Barezzi] (Tue Jan 30 21:35:32 2024)
+
+packages/apps/LineageParts:
+375223 LineageParts: Hide enable taskbar from search when not supported [LuK1337] (Sun Feb 25 21:47:02 2024)
+fe87f3 LineageParts: Allow enabling lockscreen rotation by default [Michael Bestas] (Wed Feb 21 14:21:16 2024)
+2732e7 Regenerate contributors cloud (2024-02-11) [Kevin F. Haggerty] (Wed Feb 14 13:37:00 2024)
+9e0be5 trust: remove outdated comments in strings.xml [Timi Rautamäki] (Tue Feb 13 10:59:01 2024)
+c35b1c LineageParts: Expose rotation settings activity [DroidFreak32] (Tue Feb 6 18:11:21 2024)
+
+packages/apps/Recorder:
+e2b975 Recorder: Make it REUSE compliant [Michael Bestas] (Sun Feb 25 16:14:24 2024)
+730eb3 Recorder: Inherit aapt_version_code_defaults [LuK1337] (Sun Feb 25 00:33:57 2024)
+027cb4 Recorder: Drop allowBackup=false [Sebastiano Barezzi] (Sun Feb 25 00:33:57 2024)
+e18896 Recorder: Reformat code [Sebastiano Barezzi] (Sun Feb 25 00:33:57 2024)
+241871 Recorder: Remove dead code [Sebastiano Barezzi] (Sun Feb 25 00:08:35 2024)
+c05365 Recorder: Redo edge-to-edge configuration [Sebastiano Barezzi] (Sun Feb 25 00:08:35 2024)
+d9b0a6 Recorder: Add support for coarse location permission [Sebastiano Barezzi] (Sun Feb 25 00:08:35 2024)
+ac902e Recorder: Remove unneeded flags from manifest [Sebastiano Barezzi] (Sun Feb 25 00:08:35 2024)
+c93db4 Recorder: Enable back gestures [Sebastiano Barezzi] (Sun Feb 25 00:08:35 2024)
+27aa4f Recorder: Use better view resource IDs [Sebastiano Barezzi] (Sat Feb 24 23:15:28 2024)
+c87c49 Recorder: Observe dynamic colors changes [Sebastiano Barezzi] (Sat Feb 24 23:15:28 2024)
+1a5691 Recorder: Add some null checks [Sebastiano Barezzi] (Sat Feb 24 23:15:28 2024)
+b56350 Recorder: Reformat manifest [Sebastiano Barezzi] (Sat Feb 24 22:19:51 2024)
+e8f5b1 Recorder: Equally space bottom buttons on main screen [Sebastiano Barezzi] (Sat Feb 24 22:19:39 2024)
+829dca Recorder: Rework the settings dialog [Sebastiano Barezzi] (Sat Feb 24 21:41:45 2024)
+8eb0ae Recorder: Update gradle-generatebp to v1.6 [Sebastiano Barezzi] (Sat Feb 24 15:58:04 2024)
+f4f2a9 Recorder: Redrop icons [Sebastiano Barezzi] (Sat Feb 24 15:52:17 2024)
+bd8726 Recorder: Migrate to Material3 theme [Aayush Gupta] (Sat Feb 24 15:52:17 2024)
+1cf61d Recorder: Get rid of is_day [Sebastiano Barezzi] (Sat Feb 24 13:44:03 2024)
+8372a7 Request new FOREGROUND_SERVICE_MICROPHONE permission [Aayush Gupta] (Thu Feb 22 08:38:20 2024)
+2fde4c Don't export context-registered broadcast receivers [Aayush Gupta] (Thu Feb 22 08:38:11 2024)
+36e8ee Bump compile & target Sdk versions to 34 [Aayush Gupta] (Thu Feb 22 08:37:58 2024)
+
+packages/apps/Seedvault:
+7e214f Merge branch 'android14' of https://github.com/seedvault-app/seedvault into lineage-21.0 [Michael Bestas] (Wed Feb 21 20:24:19 2024)
+f3f4cf Merge branch 'android14' of https://github.com/seedvault-app/seedvault into HEAD [Chirayu Desai] (Tue Feb 13 18:11:59 2024)
+
+packages/apps/Settings:
+bc34a1 Fix network SetupWizard theme issues [Michael Bestas] (Sun Feb 25 23:14:15 2024)
+6aa8bb Revert "Settings: default to GlifV3Theme" [Michael Bestas] (Sun Feb 25 23:14:15 2024)
+aaf238 FingerprintSettings: Add proximity check awareness if supported [Bruno Martins] (Wed Feb 21 14:37:06 2024)
+
+packages/apps/SetupWizard:
+ee0104 Match U setupdesign dark theme [Michael Bestas] (Sun Feb 25 22:25:44 2024)
+965cd0 Specify theme when launching external activities [Michael Bestas] (Sun Feb 25 22:25:44 2024)
+ec0500 SetupWizard: Make it REUSE compliant [Michael Bestas] (Sun Feb 25 22:25:43 2024)
+1db317 Remove old tests [Oliver Scott] (Sun Feb 25 22:25:43 2024)
+feadac Cleanup exit code [Oliver Scott] (Sun Feb 25 22:22:27 2024)
+fd0fdb Fix various java warnings [Oliver Scott] (Sun Feb 25 22:22:03 2024)
+766446 Reformat code [Oliver Scott] (Sun Feb 25 22:22:02 2024)
+f609cd SetupWizard: Remove unused resources [Michael Bestas] (Sun Feb 25 22:19:23 2024)
+9e8aa8 SetupWizard: skip missing subactivities [Jake Florence] (Sun Feb 25 22:19:23 2024)
+ed1a96 Revamp outro animation [Tommy Webb] (Sun Feb 25 22:19:23 2024)
+63bbec Only finish Setup Wizard Activity when fully done [Tommy Webb] (Sun Feb 25 22:19:22 2024)
+f58c0f Update deprecated code [Oliver Scott] (Sun Feb 25 21:45:38 2024)
+83338c Consolidate PhoneMonitor into SetupWizardUtils [Tommy Webb] (Sun Feb 25 21:45:38 2024)
+51fde0 Automated code cleanup + copyright update [Oliver Scott] (Sun Feb 25 21:45:38 2024)
+bd9295 SetupWizard: Remove unused strings [Michael Bestas] (Sun Feb 25 21:45:38 2024)
+973660 Optimize imports [Oliver Scott] (Sun Feb 25 21:45:38 2024)
+f51527 Launch restore step early [Oliver Scott] (Sun Feb 25 21:45:38 2024)
+554f63 SetupWizard: Add step for changing theme [Oliver Scott] (Sun Feb 25 21:45:37 2024)
+04c9f4 Use WizardManagerHelper NEXT intent and result codes [Oliver Scott] (Sun Feb 25 21:02:28 2024)
+86ed62 Launch Settings activities for lockscreen and biometrics setup [Oliver Scott] (Sun Feb 25 21:02:28 2024)
+
+packages/apps/Trebuchet:
+93f44a Trebuchet: Fix TaskbarModelCallbacksFactory instantiation [Sebastiano Barezzi] (Sat Jan 27 04:20:33 2024)
+
+packages/apps/TvSettings:
+b99636 Only auto-pair peripheral devices [Aaron Kling] (Tue Feb 20 23:16:30 2024)
+46173f fixup! Add button to shut down device [Aaron Kling] (Tue Feb 20 23:16:30 2024)
+74992d fixup! Add button to sleep device [Aaron Kling] (Tue Feb 20 23:16:27 2024)
+5fc4a1 Add button to sleep device [Aaron Kling] (Tue Feb 20 05:27:54 2024)
+71a0f6 TvSettings: implement long press power settings [Timi Rautamäki] (Fri Feb 16 21:40:01 2024)
+d2bea8 TvSettings: reformat buttons.xml [Timi Rautamäki] (Fri Feb 16 17:08:47 2024)
+b585b3 TvSettings: trust: remove outdated comments in strings.xml [Timi Rautamäki] (Tue Feb 13 11:00:44 2024)
+f69b95 fixup! Add button to shut down device [Aaron Kling] (Mon Feb 12 00:19:04 2024)
+
+packages/inputmethods/LatinIME:
+64afbb LatinIME: Set rootProject.name to LatinIME [LuK1337] (Fri Feb 23 16:48:31 2024)
+
+packages/modules/Bluetooth:
+c4ddad BondStateMachine: Allow skipping confirm for some remotes [Aaron Kling] (Thu Feb 15 08:37:09 2024)
+1fbadd Bluetooth: Add a workaround for M_RELEASE rsp len in ble_gap.cc [AShiningRay] (Fri Feb 9 00:41:21 2024)
+fc8228 Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:41:42 2024)
+
+packages/modules/Permission:
+3e7b99 Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:41:50 2024)
+
+packages/providers/DownloadProvider:
+8a7193 Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:42:13 2024)
+
+system/core:
+bb9009 fs_mgr: Load DM table as RW for debuggable recoveries [LuK1337] (Sun Feb 18 09:38:37 2024)
+620c4d Merge tag 'android-14.0.0_r25' into staging/lineage-21.0_merge-android-14.0.0_r25 [Michael Bestas] (Tue Feb 6 16:42:42 2024)
+
+system/sepolicy:
+968d83 Exempt data_between_core_and_vendor_violators from vold neverallow [Michael Bestas] (Wed Feb 14 13:04:35 2024)
+01f955 Add property to workaround M_RELEASE rsp len issues [Nolen Johnson] (Tue Feb 6 07:18:16 2024)
+
+vendor/lineage:
+77226c config: Define SetupWizard theme properties [Michael Bestas] (Sun Feb 25 23:14:07 2024)
+03b20d overlay: Update NTP server overlay for Chinese users [dantmnf] (Thu Feb 22 10:26:04 2024)
+3e4045 config: Include AudioPackage14.mk [Michael Bestas] (Wed Feb 21 18:22:37 2024)
+74db38 bootanimation: Use 256 colors [Luca Stefani] (Sun Feb 18 17:17:30 2024)
+a82e93 Revert "overlay: Set config_defaultQrCodeComponent" [Luca Stefani] (Sun Feb 18 11:57:01 2024)
+eaa261 config: Ship EmergencyInfo on WiFi only tablets [LuK1337] (Sat Feb 17 17:31:40 2024)
+bbefef ovelay: tv: set power menu max columns to 4 [Timi Rautamäki] (Fri Feb 16 17:41:20 2024)
+7dd2be Revert "overlay: Decommonize long press power action" [Timi Rautamäki] (Fri Feb 16 17:41:20 2024)
+a70671 apn: Update for Telus MVNO's (Canada) [Marc Bourgoin] (Fri Feb 16 11:28:33 2024)
+bc8d77 Hookup SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC [Luofan Chen] (Fri Feb 16 00:26:40 2024)
+390df2 bootanimation: Refreshed bootanimation for new release [Asher Simonds] (Wed Feb 14 22:37:18 2024)
+9fe4bc lineage: products: Bring back lineage_sdk_phone_arm64 emulator target [DroidFreak32] (Wed Feb 14 22:13:08 2024)
+f0d0f1 vars: Remove gs201 kernel [Michael Bestas] (Wed Feb 14 13:00:52 2024)
+2f89bf roomservice: Remove python2 imports [LuK1337] (Wed Feb 14 08:22:34 2024)
+2a9bbc roomservice: Require python3 [LuK1337] (Wed Feb 14 08:06:18 2024)
+f0b116 build: Provide qti_kernel_headers module [Michael Bestas] (Tue Feb 13 19:34:29 2024)
+8a7f23 config: Build Glimpse [LuK1337] (Tue Feb 13 16:33:20 2024)
+3e865e roomservice: Add support for remote=aosp-* [LuK1337] (Tue Feb 13 12:12:19 2024)
+8d8eed overlay: Set action for the styles & wallpaper picker activity [Michael Bestas] (Mon Feb 12 21:45:28 2024)
+65498a repopick: Skip commit_exists() check when using -p [LuK1337] (Mon Feb 12 21:45:28 2024)
+afb819 config: Move audio includes back to mobile [Nolen Johnson] (Mon Feb 12 17:14:39 2024)
+5c5c49 overlay: Decommonize long press power action [Aaron Kling] (Sun Feb 11 20:39:28 2024)
+92ced5 repopick: Fix logic for skipping already merged changes [LuK1337] (Sun Feb 11 10:03:43 2024)
+2869dc overlay: Unset config_cellBroadcastAppLinks [x0x00044] (Sat Feb 10 12:22:11 2024)
+77e5f1 repopick: Use hostname of the URL to determine lineage gerrit [dianlujitao] (Thu Feb 8 12:26:58 2024)
+68642c lineage: partner_gms: Allow GMS that isn't partner [Nolen Johnson] (Thu Feb 8 07:25:59 2024)
+b5e217 roomservice: Add support for dry run [Yumi Yukimura] (Thu Feb 8 07:25:01 2024)
+4f27f7 vars: redfin,bramble: UP1A.231105.001.B2, Feb 2024 [Chirayu Desai] (Wed Feb 7 18:01:49 2024)
+d725e5 kernel: Support kernel modules via kbuild [Aaron Kling] (Wed Feb 7 18:00:28 2024)
+2f1c52 kernel: Support copying modules to boot ramdisk [Aaron Kling] (Wed Feb 7 18:00:28 2024)
+165698 vars: February 2024 Security update [Michael Bestas] (Tue Feb 6 17:00:54 2024)
+0c09a2 lineage: overlay: Disable a couple more OTA upgrade components [Alexander Koskovich] (Tue Feb 6 09:43:01 2024)
+d549cc lineage: overlay: Disable OtaUpdateActivity component [Alexander Koskovich] (Tue Feb 6 09:43:01 2024)
+12c5c7 repopick: Clear Pyright warnings [dianlujitao] (Tue Feb 6 09:39:58 2024)
+ce6434 repopick: Check fetch result based on the actual commit [dianlujitao] (Tue Feb 6 09:39:58 2024)
+8a3a02 repopick: Apply change in parallel [dianlujitao] (Tue Feb 6 09:39:58 2024)
+0b48b9 repopick: Avoid repeatedly performing the same check [dianlujitao] (Tue Feb 6 09:39:58 2024)
+6682b3 repopick: Use the builtin urllib to handle HTTP basic authentication [dianlujitao] (Tue Feb 6 09:39:58 2024)
+6f048e repopick: Clean up subprocess calls [dianlujitao] (Tue Feb 6 09:39:58 2024)
+c0fb88 repopick: Organize imports and format with black [dianlujitao] (Tue Feb 6 09:39:58 2024)
+94b102 repopick: Remove python2 support [dianlujitao] (Tue Feb 6 09:39:58 2024)
