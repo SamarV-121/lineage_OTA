@@ -1,39 +1,43 @@
 #!/bin/bash
 #
-# Copyright © 2022-2023, Samar Vispute "SamarV-121" <samarvispute121@pm.me>
+# Copyright © 2022-2024, Samar Vispute "SamarV-121" <samar@samarv121.dev>
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 set -e
+
+OTA_DIR=$(dirname "$(dirname "$(readlink -f "$0")")")
 DEVICES=($*)
 
 logi() { echo -e "\n\033[0;32m$1\033[0m"; }
 
 for DEVICE in "${DEVICES[@]}"; do
-	logi "Generating $DEVICE changelog..."
-	lineage_OTA/scripts/changelog_gen.sh -d "$DEVICE" -O "lineage_OTA"
+    logi "Generating $DEVICE changelog..."
+    "$OTA_DIR/scripts/changelog_gen.sh" -d "$DEVICE"
 
-	logi "Uploading $DEVICE OTAs to github"
-	TAG="$DEVICE-$(date -u +%Y%m%d_%H%M%S)"
-	for BUILD in lineage_OTA/builds/*"$DEVICE"*; do
-		lineage_OTA/scripts/github-release.sh -r SamarV-121/lineage_OTA -t "$TAG" -b master -d "Date: $(date)" -f "$BUILD"
+    logi "Uploading $DEVICE OTAs to github"
+    TAG="$DEVICE-$(date -u +%Y%m%d_%H%M%S)"
+    for BUILD in "$OTA_DIR"/builds/*"$DEVICE"*; do
+        "$OTA_DIR/scripts/github-release.sh" -r SamarV-121/lineage_OTA \
+            -t "$TAG" -b master -d "Date: $(date)" -f "$BUILD"
 
-		FILENAME=$(basename "$BUILD")
-		BUILD_URL="https://lineage.samarv121.dev/$TAG/$FILENAME"
-		if [[ $FILENAME =~ gms ]]; then
-			DEVICE_JSON="${DEVICE}_gms.json"
-		else
-			DEVICE_JSON="${DEVICE}.json"
-		fi
+        FILENAME=$(basename "$BUILD")
+        BUILD_URL="https://lineage.samarv121.dev/$TAG/$FILENAME"
+        if [[ $FILENAME =~ gms ]]; then
+            DEVICE_JSON="${DEVICE}_gms.json"
+        else
+            DEVICE_JSON="${DEVICE}.json"
+        fi
 
-		logi "Generating $FILENAME json..."
-		lineage_OTA/scripts/ota_info_gen.sh -z "$BUILD" -u "$BUILD_URL" -j "lineage_OTA/$DEVICE_JSON"
-	done
+        logi "Generating $FILENAME json..."
+        "$OTA_DIR/scripts/ota_info_gen.sh" -z "$BUILD" -u "$BUILD_URL" \
+            -j "$OTA_DIR/$DEVICE_JSON"
+    done
 done
 
 logi "Generating platform changelog..."
-lineage_OTA/scripts/changelog_gen.sh -p -O "lineage_OTA"
+"$OTA_DIR/scripts/changelog_gen.sh" -p
 
 logi "Committing the changes..."
-git -C "lineage_OTA" add .
-git -C "lineage_OTA" commit -m "OTA: $(date +%F)"
+git -C "$OTA_DIR" add .
+git -C "$OTA_DIR" commit -m "OTA: $(date +%F)"

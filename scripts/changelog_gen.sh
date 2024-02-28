@@ -1,82 +1,114 @@
 #!/bin/bash
 #
-# Copyright © 2022-2023, Samar Vispute "SamarV-121" <samarvispute121@pm.me>
+# Copyright © 2022-2024, Samar Vispute "SamarV-121" <samar@samarv121.dev>
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 function usage() {
-	cat <<EOF
+    cat <<EOF
 Usage: $0 [options]
 Options:
    -p           Generate platform specific changelog
-   -d DEVICE    Generate device specific changelog
+   -d <DEVICE>  Generate device specific changelog
+   -O <DIR>     Set output directory
 EOF
-	exit
+    exit
 }
 
 [ -z "$1" ] && usage
 
+ota_dir=$(dirname "$(dirname "$(readlink -f "$0")")")
+root_dir=$(dirname "$ota_dir")
+temp_file=$(mktemp)
+
 while getopts ":hd:pO:" opt; do
-	case "$opt" in
-	d)
-		DEVICE="$OPTARG"
-		CHANGELOG="changelog_$DEVICE.txt"
-		;;
-	p)
-		CHANGELOG="changelog.txt"
-		;;
-	O)
-		OTA_DIR="$OPTARG"
-		;;
-	h | *)
-		usage
-		;;
-	esac
+    case "$opt" in
+    d)
+        device="$OPTARG"
+        changelog_file="$ota_dir/changelog_$device.txt"
+        ;;
+    p)
+        changelog_file="$ota_dir/changelog.txt"
+        ;;
+    O)
+        custom_ota_dir="$OPTARG"
+        ;;
+    h | *)
+        usage
+        ;;
+    esac
 done
 
-[ "$OTA_DIR" ] && CHANGELOG="$OTA_DIR/$CHANGELOG"
+[ "$custom_ota_dir" ] && changelog_file="$custom_ota_dir/$changelog_file"
 
-if [ ! -e "$CHANGELOG" ]; then
-	curl -s "https://raw.githubusercontent.com/SamarV-121/lineage_OTA/master/$CHANGELOG" -o "$CHANGELOG"
+if [ ! -e "$changelog_file" ]; then
+    curl -s "https://raw.githubusercontent.com/SamarV-121/lineage_OTA/master/$changelog_file" \
+        -o "$changelog_file"
 fi
 
 declare -A device_repos=(
-	["m20lte"]="device/samsung/m20lte device/samsung/universal7904-common device/samsung_slsi/sepolicy kernel/samsung/universal7904 hardware/samsung hardware/samsung_slsi/scsc_wifibt/wifi_hal hardware/samsung_slsi/libbt hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib hardware/samsung_slsi-linaro/config hardware/samsung_slsi-linaro/exynos hardware/samsung_slsi-linaro/exynos5 hardware/samsung_slsi-linaro/graphics hardware/samsung_slsi-linaro/openmax"
-	["RM6785"]="device/realme/RM6785-common device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
-	# ["RMX2001L1"]="device/realme/RMX2001L1 device/realme/RM6785-common device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
-	# ["RMX2151L1"]="device/realme/RMX2151L1 device/realme/RM6785-common device/mediatek/sepolicy_vndr hardware/mediatek kernel/realme/mt6785 vendor/realme-firmware"
+    ["m20lte"]="device/samsung/m20lte
+                device/samsung/universal7904-common
+                device/samsung_slsi/sepolicy
+                kernel/samsung/universal7904
+                hardware/samsung
+                hardware/samsung_slsi/scsc_wifibt/wifi_hal
+                hardware/samsung_slsi/libbt
+                hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
+                hardware/samsung_slsi-linaro/config
+                hardware/samsung_slsi-linaro/exynos
+                hardware/samsung_slsi-linaro/exynos5
+                hardware/samsung_slsi-linaro/graphics
+                hardware/samsung_slsi-linaro/interfaces
+                hardware/samsung_slsi-linaro/openmax"
+    ["RM6785"]="device/realme/RM6785-common
+                device/mediatek/sepolicy_vndr
+                hardware/mediatek
+                kernel/realme/mt6785
+                vendor/realme-firmware"
 )
 
-TEMP_FILE=$(mktemp)
-
 function git_log() {
-	LOG=$(git -C "$PROJECT" log --first-parent --after="$LAST_DATE" --abbrev=6 --date=local --format=tformat:"%h %s [%an] (%cd)")
-	if [ -n "$LOG" ]; then
-		echo "$PROJECT"
-		echo "$PROJECT:" >>"$TEMP_FILE"
-
-		if ! [[ $LOG =~ "Automatic translation import" ]]; then
-			echo -e "$LOG\n" >>"$TEMP_FILE"
-		fi
-	fi
+    log=$(
+        git -C "$root_dir/$project" log --first-parent \
+            --after="$last_date" \
+            --abbrev=6 \
+            --date=local \
+            --format=tformat:"%h %s [%an] (%cd)" |
+            grep -v "Automatic translation import"
+    )
+    if [ -n "$log" ]; then
+        echo "$project"
+        echo "$project:" >>"$temp_file"
+        echo -e "$log\n" >>"$temp_file"
+    fi
 }
 
-LAST_DATE=$(head -n2 "$CHANGELOG" | tail -n1)
-echo -e "==========\n$(date +%F)\n==========" >"$TEMP_FILE"
+last_date=$(head -n2 "$changelog_file" | tail -n1)
+echo -e "==========\n$(date +%F)\n==========" >"$temp_file"
 
-if [[ "$DEVICE" == "RMX2001L1" || "$DEVICE" == "RMX2151L1" ]]; then
-    DEVICE="RM6785"
+if [[ $device == "RMX2001L1" || $device == "RMX2151L1" ]]; then
+    device="RM6785"
 fi
 
-if [ "$DEVICE" ]; then
-	for PROJECT in ${device_repos[$DEVICE]}; do
-		git_log
-	done
+if [ "$device" ]; then
+    for project in ${device_repos[$device]}; do
+        git_log
+    done
 else
-	excluded_repos="extract-utils|crowdin|qcom|ant|json|codeaurora|nxp|lineage/|realme|mediatek|samsung"
-	grep -Ev "$excluded_repos" .repo/project.list | while read -r PROJECT; do
-		git_log
-	done
+    mapfile -t projects < <(
+        {
+            awk '/<!-- LineageOS additions -->/,/^$/' "$root_dir/.repo/manifests/snippets/lineage.xml" |
+                grep -v crowdin |
+                awk -F'[" ]' '/<project/{print $5}'
+            grep "LineageOS/" "$root_dir/.repo/manifests/default.xml" |
+                grep -v qcom |
+                awk -F'[" ]' '/<project/{print $5}'
+        } | sort
+    )
+    for project in "${projects[@]}"; do
+        git_log
+    done
 fi
 
-echo -e "$(cat "$TEMP_FILE" "$CHANGELOG")" >"$CHANGELOG"
+cat "$temp_file" "$changelog_file" >"$changelog_file.tmp" && mv "$changelog_file.tmp" "$changelog_file"
