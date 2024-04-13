@@ -1,4 +1,41 @@
 ==========
+2024-04-13
+==========
+device/samsung/universal7904-common:
+db21a3 universal7904: Hacky workaround to satisfy vintf kernel version check [SamarV-121] (Mon Apr 8 09:45:00 2024)
+75e33c universal7904: Raise VINTF target level to 4 [Sebastiano Barezzi] (Mon Apr 8 09:42:11 2024)
+095d99 Revert "universal7904: Disable VINTF checks" [SamarV-121] (Mon Apr 8 09:42:11 2024)
+48ccc9 universal7904: Fix sepolicy [SamarV-121] (Mon Apr 1 11:23:38 2024)
+9c6f89 universal7904: overlay: Remove non-AOSP networkAttributes items [K9100ii] (Mon Apr 1 11:23:38 2024)
+d86539 universal7904: Remove deprecated trust HAL [Bruno Martins] (Sun Mar 24 09:26:44 2024)
+e72223 universal7904: Don't explicitly include updatable_apex.mk [basamaryan] (Thu Mar 21 12:29:27 2024)
+778e88 universal7904: Auto generate symlinks while extraction [SamarV-121] (Thu Mar 21 12:25:56 2024)
+0400f7 universal7904: libcamera_metadata_helper: Use String8/16 c_str [Tomasz Wasilczyk] (Wed Mar 13 11:49:44 2024)
+87e124 universal7904: Use install_symlink to add symlinks [Cole Faust] (Wed Mar 13 11:49:09 2024)
+
+device/samsung_slsi/sepolicy:
+ebdee6 sepolicy: Remove duplicate declaration of dtbo_block_device [David Marble] (Thu Mar 21 19:28:33 2024)
+
+kernel/samsung/universal7904:
+16c536 Merge 'linux-4.4.y-cip' of https://git.kernel.org/pub/scm/linux/kernel/git/cip/linux-cip.git into lineage-21 [SamarV-121] (Wed Mar 13 07:43:55 2024)
+
+hardware/samsung:
+5ac489 doze: mk->bp [Ruchit] (Wed Mar 20 15:54:31 2024)
+219ef4 dap: Migrate to SelectorWithWidgetPreference [LuK1337] (Wed Mar 20 15:54:31 2024)
+8fd19f samsung: Migrate to CompoundButton.OnCheckedChangeListener [Chaohui Wang] (Wed Mar 20 15:54:28 2024)
+8b1499 samsung: Enable use_resource_processor for all sysui deps [Peter Kalauskas] (Wed Mar 20 15:54:23 2024)
+1548ce hidl: camera: Update dependencies for U QPR2 [Bruno Martins] (Mon Mar 11 17:29:39 2024)
+fe1251 aidl: Update dependencies for QPR2 [Michael Bestas] (Mon Mar 11 17:19:58 2024)
+
+hardware/samsung_slsi-linaro/exynos:
+9a82de exynos/gralloc3/src/mali_gralloc_debug.cpp: use Strings8/16 empty() [David Marble] (Fri Mar 29 22:22:49 2024)
+381440 exynos: use Strings8/16 c_str() [David Marble] (Fri Mar 29 22:21:49 2024)
+
+hardware/samsung_slsi-linaro/graphics:
+5b69c7 graphics: use Strings8/16 c_str() and empty() [David Marble] (Mon Mar 25 20:38:05 2024)
+cd29ac exynos9830: drop setPerformanceSetting() [Francescodario Cuzzocrea] (Thu Feb 29 20:02:20 2024)
+
+==========
 2024-02-28
 ==========
 device/samsung/m20lte:

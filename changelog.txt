@@ -1,4 +1,628 @@
 ==========
+2024-04-13
+==========
+android:
+0ddac7 manifest: April 2024 Security update [Michael Bestas] (Wed Apr 3 08:57:46 2024)
+1413de Track device/google_car [Nolen Johnson] (Thu Mar 28 20:23:30 2024)
+be7f0b manifest: March 2024 Quarterly Platform Release and Security update [Michael Bestas] (Mon Mar 11 11:25:14 2024)
+3aa029 manifest: Switch to our own samsung/st NFC [Michael Bestas] (Mon Mar 11 11:25:14 2024)
+56bf1c lineage: Enable SimpleSettingsConfig [Aaron Kling] (Thu Mar 7 18:03:31 2024)
+
+bionic:
+c257e8 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:28:56 2024)
+
+bootable/recovery:
+a08daf recovery_ui: Respect margin_height while drawing battery capacity status [Chippa-a] (Sat Mar 30 14:00:28 2024)
+b78bf1 fixup! recovery_utils: add support for unmounting entire volumes [LuK1337] (Sun Mar 24 09:56:49 2024)
+5d49ff recovery: Update logo after going back to recovery [LuK1337] (Mon Mar 11 15:24:15 2024)
+f32ca7 volume_manager: Remove libdiskconfig dependency [Michael Bestas] (Sun Mar 10 16:50:08 2024)
+2e158a recovery_ui: Bump to android.hardware.health-V3-ndk [Michael Bestas] (Sun Mar 10 16:50:07 2024)
+4c4c3f Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:59:24 2024)
+
+build/make:
+2638b6 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas] (Wed Apr 3 10:44:02 2024)
+a9951b Correct logic for obtaining the path to full recovery image [Ricky Cheung] (Sat Mar 30 06:04:58 2024)
+9493e5 releasetools: Resolve symlinks in IsEntryOtaPackage() [LuK1337] (Tue Mar 26 10:29:57 2024)
+701d28 fixup! build: Add phony package to build enforce RRO packages [Yumi Yukimura] (Mon Mar 25 16:50:38 2024)
+96844f No more lies [Chirayu Desai] (Fri Mar 22 17:47:37 2024)
+dc4437 Revert "Revert "Allow to override fastboot-info.txt for specific..." [Dmitrii Merkurev] (Thu Mar 21 07:46:16 2024)
+847af8 fixup! build: Add support for device tree in boot.img [LuK1337] (Wed Mar 20 20:47:16 2024)
+ff7285 Remove android.hardware.wifi from generic_system.mk [Michael Bestas] (Wed Mar 13 18:24:34 2024)
+72de1c Remove WallpaperPicker from aosp_product.mk [Michael Bestas] (Wed Mar 13 18:09:52 2024)
+c002c7 envsetup: Pass valid TARGET_RELEASE to check_product [LuK1337] (Mon Mar 11 10:29:14 2024)
+eebf87 fixup! core: Allow overriding device/model/name properties [Michael Bestas] (Sun Mar 10 05:13:50 2024)
+b854cd Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:45:21 2024)
+
+build/soong:
+743a21 Support multiple sources for prebuilt_etc [Thiébaud Weksteen] (Mon Mar 25 20:51:04 2024)
+883519 soong: paths: Fix out of tree $OUT [Cosmin Tanislav] (Thu Mar 21 03:16:26 2024)
+e26eb1 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:38:04 2024)
+
+development:
+101baf Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:03 2024)
+
+device/generic/common:
+e2feee Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:06 2024)
+
+device/google/atv:
+010133 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:00:31 2024)
+
+device/google/contexthub:
+846d83 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:13 2024)
+
+device/lineage/atv:
+3d3e87 Copy Steam Controller layouts for ble and wireless [Aaron Kling] (Mon Mar 25 23:37:40 2024)
+2bf768 Revert "Add steam controller key layouts" [Aaron Kling] (Mon Mar 25 23:37:35 2024)
+
+device/lineage/sepolicy:
+65533b qcom: Allow CAF FM radio app to read ro.vendor.fm.use_audio_session [Bruno Martins] (Sun Apr 7 17:01:30 2024)
+754e48 common: Changes for android.hardware.usb@1.3-service.dual_role_usb HAL [Michael Bestas] (Thu Mar 21 13:41:31 2024)
+447be8 common: Remove deprecated hal_lineage_trust policy [Michael Bestas] (Thu Mar 21 13:38:32 2024)
+1fdfdf sepolicy: Update for usb 1.3-basic HAL [Yumi Yukimura] (Wed Mar 20 20:40:29 2024)
+
+external/arm-trusted-firmware:
+c6750c Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:15 2024)
+
+external/avb:
+8aaa36 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:17 2024)
+
+external/bash:
+e394fc mk->bp [LuK1337] (Mon Mar 25 21:36:13 2024)
+
+external/chromium-webview/patches:
+d7502a Update Chromium Webview to 122.0.6261.119 [Kevin F. Haggerty] (Fri Mar 15 21:49:02 2024)
+864d15 Revert "Set android.ext.adservices as optionally used lib" [Chirayu Desai] (Sun Mar 3 15:43:02 2024)
+d984db Begone, adservices [Kevin F. Haggerty] (Sun Mar 3 15:42:54 2024)
+b38c6c Set android.ext.adservices as optionally used lib [Chirayu Desai] (Sat Mar 2 00:52:57 2024)
+6dfd6e Update Chromium Webview to 122.0.6261.90 [Kevin F. Haggerty] (Thu Feb 29 13:26:26 2024)
+
+external/chromium-webview/prebuilt/arm:
+47c88e Update Chromium Webview arm prebuilt to 122.0.6261.119 [Kevin F. Haggerty] (Sat Mar 16 13:52:14 2024)
+05a960 Rebuild arm Chromium Webview to remove adservices [Kevin F. Haggerty] (Sun Mar 3 14:59:42 2024)
+64ab07 Update Chromium Webview arm prebuilt to 122.0.6261.90 [Kevin F. Haggerty] (Fri Mar 1 04:16:20 2024)
+
+external/chromium-webview/prebuilt/arm64:
+bdcd39 Update Chromium Webview arm64 prebuilt to 122.0.6261.119 [Kevin F. Haggerty] (Sat Mar 16 13:52:21 2024)
+417dec Rebuild arm64 Chromium Webview to remove adservices [Kevin F. Haggerty] (Sun Mar 3 14:59:57 2024)
+5892f4 Update Chromium Webview arm64 prebuilt to 122.0.6261.90 [Kevin F. Haggerty] (Fri Mar 1 04:16:27 2024)
+
+external/chromium-webview/prebuilt/x86:
+2ad8d3 Update Chromium Webview x86 prebuilt to 122.0.6261.119 [Kevin F. Haggerty] (Sat Mar 16 13:52:28 2024)
+5e4902 Rebuild x86 Chromium Webview to remove adservices [Kevin F. Haggerty] (Sun Mar 3 14:59:59 2024)
+a97397 Update Chromium Webview x86 prebuilt to 122.0.6261.90 [Kevin F. Haggerty] (Fri Mar 1 04:16:33 2024)
+
+external/chromium-webview/prebuilt/x86_64:
+e3d143 Update Chromium Webview x86_64 prebuilt to 122.0.6261.119 [Kevin F. Haggerty] (Sat Mar 16 13:52:34 2024)
+fb4141 Rebuild x86_64 Chromium Webview to remove adservices [Kevin F. Haggerty] (Sun Mar 3 15:00:00 2024)
+2bfbe2 Update Chromium Webview x86_64 prebuilt to 122.0.6261.90 [Kevin F. Haggerty] (Fri Mar 1 04:16:37 2024)
+
+external/cronet:
+9f98ed Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:20 2024)
+
+external/dtc:
+373938 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:23 2024)
+
+external/e2fsprogs:
+d37e9f Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:25 2024)
+
+external/htop:
+449008 mk->bp [LuK1337] (Mon Mar 25 16:09:43 2024)
+
+external/libcxx:
+106fdb Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:30 2024)
+
+external/libncurses:
+423e8c mk->bp [LuK1337] (Mon Mar 25 21:39:53 2024)
+
+external/libnl:
+a1fa26 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:33 2024)
+
+external/libvpx:
+1ecd62 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:35 2024)
+
+external/nano:
+d18ad7 mk->bp [LuK1337] (Mon Mar 25 21:44:53 2024)
+
+external/setupcompat:
+e34317 fixup! Silence log spam [Michael Bestas] (Wed Mar 13 00:27:32 2024)
+83bf7c fixup! Change some more defaults [Michael Bestas] (Wed Mar 13 00:26:34 2024)
+48f940 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:40 2024)
+
+external/vim:
+6c12c2 mk->bp [LuK1337] (Mon Mar 25 21:40:06 2024)
+
+external/wpa_supplicant_8:
+e84613 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:29:48 2024)
+
+external/zstd:
+47433a Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:01:27 2024)
+
+frameworks/av:
+c2809d Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas] (Wed Apr 3 10:44:55 2024)
+5f4311 libcameraservice: Use the correct vendor tag id type on filterParameters [danielml] (Tue Mar 26 12:47:55 2024)
+c8123d fixup! Camera: Skip stream size check for whitelisted apps [Nick Reuter] (Wed Mar 20 17:28:48 2024)
+dc23ce fixup! Revert "stagefright: remove Miracast sender code" [Michael Bestas] (Sun Mar 10 17:20:20 2024)
+d0a222 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:04:29 2024)
+
+frameworks/base:
+be7b89 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas] (Wed Apr 3 10:44:58 2024)
+bf5884 Screenrecord: Fix notifications not being dismissed [Ido Ben-Hur] (Tue Apr 2 21:55:35 2024)
+e0c254 Screenrecord: Add delete action to the notification [Sourajit Karmakar] (Tue Apr 2 21:55:35 2024)
+cf766f Screenrecord: Dismiss notification on stop [Lostark13] (Tue Apr 2 21:55:35 2024)
+8e4f21 Screenrecord: Save preferences for permission dialog [Pranav Vashi] (Tue Apr 2 21:55:35 2024)
+059325b Screenrecord: Add an option to use HEVC [Ido Ben-Hur] (Tue Apr 2 21:55:35 2024)
+cf4e36 Screenrecord: Allow to reduce 3 second screen record timer [maitreya29] (Tue Apr 2 21:55:35 2024)
+d8795db Screenrecord: Add an option to record for longer [Ido Ben-Hur] (Tue Apr 2 21:55:35 2024)
+5b9226e3 Screenrecord: Make low quality bitrate scalable per device [Ido Ben-Hur] (Tue Apr 2 21:55:35 2024)
+3aa209 Screenrecord: Save and load set preferences [Ido Ben-Hur] (Tue Apr 2 21:55:35 2024)
+d50e8d Screenrecord: Remember last used blinking dot position [Ido Ben-Hur] (Tue Apr 2 21:55:35 2024)
+78bc8d Screenrecord: add blinking stop dot and low quality options [ezio84] (Tue Apr 2 21:55:35 2024)
+c4053e Screenrecord: Allow to select AVC codec profile level [iusmac] (Tue Apr 2 21:55:35 2024)
+dc1c7b Screenrecord: Allow limiting the max framerate [Kuba Wojciechowski] (Tue Apr 2 21:55:35 2024)
+39e6e6a core: BatteryManager: Add few more Battery broadcast intents [Jyotiraditya Panda] (Tue Apr 2 21:55:35 2024)
+125409 fixup! frameworks: Add device controls shortcut to power menu [Michael Bestas] (Tue Apr 2 19:04:41 2024)
+385d4c fixup! frameworks: Add more power menu customizations [Michael Bestas] (Tue Apr 2 19:04:41 2024)
+8013f67 fixup! frameworks: Add support for advanced restart options [Michael Bestas] (Tue Apr 2 19:04:40 2024)
+f423f8b fixup! SystemUI: advanced reboot: set maxElementsWrap [Michael Bestas] (Tue Apr 2 19:04:40 2024)
+41acd95 fixup! SystemUI: Register content observer for clock position [Michael Bestas] (Tue Apr 2 19:04:40 2024)
+0eb0dae fixup! SystemUI: Port brightness slider changes [Michael Bestas] (Tue Apr 2 19:04:39 2024)
+9d55d4 fixup! DozeSensors: only use proximity sensor if supported [Michael Bestas] (Tue Apr 2 19:04:39 2024)
+2701e6c fixup! SystemUI: Allow ignoring IWlan status in the mobile icon pipeline [Michael Bestas] (Tue Apr 2 19:04:38 2024)
+f0c541d fixup! udfps: Make pressed udfp view configurable [Michael Bestas] (Tue Apr 2 19:04:38 2024)
+996471 fixup! SystemUI: Add UDFPS framework dimming support [Michael Bestas] (Tue Apr 2 19:04:38 2024)
+aad94b fixup! SystemUI: Add Profiles tile [Michael Bestas] (Tue Apr 2 19:04:37 2024)
+f01df1f3 fixup! SystemUI: Add VPN tile [Michael Bestas] (Tue Apr 2 19:04:37 2024)
+1b82cf fixup! SystemUI: Add Lineage statusbar item holder [Oliver Scott] (Tue Apr 2 19:04:36 2024)
+443eac fixup! SystemUI: Add double tap to sleep gesture [Oliver Scott] (Tue Apr 2 19:04:36 2024)
+0a3ea2 fixup! SystemUI: Bringup tuner statusbar changes [Oliver Scott] (Tue Apr 2 19:04:36 2024)
+2d6153 fixup! SystemUI: Add USB Tether tile [Oliver Scott] (Tue Apr 2 19:04:35 2024)
+fb772f fixup! SystemUI: Add Sync tile [Oliver Scott] (Tue Apr 2 19:04:35 2024)
+4d58cb1 fixup! SystemUI: Add reading mode tile [Oliver Scott] (Tue Apr 2 19:04:34 2024)
+1701644 fixup! SystemUI: Add powershare QS tile [Oliver Scott] (Tue Apr 2 19:04:34 2024)
+cf321c6 fixup! SystemUI: Add heads up tile [Oliver Scott] (Tue Apr 2 19:04:34 2024)
+43d54f fixup! SystemUI: Add caffeine QS tile [Oliver Scott] (Tue Apr 2 19:04:33 2024)
+d02a17 fixup! SystemUI: Add AmbientDisplay tile [Oliver Scott] (Tue Apr 2 19:04:33 2024)
+7dec343 fixup! SystemUI: Add AOD QS tile [Oliver Scott] (Tue Apr 2 19:04:32 2024)
+02339c SystemUI: Refactor the WiFi & Cellular QS tiles [Tommaso Fonda] (Tue Apr 2 19:04:32 2024)
+429f5d1 Reapply "SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model" [Danny Lin] (Tue Apr 2 19:04:32 2024)
+033d5c Reapply "SystemUI: Restore wifi and cellular QS tiles" [Michael Bestas] (Tue Apr 2 19:04:31 2024)
+498f741 Settings: Always show package name in installed app details [Michael Bestas] (Wed Mar 27 21:21:21 2024)
+5852c1b Revert "Settings: Add package name to installed app details [2/2]" [Michael Bestas] (Wed Mar 27 21:21:21 2024)
+8ba601 fixup! SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling [Michael Bestas] (Wed Mar 27 21:21:20 2024)
+e034bc SystemUI: Restore 14 QPR1 FingerprintInteractiveToAuth handling [LuK1337] (Wed Mar 27 00:41:30 2024)
+56d09f6 fixup! SystemUI: Add FingerprintInteractiveToAuthProvider implementation [Anay Wadhera] (Tue Mar 26 23:55:49 2024)
+fabbde2 fixup! SystemUI: Implement hide gestural navigation hint bar [Dhina17] (Mon Mar 25 15:03:19 2024)
+f84ce9 fixup! Implement edge long swipe gesture [OnlyTomInSecond] (Sun Mar 24 14:52:14 2024)
+329f74 UsbDeviceManager: Adapt for data signaling quirks [Tommy Webb] (Fri Mar 22 10:41:06 2024)
+579011 Drop support for legacy USB restrictor [Chirayu Desai] (Thu Mar 21 08:25:03 2024)
+16fec3 fixup! Camera button support [Michael Bestas] (Thu Mar 21 08:25:03 2024)
+80ff2a54 fixup! Add support for runtime toggle of navbar [LuK1337] (Thu Mar 21 08:25:02 2024)
+b16a042 fixup! SystemUI: Add API for runtime taskbar config [LuK1337] (Thu Mar 21 08:25:02 2024)
+bb2d997 fixup! Firewall: Transport-based toggle support (1/3) [Michael Bestas] (Thu Mar 21 08:24:42 2024)
+1e98f9f fixup! SystemUI: Register content observer for clock position [Michael Bestas] (Thu Mar 21 08:24:42 2024)
+065a0c fixup! SystemUI: screenshot: open long screenshot activity for partial screenshots [Michael Bestas] (Thu Mar 21 08:24:42 2024)
+beadf1 Partially revert "Show floating rotation button regardless of ime status" [Michael Bestas] (Thu Mar 21 08:24:42 2024)
+98b9c1 fixup! SystemUI: Add UDFPS framework dimming support [Michael Bestas] (Thu Mar 21 08:24:41 2024)
+582c43 fixup! Implement edge long swipe gesture to new back gesture affordance [Michael Bestas] (Thu Mar 21 08:24:41 2024)
+d1799c fixup! udfps: Restore illumination dot for global hbm [Michael Bestas] (Thu Mar 21 08:24:41 2024)
+165bd9 fixup! Forward port CM Screen Security settings (1/2) [Michael Bestas] (Thu Mar 21 08:24:41 2024)
+18f3b5 fixup! Allow signature spoofing for microG Companion/Services [Michael Bestas] (Thu Mar 21 08:24:41 2024)
+32ca67 Revert "fixup! SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model" [Michael Bestas] (Thu Mar 21 08:24:40 2024)
+8acab1 Revert "SystemUI: Allow Wi-Fi/cell tiles to co-exist with provider model" [Michael Bestas] (Thu Mar 21 08:24:40 2024)
+f2f88d Revert "SystemUI: Restore wifi and cellular QS tiles" [Chirayu Desai] (Thu Mar 21 08:24:40 2024)
+aa9a5c1 fixup! SystemUI: Add powershare QS tile [Chirayu Desai] (Thu Mar 21 08:24:40 2024)
+f31393 fixup! SystemUI: Add AmbientDisplay tile [Chirayu Desai] (Thu Mar 21 08:24:40 2024)
+0166e8 fixup! SystemUI: Add AOD QS tile [Chirayu Desai] (Thu Mar 21 08:24:40 2024)
+bf1e15 fixup! SystemUI: Add double tap to sleep gesture [Chirayu Desai] (Thu Mar 21 08:24:39 2024)
+0699ffb1 fixup! VolumeDialogImpl: Fix cut layout when on setup or lock task mode [Chirayu Desai] (Thu Mar 21 08:24:39 2024)
+f7edb3 fixup! idmap2: Cache Lineage resources [Michael Bestas] (Thu Mar 21 08:24:39 2024)
+f01abd Reapply "Update parcling logic for Uris." [Michael Bestas] (Thu Mar 21 08:24:39 2024)
+7510f3 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Thu Mar 21 08:20:53 2024)
+1aa3f6 Fix unknown sources app install confirmation [Tommy Webb] (Sat Mar 2 02:16:53 2024)
+
+frameworks/libs/systemui:
+c73597 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:30:17 2024)
+
+frameworks/native:
+238a5b input: Bring back PointerProperties::copyFrom() [Edwin Moquete] (Tue Mar 26 16:09:54 2024)
+615d64 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:15:41 2024)
+
+frameworks/opt/telephony:
+165563 PhoneSwitcher: Fallback to HAL_COMMAND_ALLOW_DATA when DDS switch fails [LuK1337] (Fri Mar 22 17:51:56 2024)
+886737 fixup! RIL: Fix manual network selection with old modem [LuK1337] (Mon Mar 11 12:10:13 2024)
+952c499 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:19:46 2024)
+
+hardware/broadcom/libbt:
+b8df94 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:30:31 2024)
+
+hardware/google/gchips:
+46d2ef Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:30:34 2024)
+
+hardware/google/graphics/common:
+3bdf10 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:30:36 2024)
+
+hardware/google/pixel:
+b3c22f Restore drv2624 vibrator HAL APEX [Michael Bestas] (Wed Mar 13 17:56:31 2024)
+be6235 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:21:24 2024)
+
+hardware/google/pixel-sepolicy:
+37f77f Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:30:40 2024)
+
+hardware/interfaces:
+f130a1c Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas] (Wed Apr 3 10:45:26 2024)
+f34187 Partial revert "Remove mapper from composer2.1 VTS" [Aaron Kling] (Thu Mar 28 19:41:00 2024)
+a8d627 Revert "compatibility_matrices: Allow radio.config@1.0 till target-level 5" [Yumi Yukimura] (Fri Mar 22 16:20:22 2024)
+0966b4 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:30:44 2024)
+
+hardware/libhardware:
+56359d fixup! hardware/libhw: Add display_defs.h to declare custom enums/flags [Michael Bestas] (Sun Mar 10 20:28:44 2024)
+f4f5a1 fixup! audio: Add audio amplifier HAL [Michael Bestas] (Sun Mar 10 05:10:57 2024)
+d277d7 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:23:25 2024)
+
+hardware/lineage/compat:
+1522a4 compat: Drop libprotobuf-cpp-lite-3.9.1-vendorcompat [basamaryan] (Wed Mar 20 05:26:59 2024)
+353e69 compat: Provide libcrypto-v33 [LuK1337] (Mon Mar 18 17:21:01 2024)
+
+hardware/lineage/interfaces:
+7f5f18 gnss: Remove legacy passthrough HAL [Bruno Martins] (Fri Mar 22 15:26:34 2024)
+9848d5 usb: 1.3-basic: Allow devices to customize usb control {path,enable,disable} [LuK1337] (Fri Mar 22 12:09:09 2024)
+407afd usb: 1.3-basic: Implement enableUsbDataSignal method for legacy USB restrict [Yumi Yukimura] (Fri Mar 22 12:09:09 2024)
+11798b usb: 1.3-basic: Minor improvements [Yumi Yukimura] (Fri Mar 22 12:09:09 2024)
+24bb38 usb: 1.0-basic => 1.3-basic [Yumi Yukimura] (Fri Mar 22 12:09:09 2024)
+a48db3 usb: 1.3-dual_role_usb: Add support for /sys/devices/soc [LuK1337] (Fri Mar 22 12:08:11 2024)
+09dbe7 usb: 1.3-dual_role_usb: run as user root, group root system [Yueyao Zhu] (Fri Mar 22 12:08:11 2024)
+55962c usb: 1.3-dual_role_usb: Handle failures in optional sysfs gracefully [Michael Bestas] (Fri Mar 22 12:08:11 2024)
+e0e9b4 usb: 1.3-dual_role_usb: Allow overriding device/controller names [Michael Bestas] (Fri Mar 22 12:08:11 2024)
+661665 usb: 1.2-dual_role_usb: Update to usb@1.3 [Albert Wang] (Fri Mar 22 12:08:11 2024)
+b541eb usb: 1.1-dual_role_usb: Update to usb@1.2 [Ronak Vijay Raheja] (Fri Mar 22 12:08:11 2024)
+79ba7a usb: 1.1-dual_role_usb: clang-format [Michael Bestas] (Fri Mar 22 12:08:11 2024)
+71d59b usb: 1.0-dual_role_usb: Update to usb@1.1 [Rashed Abdel-Tawab] (Fri Mar 22 12:08:11 2024)
+c4702b usb: 1.0-dual_role_usb: Rebrand [Michael Bestas] (Fri Mar 22 12:08:11 2024)
+ccd77f usb: Import android.hardware.usb@1.0 to 1.0-dual_role_usb [Michael Bestas] (Fri Mar 22 12:08:11 2024)
+33e567 Deprecate vendor.lineage.trust@1.0 [Michael Bestas] (Fri Mar 22 12:08:11 2024)
+4c474a wifi: Sunset legacy HIDL HAL [Bruno Martins] (Thu Mar 21 18:09:39 2024)
+eaedee health: Add battery_charging_enabled node to ChargingControl node list [me-cafebabe] (Thu Feb 29 00:10:27 2024)
+
+hardware/samsung/nfc:
+51321d Add vendor prefix and change service name [Michael Bestas] (Sat Mar 2 19:06:33 2024)
+
+hardware/st/nfc:
+0b0183 Add support to read different fw configs for ssss/dsds [Michael Bestas] (Fri Mar 22 16:49:29 2024)
+a161a4 Add vendor prefix and change service name [Michael Bestas] (Fri Mar 22 16:49:29 2024)
+140683 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:19 2024)
+
+kernel/configs:
+7b02a6 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:22 2024)
+
+lineage-sdk:
+dcbd8d Drop support for legacy USB restrictor [Chirayu Desai] (Thu Mar 21 09:34:33 2024)
+360d95 LineagePreferenceLib: Migrate to SwitchPreferenceCompat [Michael Bestas] (Thu Mar 21 08:28:58 2024)
+
+packages/apps/Aperture:
+890504 Aperture: Allow background launch for QR code pending intents [Luca Stefani] (Thu Mar 21 22:36:59 2024)
+dd52eb Aperture: Rework settings [Sebastiano Barezzi] (Tue Mar 19 14:47:19 2024)
+231d3d Aperture: Enable OnBackInvokedCallback [Sebastiano Barezzi] (Tue Mar 19 14:47:19 2024)
+38be5b Aperture: settings_activity -> activity_settings [Sebastiano Barezzi] (Tue Mar 5 09:00:57 2024)
+c7f464 Aperture: Use window bars visibility extension from Glimpse [Sebastiano Barezzi] (Tue Mar 5 09:00:14 2024)
+a66041 Aperture: Inflate activities' views via constructor [Sebastiano Barezzi] (Tue Mar 5 08:44:54 2024)
+efed05 Aperture: Use smooth zoom for logical camera switch button [Sebastiano Barezzi] (Fri Mar 1 23:52:02 2024)
+fb2fb3 Aperture: QrImageAnalyzer: Fix views interaction on background thread [Sebastiano Barezzi] (Fri Mar 1 23:31:31 2024)
+e90283 Aperture: Reset zoom ratio on current cam click [Luca Stefani] (Fri Mar 1 23:31:31 2024)
+5b6e86 Aperture: Use the new ZoomGestureDetector [Luca Stefani] (Fri Mar 1 13:32:06 2024)
+9f443d Aperture: Import ZoomGestureDetector [Luca Stefani] (Fri Mar 1 13:32:06 2024)
+e5ea46c Aperture: Reformat code [Sebastiano Barezzi] (Fri Mar 1 13:12:28 2024)
+ea781b Aperture: Move camera manager to the view model [Sebastiano Barezzi] (Fri Mar 1 13:12:28 2024)
+4831db Aperture: Extract overlay configuration into a new class [Sebastiano Barezzi] (Fri Mar 1 13:12:28 2024)
+547cf2 Aperture: Move camera view model to .viewmodels [Sebastiano Barezzi] (Fri Mar 1 13:12:28 2024)
+889475 Aperture: Use nonNullablePropertyDelegate for screen rotation LiveData [Sebastiano Barezzi] (Fri Mar 1 13:12:28 2024)
+e747a2 Aperture: Rework gallery button handling [Tommy Webb] (Fri Mar 1 13:12:28 2024)
+3ddff7 Aperture: Initial captured media flow [Sebastiano Barezzi] (Fri Mar 1 13:12:27 2024)
+d0a522 Aperture: Bump gradle-generatebp to v1.7 [LuK1337] (Fri Mar 1 11:50:36 2024)
+3c9a0c Aperture: Reformat code [Sebastiano Barezzi] (Wed Feb 28 15:41:29 2024)
+958af0 Aperture: Update icons from Material Icons [Sebastiano Barezzi] (Wed Feb 28 15:41:29 2024)
+78db13 Aperture: Implement screen flash [Sebastiano Barezzi] (Wed Feb 28 15:41:29 2024)
+3cfe9a Aperture: Remove RED_EYE mentions [Sebastiano Barezzi] (Wed Feb 28 15:41:29 2024)
+f3fbb5 Aperture: Use `onCaptureStarted()` for shutter sound and UI update [Sebastiano Barezzi] (Wed Feb 28 15:41:29 2024)
+
+packages/apps/Camera2:
+865450 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:24 2024)
+
+packages/apps/Car/Settings:
+32ff6e Settings: res: cm -> lineage [Michael Bestas] (Fri Mar 29 08:47:41 2024)
+f7fede One does not simply become a Developer [Chirayu Desai] (Thu Mar 28 09:44:10 2024)
+da2817 fixup! Hardcode default pattern size [Bruno Martins] (Thu Mar 28 09:44:07 2024)
+60e2c1 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:29:54 2024)
+
+packages/apps/CellBroadcastReceiver:
+152a81 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:29 2024)
+
+packages/apps/Contacts:
+0dd8e7 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:32 2024)
+
+packages/apps/Dialer:
+711503 fixup! Dialer: convert VoicemailSecretCodeActivity to androidx [Michael W] (Mon Apr 1 13:05:24 2024)
+9cf5ef Dialer: convert VoicemailSecretCodeActivity to androidx [Joel Beckmeyer] (Sat Mar 30 20:48:43 2024)
+28f3ce Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Wed Mar 20 18:39:48 2024)
+a5ac5c Add README [Amith Dsouza] (Wed Mar 20 18:39:21 2024)
+42f9b0 Dialer: implement vvm_type_advvm (AT&T VVM) [Joel Beckmeyer] (Sun Mar 10 21:51:43 2024)
+0f6deb Dialer: show blocked calls in call log [Joel Beckmeyer] (Sat Mar 9 05:25:09 2024)
+
+packages/apps/DocumentsUI:
+92695f Fix zip archive interactions [Tommy Webb] (Thu Apr 4 18:06:02 2024)
+ea9cfa Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:32:52 2024)
+
+packages/apps/EmergencyInfo:
+5694b7 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:38 2024)
+
+packages/apps/Etar:
+667e46 Handle null-safety errors for AOSP QPR2 [Michael Bestas] (Sun Mar 10 05:18:30 2024)
+418c4c Use -Xjvm-default=all instead of -Xjvm-default=enable or @JvmDefault [Colin Cross] (Sun Mar 10 05:18:23 2024)
+
+packages/apps/FlipFlap:
+c9c070 FlipFlap: Migrate to CompoundButton.OnCheckedChangeListener [Chaohui Wang] (Fri Mar 22 15:23:50 2024)
+f56340 FlipFlap: Enable use_resource_processor for all sysui deps [Peter Kalauskas] (Fri Mar 22 15:23:50 2024)
+
+packages/apps/Glimpse:
+e5d3f8 Glimpse: Enable scrollbar for bottom sheet horizontal scroll view [LuK1337] (Fri Mar 1 18:57:23 2024)
+11e5d1 Glimpse: Bump gradle-generatebp to v1.7 [LuK1337] (Fri Mar 1 11:51:26 2024)
+
+packages/apps/Jelly:
+a75728 Jelly: Switch to AlertDialog [Sebastiano Barezzi] (Fri Apr 5 10:50:33 2024)
+2ebff3 Jelly: Allow user added certificates to be used [Alexander Koskovich] (Sun Mar 31 16:11:02 2024)
+04ca7e Jelly: Handle SSL certificate errors [Alexander Koskovich] (Sun Mar 31 16:11:02 2024)
+564b57 Jelly: Bump compile and target SDK version to 34 [LuK1337] (Thu Mar 21 11:51:47 2024)
+c61cb4 Jelly: Bump gradle-generatebp to v1.7 [LuK1337] (Thu Mar 21 11:46:02 2024)
+759ed1 Jelly: Update AGP to 8.2.1 [Sebastiano Barezzi] (Thu Mar 21 11:43:49 2024)
+5799ec Jelly: Update Gradle to 8.5 [Sebastiano Barezzi] (Thu Mar 21 11:43:49 2024)
+67c1fa Jelly: Convert to ViewModel + flows + ListAdapter [Luca Stefani] (Sat Mar 16 16:08:15 2024)
+448638 Jelly: Add History and Favorite flows [Luca Stefani] (Sat Mar 16 16:04:47 2024)
+480997 Jelly: Add extension for converting a query into a flow [Luca Stefani] (Sat Mar 16 09:38:53 2024)
+6224c2 Jelly: Don't use android:fullBackupContent [Luca Stefani] (Sat Mar 16 09:38:53 2024)
+
+packages/apps/LineageParts:
+689d08 LineageParts: Migrate MainSwitchBar and Switch to Material3 [Bruno Martins] (Sun Mar 24 22:24:08 2024)
+a4527b LineageParts: Migrate to SwitchPreferenceCompat [Michael Bestas] (Wed Mar 20 18:42:17 2024)
+b2f7b0 ProfileSettings: Implement OnCheckedChangeListener [Bruno Martins] (Wed Mar 20 18:42:13 2024)
+77d95e Update for QPR2 setRotationLockForAccessibility API change [Michael Bestas] (Wed Mar 20 14:21:52 2024)
+4fb2ea LineageParts: Fix DisplayRotation [Michael Bestas] (Wed Mar 20 14:21:46 2024)
+57dea8 ChargingControl: Respect 24 hour locales in TimePicker [Georg Veichtlbauer] (Tue Mar 5 23:09:27 2024)
+
+packages/apps/Messaging:
+eb7741 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:40 2024)
+
+packages/apps/Nfc:
+2fb062 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:43 2024)
+
+packages/apps/Seedvault:
+1e5fd5 Merge branch 'android14' of github.com:seedvault-app/seedvault into lineage-21.0 [Michael Bestas] (Sun Mar 10 05:21:00 2024)
+
+packages/apps/Settings:
+8a6ec3 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas] (Wed Apr 3 10:46:28 2024)
+e1cea8 Make battery cycle count configurable and disable it by default [Michael Bestas] (Tue Apr 2 21:57:03 2024)
+1a1486 Hide unavailable battery info [Michael Bestas] (Tue Apr 2 21:57:03 2024)
+911d6d Settings: deviceinfo: Extend Battery info page [Jyotiraditya Panda] (Tue Apr 2 21:57:03 2024)
+781740 Make battery info configurable and enable it by default [Michael Bestas] (Tue Apr 2 21:57:03 2024)
+3ffb1b Revert "Settings: Add package name to installed app details [1/2]" [Michael Bestas] (Thu Mar 28 07:37:28 2024)
+12793b Settings: Move adb root toggle and make it independent [Bruno Martins] (Wed Mar 27 16:03:16 2024)
+6c31c6 Settings: Disable adb root if developer options are disabled [Bruno Martins] (Wed Mar 27 16:03:13 2024)
+1e3807 fixup! Settings: Show single-touch wakeup setting on rear & front fps devices [Michael Bestas] (Mon Mar 25 13:29:19 2024)
+ba302d fixup! Hide SFPS wakeup setting when it's not supported [Michael Bestas] (Mon Mar 25 13:29:19 2024)
+349226 fixup! DynamicDenylistManager shall not exist [Michael Bestas] (Fri Mar 22 20:17:02 2024)
+e890bf DynamicDenylistManager shall not exist [Tommy Webb] (Fri Mar 22 17:58:11 2024)
+4d49a0 Also disable switch for "Allow background usage" [Tommy Webb] (Fri Mar 22 17:58:06 2024)
+a058cd fixup! Settings: Forward port pattern visibility settings (2/2) [Michael Bestas] (Sun Mar 10 20:39:11 2024)
+97e852 fixup! Settings: Add FastCharge preference into Battery settings [Michael Bestas] (Sun Mar 10 20:38:32 2024)
+e344ea fixup! Add toggle to enable ADB root [Michael Bestas] (Sun Mar 10 20:36:44 2024)
+6a54d7d fixup! Settings: Add option to scramble pin layout when unlocking (1/2). [Michael Bestas] (Sun Mar 10 05:20:28 2024)
+32d2e6 fixup! Settings: Add switch preference for AGPS [Michael Bestas] (Sun Mar 10 05:20:14 2024)
+038a74 fixup! Settings: gestures: Add page for Screen-Off UDFPS [Tommy Webb] (Sun Mar 10 05:10:10 2024)
+896cfa Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sat Mar 9 03:26:19 2024)
+d60c7e Handle mobile data on internet page during setup [Alexander Koskovich] (Sat Mar 2 02:15:09 2024)
+
+packages/apps/SettingsIntelligence:
+f1fcc5 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:50 2024)
+
+packages/apps/SetupWizard:
+79e9f1 Fix QPR2 build [Michael Bestas] (Wed Mar 20 19:06:16 2024)
+935ba6 SUW: center welcome text on TV [Timi Rautamäki] (Tue Mar 5 20:20:42 2024)
+6cb268 BluetoothSetupActivity: ignore cancel results [Aaron Kling] (Tue Mar 5 20:19:43 2024)
+a09594 WelcomeActivity: do nothing on back press [Aaron Kling] (Tue Mar 5 20:14:58 2024)
+112f92 fixup! Remove unused colors [razorloves] (Sat Mar 2 03:48:40 2024)
+2b605d welcome: Use a separate string for work profile start [Chirayu Desai] (Sat Mar 2 01:39:05 2024)
+db86c2 Remove unused View [Michael Bestas] (Sat Mar 2 01:39:05 2024)
+b69c30 Remove unused colors [Michael Bestas] (Sat Mar 2 01:39:05 2024)
+f3d294 Remove unused import [Michael Bestas] (Sat Mar 2 01:39:04 2024)
+ab27e6 Don't disable mobile data, AOSP has props for this [Tom Pratt] (Wed Feb 28 15:05:26 2024)
+
+packages/apps/SimpleSettingsConfig:
+f5620a Convert to set settings instead of deviceconfig [Aaron Kling] (Fri Mar 8 21:06:58 2024)
+6d87e7 Rebrand to SimpleSettingsConfig [Aaron Kling] (Fri Mar 8 21:06:35 2024)
+
+packages/apps/Stk:
+12c0bb Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:31:52 2024)
+
+packages/apps/ThemePicker:
+4a3bd3 fixup! ThemePicker: Bring back fonts, icon pack, shape customization [Michael Bestas] (Fri Mar 22 18:12:51 2024)
+27ceee Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sat Mar 9 03:45:49 2024)
+
+packages/apps/Trebuchet:
+15baf9 Merge tag 'android-14.0.0_r31' into staging/lineage-21.0_merge-android-14.0.0_r31 [Michael Bestas] (Wed Apr 3 10:46:42 2024)
+8c7928 fixup! QuickStep: Google Feed integration [Michael Bestas] (Sun Mar 10 20:40:16 2024)
+78c6bc Restore isTwoButtonNavMode() [Michael Bestas] (Sun Mar 10 20:40:16 2024)
+72e113 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sat Mar 9 04:39:48 2024)
+
+packages/apps/TvSettings:
+ae46b6 Settings: res: cm -> lineage [Michael Bestas] (Fri Mar 29 08:45:58 2024)
+fb811d fixup! Settings: Implement ADB over network [Bruno Martins] (Thu Mar 28 09:24:40 2024)
+ed2cd5 Add support for Nvidia convertible USB port [Aaron Kling] (Thu Mar 28 09:24:35 2024)
+842eb1 TvSettings: Move power related options to "Power and Energy" [Bruno Martins] (Mon Mar 25 09:50:53 2024)
+28362f TvSettings: Reorder restart, sleep and shutdown guided actions [Bruno Martins] (Mon Mar 25 09:42:08 2024)
+a832e2 ButtonsFragment: Fix advanced restart preference [Bruno Martins] (Sun Mar 24 17:37:09 2024)
+37883b fixup! Settings: Implement ADB over network [Bruno Martins] (Sat Mar 23 16:46:43 2024)
+484ade fixup! Add rooted development option [Timi Rautamäki] (Sat Mar 23 14:53:49 2024)
+7ac803 TvSettings: fix launching suggestions [Timi Rautamäki] (Sat Mar 23 13:04:42 2024)
+03b3c1 TvSettings: fix crash on developer options [Timi Rautamäki] (Sat Mar 23 13:04:42 2024)
+2beacd Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:43:27 2024)
+dc2ebf fixup! Move openInEditMode from onViewCreated to onResume [Aaron Kling] (Thu Feb 29 01:43:37 2024)
+f08a15 Revert "Putting device into pairing mode should time out after awhile" [Aaron Kling] (Wed Feb 28 23:55:00 2024)
+757522 Add ethernet check to initial network setup [Andreas Sandblad] (Wed Feb 28 23:54:49 2024)
+
+packages/apps/WallpaperPicker2:
+2ebaa8 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:38:45 2024)
+
+packages/inputmethods/LatinIME:
+1c37af Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:32:14 2024)
+
+packages/inputmethods/LeanbackIME:
+e149bd Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:32:16 2024)
+
+packages/modules/Bluetooth:
+e40e2bb [ALPS08619561] Add VSC Cmd for Mediatek chip [weifan.zhang] (Sat Mar 23 15:56:56 2024)
+750a0c Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:50:44 2024)
+
+packages/modules/Connectivity:
+0c2456 Remove sdk level check when calling getDataSaverEnabled [Junyu Lai] (Tue Mar 19 19:57:48 2024)
+f586ef netd: Remove <4.14 kernel restrictions [Michael Bestas] (Tue Mar 19 19:57:25 2024)
+f85946 netbpfload: Support <4.14 kernels [Michael Bestas] (Tue Mar 19 19:57:25 2024)
+6d7114 netbpfload: Relax kernel version requirement [Nanhumly] (Mon Mar 18 19:40:12 2024)
+b5c59d NetBpfLoad: more 4.9-T support [Maciej Żenczykowski] (Mon Mar 18 19:40:06 2024)
+e61bff netbpfload: add back support for 4.9-T kernels [Maciej Żenczykowski] (Fri Mar 15 13:06:46 2024)
+2101a2 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sun Mar 10 17:07:51 2024)
+
+packages/modules/Permission:
+53b7a8 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:56:53 2024)
+
+packages/modules/Wifi:
+33c9f3 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:57:26 2024)
+
+packages/modules/adb:
+067985 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:32:18 2024)
+
+packages/modules/common:
+400a83 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:52:05 2024)
+
+packages/providers/CalendarProvider:
+826cae Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:11 2024)
+
+packages/providers/CallLogProvider:
+bd8de1 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:13 2024)
+
+packages/providers/ContactsProvider:
+510dd1 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:16 2024)
+
+packages/providers/DownloadProvider:
+2c95de Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:19 2024)
+
+packages/providers/MediaProvider:
+13ed8c Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:21 2024)
+
+packages/providers/TelephonyProvider:
+46c4e4 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:24 2024)
+
+packages/resources/devicesettings:
+17f73b DeviceSettings: Migrate MainSwitchBar and Switch to Material3 [Bruno Martins] (Sun Mar 24 22:23:58 2024)
+
+packages/screensavers/PhotoTable:
+199ed6 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:26 2024)
+
+packages/services/Car:
+6e90c7 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:30 2024)
+
+packages/services/Mms:
+f376e7 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:32 2024)
+
+packages/services/Telecomm:
+ee475e Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:58:11 2024)
+
+packages/services/Telephony:
+f01bc1 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 23:58:33 2024)
+
+packages/wallpapers/LivePicker:
+cf2dba Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:40 2024)
+
+system/bpf:
+dd436e bpfloader: Support <4.14 kernels [Michael Bestas] (Tue Mar 19 19:58:36 2024)
+1d8b8a bpfloader: more 4.9-T support [Maciej Żenczykowski] (Mon Mar 18 20:33:19 2024)
+84d060 bpfloader: add back support for 4.9-T kernels [Maciej Żenczykowski] (Mon Mar 18 20:33:15 2024)
+5ee85b Revert "Partially revert "bpfloader - remove dead code"" [Michael Bestas] (Mon Mar 18 20:25:31 2024)
+208faa Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:42 2024)
+
+system/core:
+6a7e4a init: Remove encryption=DeleteIfNecessary from /data/misc/bootanim [Michael Bestas] (Thu Apr 4 16:27:49 2024)
+35abf4 fixup! healthd: Reinitialize mChargerNames for every battery update [Michael Bestas] (Sun Mar 10 16:47:36 2024)
+6f626a Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sat Mar 9 00:02:53 2024)
+
+system/extras:
+5d70f5 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:49 2024)
+
+system/keymaster:
+c511cf Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:51 2024)
+
+system/libhidl:
+8b4bbd Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:54 2024)
+
+system/libziparchive:
+217051 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:56 2024)
+
+system/logging:
+2f90d4 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:33:59 2024)
+
+system/media:
+993ee4 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:34:01 2024)
+
+system/netd:
+c218be Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:34:04 2024)
+
+system/security:
+54ff8b Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:34:07 2024)
+
+system/sepolicy:
+1d6643 sepolicy: allow fastbootd to operate devpts [Randall Huang] (Thu Mar 21 07:38:00 2024)
+560231 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sat Mar 9 00:06:30 2024)
+
+system/tools/mkbootimg:
+90054a Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Fri Mar 8 22:34:13 2024)
+
+system/update_engine:
+9aa498 fixup! update_engine: Add performance mode [Michael Bestas] (Sun Mar 10 17:18:00 2024)
+db106e Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sat Mar 9 00:07:29 2024)
+
+system/vold:
+8d8815 Merge tag 'android-14.0.0_r29' into staging/lineage-21.0_merge-android-14.0.0_r29 [Michael Bestas] (Sat Mar 9 00:04:10 2024)
+
+tools/extract-utils:
+bd1fbd extract-utils: Add support for adding required modules to packages [SamarV-121] (Tue Mar 19 16:39:26 2024)
+045c65 extract-utils: Support declaring symlinks to source files [SamarV-121] (Tue Mar 19 16:39:22 2024)
+39c612 extract-utils: Prevent adding AB_OTA_PARTITIONS definition on non AB devices [SamarV-121] (Tue Mar 19 05:22:30 2024)
+6ff62a extract_utils: Add preprocessed: true to all presigned apps [Michael Bestas] (Sun Mar 10 05:17:41 2024)
+
+vendor/lineage:
+f2a488 bootanimation: Refinements [Asher Simonds] (Sat Apr 6 13:10:13 2024)
+04cde9 vars: Remove msm-4.9/msm-4.14/gs201 kernels [Michael Bestas] (Wed Apr 3 10:43:04 2024)
+cb8d52 vars: April 2024 Security update [Chirayu Desai] (Wed Apr 3 10:41:41 2024)
+9a445c vars: Update qcom tags [Michael Bestas] (Mon Apr 1 09:07:06 2024)
+f75e11 overlay: several Dialer VVM config fixes [Joel Beckmeyer] (Sat Mar 30 20:48:53 2024)
+1b0fc0 fixup! kernel: Support copying modules to boot ramdisk [Aaron Kling] (Sat Mar 30 06:38:58 2024)
+5b8dd2 lineage: products: sdk_phone_x86_64 emulator - fix sdk_addon packaging [mse1969] (Wed Mar 27 23:48:10 2024)
+75b2af repopick: Require python3 [LuK1337] (Tue Mar 26 19:09:48 2024)
+105b86 lineage: products: sdk_phone_x86_64 emulator - restore partition sizes [mse1969] (Mon Mar 25 16:22:39 2024)
+8e362b overlay: tv: Add night mode for package installer [Aaron Kling] (Mon Mar 25 16:11:42 2024)
+01a36e lineage: products: remove sdk_phone_x86 emulator target [mse1969] (Sun Mar 24 22:20:28 2024)
+b0d0c6 lineage: products: Fix lineage_sdk_car* emulator targets [mse1969] (Sun Mar 24 22:17:17 2024)
+1c69ed lineage: products: Fix lineage_sdk_phone_x86_64 emulator target [mse1969] (Sun Mar 24 22:13:00 2024)
+5d26fd config: Include AudioTv.mk on atv [Michael Bestas] (Fri Mar 22 23:55:58 2024)
+91592b config: Remove deprecated vendor.lineage.trust from FCM [Michael Bestas] (Thu Mar 21 08:33:08 2024)
+dfec56 kernel: Add clean headers script to workaround conflicts with bionic [LuK1337] (Wed Mar 20 20:53:44 2024)
+a00030 envsetup: Fix breakfast [Michael Bestas] (Wed Mar 20 20:53:44 2024)
+abcc41 vars: 🐘 March 2024 Quarterly Platform Release & Security update 🐘 [Chirayu Desai] (Wed Mar 20 19:58:57 2024)
+2a348e repopick: Use `number` instead of `id` for error msgs [LuK1337] (Mon Mar 11 10:58:11 2024)
+d5031d overlay: enable VVM for Boost and other ATT MVNOs [Joel Beckmeyer] (Sun Mar 10 21:51:14 2024)
+8e4967 config: Build simple Settings provisioning service [Aaron Kling] (Thu Mar 7 17:58:59 2024)
+f3ee86 bacon: Depend on $(DEFAULT_GOAL) [LuK1337] (Mon Mar 4 15:10:36 2024)
+fccfef config: Fix build when WITH_SU is set [Michael Bestas] (Thu Feb 29 20:48:31 2024)
+fc39d9 Disable mobiledata by default with sys prop [Tom Pratt] (Wed Feb 28 15:07:37 2024)
+
+==========
 2024-02-28
 ==========
 android:
