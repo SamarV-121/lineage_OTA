@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright © 2022-2024, Samar Vispute "SamarV-121" <samar@samarv121.dev>
+# Copyright © 2022-2025, Samar Vispute "SamarV-121" <samar@samarv121.dev>
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -66,6 +66,12 @@ declare -A device_repos=(
                 hardware/mediatek
                 kernel/realme/mt6785
                 vendor/realme-firmware"
+    ["eqe"]="device/motorola/eqe
+             kernel/motorola/sm7550
+             kernel/motorola/sm7550-modules
+             kernel/motorola/sm7550-devicetrees
+             hardware/motorola
+             system/qcom"
 )
 
 function git_log() {

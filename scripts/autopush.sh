@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright © 2022-2024, Samar Vispute "SamarV-121" <samar@samarv121.dev>
+# Copyright © 2022-2025, Samar Vispute "SamarV-121" <samar@samarv121.dev>
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -17,11 +17,13 @@ for DEVICE in "${DEVICES[@]}"; do
 
     logi "Uploading $DEVICE OTAs to github"
     TAG="$DEVICE-$(date -u +%Y%m%d_%H%M%S)"
-    for BUILD in "$OTA_DIR"/builds/*"$DEVICE"*; do
+    for BUILD in "$OTA_DIR"/builds/"$DEVICE"/*; do
         "$OTA_DIR/scripts/github-release.sh" -r SamarV-121/lineage_OTA \
             -t "$TAG" -b master -d "Date: $(date)" -f "$BUILD"
 
         FILENAME=$(basename "$BUILD")
+	[[ "$FILENAME"  == *.zip ]] || continue
+
         BUILD_URL="https://lineage.samarv121.dev/$TAG/$FILENAME"
         if [[ $FILENAME =~ gms ]]; then
             DEVICE_JSON="${DEVICE}_gms.json"
