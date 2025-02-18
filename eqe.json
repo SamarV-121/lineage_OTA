@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1738681381,
-      "filename": "lineage-22.1-20250204_150308-UNOFFICIAL-eqe.zip",
-      "id": "95efd31eeddd505d2da78989b6ab7c4b6d932a16bbd745f2214a75e8d00f68c6",
+      "datetime": 1739765154,
+      "filename": "lineage-22.1-20250217_040635-UNOFFICIAL-eqe.zip",
+      "id": "80ff89e5298ba25f663d6b6bcc966fead1c0f0000c0f72817dc86e1ea82dc397",
       "romtype": "UNOFFICIAL",
-      "size": 1582989859,
-      "url": "https://lineage.samarv121.dev/eqe-20250206_034115/lineage-22.1-20250204_150308-UNOFFICIAL-eqe.zip",
+      "size": 1410679519,
+      "url": "https://lineage.samarv121.dev/eqe-20250218_031516/lineage-22.1-20250217_040635-UNOFFICIAL-eqe.zip",
       "version": "22.1"
     }
   ]

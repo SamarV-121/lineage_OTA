@@ -1,3 +1,99 @@
 ==========
+2025-02-18
+==========
+android:
+538c25 manifest: February 2025 Security Update [Michael Bestas] (Sat Feb 8 20:21:41 2025)
+43cb1e manifest: Drop legacy QCOM VR HAL [Michael Bestas] (Sat Feb 8 12:20:15 2025)
+
+build/make:
+36c190 Merge tag 'android-15.0.0_r14' into staging/lineage-22.1_merge-android-15.0.0_r14 [Michael Bestas] (Sat Feb 8 16:56:25 2025)
+
+device/lineage/sepolicy:
+14fdb8 Restrict access to custom properties [Michael Bestas] (Tue Feb 11 19:27:38 2025)
+7ce36a common: label Lineage fingerprint AIDL [Han Sol Jin] (Tue Feb 11 07:06:27 2025)
+
+external/gptfdisk:
+b60506 gptfdisk: Make libgptf available to product/vendor [Aaron Kling] (Thu Feb 6 06:24:52 2025)
+
+frameworks/av:
+c2d9d7b Merge tag 'android-15.0.0_r14' into staging/lineage-22.1_merge-android-15.0.0_r14 [Michael Bestas] (Wed Feb 5 15:58:24 2025)
+
+frameworks/base:
+8f2748 Merge tag 'android-15.0.0_r14' into staging/lineage-22.1_merge-android-15.0.0_r14 [Michael Bestas] (Sat Feb 8 20:19:47 2025)
+9595096 SystemUI: Add DOUBLE_TAP_TO_WAKE to tuner service reset exceptions [LuK1337] (Wed Feb 5 19:12:14 2025)
+
+hardware/google/pixel:
+15b40a pixel: Switch to common lineage powershare HAL [Michael Bestas] (Tue Feb 4 15:34:58 2025)
+
+hardware/google/pixel-sepolicy:
+3961e3 pixel: Switch to common lineage powershare HAL [Michael Bestas] (Tue Feb 4 15:35:49 2025)
+
+hardware/lineage/interfaces:
+8f445d fingerprint: aidl: Improve documentation on sensor_location [Luofan Chen] (Tue Feb 11 11:23:43 2025)
+3824e1 fingerprint: aidl: Use soong to decide which arch to build [Giovanni Ricca] (Tue Feb 11 11:23:43 2025)
+9d7e86 fingerprint: aidl: Allow setting more than one sensor location [Jens Reidel] (Tue Feb 11 11:23:43 2025)
+87c6ff fingerprint: aidl: Initial legacy libhardware implementation [Fabian Leutenegger] (Tue Feb 11 11:23:43 2025)
+15024d fingerprint: aidl: Initial stub service [Tim Zimmermann] (Tue Feb 11 06:35:05 2025)
+a90b7f light: Add `lcd-backlight-ex` to the list of backlight devices [Han Sol Jin] (Mon Feb 10 11:57:53 2025)
+232ba0 light: Add `panel0-backlight-ex` to the list of backlight devices [Han Sol Jin] (Mon Feb 10 11:57:17 2025)
+6063ea light: Add "sprd_backlight" to the list of backlight devices [Giovanni Ricca] (Thu Feb 6 11:50:32 2025)
+
+hardware/samsung/nfc:
+61bc89 nfc: Rename debug level property [Michael Bestas] (Mon Feb 10 17:24:07 2025)
+
+lineage-sdk:
+b9be94 sdk: Get rid of lineageos.os.{Build,Concierge} [Michael Bestas] (Mon Feb 10 16:13:48 2025)
+
+packages/apps/Camelot:
+8318cb Camelot: Update androidx.pdf to 1.0.0-alpha06 [Luca Stefani] (Thu Feb 6 15:50:30 2025)
+
+packages/apps/FMRadio:
+f3eb07 FMRadio: Rework custom jni support [Michael Bestas] (Fri Feb 7 19:47:20 2025)
+
+packages/apps/Glimpse:
+c57bcd Glimpse: Create a Media out of thin air if not in media provider [Luca Stefani] (Fri Feb 7 13:21:14 2025)
+
+packages/apps/Settings:
+0eb034c Settings: Make SIM toggle unchangable when not supported [LuK1337] (Mon Feb 10 14:06:22 2025)
+a0338d Merge tag 'android-15.0.0_r14' into staging/lineage-22.1_merge-android-15.0.0_r14 [Michael Bestas] (Wed Feb 5 15:50:35 2025)
+
+packages/apps/Twelve:
+dec2d1 Twelve: Make togglePlayPause() rewind if playback has ended [LuK1337] (Mon Feb 10 09:06:06 2025)
+2c66e7 Twelve: Add some margin to create playlist button [Luca Stefani] (Sun Feb 9 23:38:48 2025)
+11e6ec Twelve: Don't open bottom sheet for "create playlist" item [Luca Stefani] (Sun Feb 9 23:38:48 2025)
+8a0e7d Twelve: Move onPrepareView callbacks using item to onBindView [Luca Stefani] (Sun Feb 9 23:37:04 2025)
+799a82 Twelve: Merge all media item views [Sebastiano Barezzi] (Sun Feb 9 23:10:56 2025)
+c95473 Twelve: Reformat code [Sebastiano Barezzi] (Sun Feb 9 16:59:27 2025)
+0836d8 Twelve: Fix/improve intent handling navigation [Sebastiano Barezzi] (Sun Feb 9 16:47:49 2025)
+2a492f Twelve: Fix-up provider preference store [Luca Stefani] (Fri Feb 7 22:31:38 2025)
+967f2a Twelve: New create playlist fragment [Sebastiano Barezzi] (Fri Feb 7 18:40:30 2025)
+23e5e4 Twelve: Convert Serializable users to Parcel [Luca Stefani] (Fri Feb 7 18:40:30 2025)
+ed57e2 Twelve: Better provider selector dialog [Sebastiano Barezzi] (Fri Feb 7 18:22:51 2025)
+b06afb Twelve: Commonize Material 3 dialog fragments [Sebastiano Barezzi] (Fri Feb 7 18:22:51 2025)
+
+packages/modules/Bluetooth:
+c2414b Merge tag 'android-15.0.0_r14' into staging/lineage-22.1_merge-android-15.0.0_r14 [Michael Bestas] (Wed Feb 5 15:51:32 2025)
+
+packages/services/Telecomm:
+9eea11 Merge tag 'android-15.0.0_r14' into staging/lineage-22.1_merge-android-15.0.0_r14 [Michael Bestas] (Wed Feb 5 15:52:53 2025)
+
+packages/services/Telephony:
+a8f88e PhoneInterfaceManager: Catch and check NullPointerException [someone5678] (Wed Feb 12 04:46:03 2025)
+
+system/core:
+5860c0 Merge tag 'android-15.0.0_r14' into staging/lineage-22.1_merge-android-15.0.0_r14 [Michael Bestas] (Wed Feb 5 15:53:13 2025)
+
+tools/extract-utils:
+9d8fe9 extract-utils: Don't make extract-factory mutually exclusive [Michael Bestas] (Tue Feb 4 18:21:30 2025)
+
+vendor/lineage:
+4119bc config: Long live ro.modversion [Michael Bestas] (Tue Feb 11 17:47:12 2025)
+2053e6 TV: Ship Catapult [Timi] (Mon Feb 10 09:38:29 2025)
+8cafe3 vars: February 2025 Security update [Chirayu Desai] (Sat Feb 8 20:21:35 2025)
+81d6c3 Revert "config: Changes for libfmjni bp conversion" [borbelyvince] (Fri Feb 7 23:01:18 2025)
+03f912 apns: Update Lebara UK [razorloves] (Fri Feb 7 04:56:09 2025)
+728e6e vars: Update qcom tags [Michael Bestas] (Fri Feb 7 02:11:19 2025)
+
+==========
 2025-02-04
 ==========
