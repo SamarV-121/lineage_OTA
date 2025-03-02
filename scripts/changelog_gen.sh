@@ -64,8 +64,7 @@ declare -A device_repos=(
     ["RM6785"]="device/realme/RM6785-common
                 device/mediatek/sepolicy_vndr
                 hardware/mediatek
-                kernel/realme/mt6785
-                vendor/realme-firmware"
+                kernel/realme/mt6785"
     ["eqe"]="device/motorola/eqe
              kernel/motorola/sm7550
              kernel/motorola/sm7550-modules
