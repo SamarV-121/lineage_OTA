@@ -1,13 +1,13 @@
 {
   "response": [
     {
-      "datetime": 1740807213,
-      "filename": "lineage-22.1-20250301_053428-UNOFFICIAL-RMX2001L1.zip",
-      "id": "399d18bd8c224179ede3a29c2e8a9c5f7e2194f8fdb6a1be846aa82aff7737d6",
+      "datetime": 1747974767,
+      "filename": "lineage-22.2-20250523_044329-UNOFFICIAL-RMX2001L1.zip",
+      "id": "a9ed946a08e647f9e9a70c776fbbd2129b213f0c2659b9bad5cff8f14a9ede79",
       "romtype": "UNOFFICIAL",
-      "size": 1394511841,
-      "url": "https://lineage.samarv121.dev/RMX2001L1-20250302_061622/lineage-22.1-20250301_053428-UNOFFICIAL-RMX2001L1.zip",
-      "version": "22.1"
+      "size": 1406005393,
+      "url": "https://lineage.samarv121.dev/RMX2001L1-20250525_055132/lineage-22.2-20250523_044329-UNOFFICIAL-RMX2001L1.zip",
+      "version": "22.2"
     }
   ]
 }
